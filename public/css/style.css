@@ -1,3 +1,7 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:6c513a8b0e6db3c94e78a944947b8a59ecafaf0cfb95112ee669d4b2bd8d40c7
-size 259
+/* Apply styles to the <body> tag */
+body {
+    padding: 20px; /* Space inside the body */
+    margin: 0; /* Remove default margin */
+    width: 100%; /* Full width of the viewport */
+    min-height: 100vh; /* Ensure body covers the full viewport height */
+}

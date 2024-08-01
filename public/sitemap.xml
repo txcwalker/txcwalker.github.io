@@ -1,3 +1,30 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:96c3281eaf84dea108491ef5ecab168b73f3186e8c53cdc524701d0320a0ba59
-size 1112
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+  xmlns:xhtml="http://www.w3.org/1999/xhtml">
+  <url>
+    <loc>http://localhost:1313/posts/yelpsearchscore/</loc>
+    <lastmod>2024-07-29T01:52:23-05:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/posts/yelpintroduction/</loc>
+    <lastmod>2024-07-29T01:52:23-05:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/posts/yelpandzillow/</loc>
+    <lastmod>2024-07-29T01:52:23-05:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/posts/yelpheatmaps/</loc>
+    <lastmod>2024-07-29T01:52:23-05:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/posts/yelptaggraphs/</loc>
+    <lastmod>2024-07-29T01:52:23-05:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/</loc>
+    <lastmod>2024-07-29T01:52:23-05:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/posts/</loc>
+    <lastmod>2024-07-29T01:52:23-05:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/categories/</loc>
+  </url><url>
+    <loc>http://localhost:1313/tags/</loc>
+  </url>
+</urlset>

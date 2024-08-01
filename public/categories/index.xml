@@ -1,3 +1,11 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:9943b3bc7ea8ea9bb93c02847e6dd139da153ce295baeee261b82cbb58515e2c
-size 505
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Categories on Cam&#39;s Portfolio</title>
+    <link>http://localhost:1313/categories/</link>
+    <description>Recent content in Categories on Cam&#39;s Portfolio</description>
+    <generator>Hugo</generator>
+    <language>en-us</language>
+    <atom:link href="http://localhost:1313/categories/index.xml" rel="self" type="application/rss+xml" />
+  </channel>
+</rss>

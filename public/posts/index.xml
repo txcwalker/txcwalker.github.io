@@ -1,3 +1,47 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:3b7826ffacdaab342dbcc90e576fc065438b7103f33fe2efce792bab1aabfe0e
-size 4216
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Posts on Cam&#39;s Portfolio</title>
+    <link>http://localhost:1313/posts/</link>
+    <description>Recent content in Posts on Cam&#39;s Portfolio</description>
+    <generator>Hugo</generator>
+    <language>en-us</language>
+    <lastBuildDate>Mon, 29 Jul 2024 01:52:23 -0500</lastBuildDate>
+    <atom:link href="http://localhost:1313/posts/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Yelp Search Score</title>
+      <link>http://localhost:1313/posts/yelpsearchscore/</link>
+      <pubDate>Mon, 29 Jul 2024 01:52:23 -0500</pubDate>
+      <guid>http://localhost:1313/posts/yelpsearchscore/</guid>
+      <description>Search Score After using Yelp to find the best restaurants ‘near me’ for the past decade plus, I have seen a decline in the accuracy and validity of their search algorithm. Too often the search results seemed random and incomplete. So after years of confusion, I finally decided to try and take a look under the hood, see if I could understand their search algorithm and results. Then finally take a stab at my own search algorithm and see how closely my results compared to theirs.</description>
+    </item>
+    <item>
+      <title>Yelp Introduction</title>
+      <link>http://localhost:1313/posts/yelpintroduction/</link>
+      <pubDate>Mon, 29 Jul 2024 01:52:23 -0500</pubDate>
+      <guid>http://localhost:1313/posts/yelpintroduction/</guid>
+      <description>Summary This is an introduction to the analysis done on Yelp included on this site. It goes over some of the difficulties of the data as well as providing a brief overview of the process taken to construct the project.&#xA;The Yelp API has its positives and negatives. It is relatively easy to get access and get started using. There are plenty of pages of documentation on how to use the API and its limitations.</description>
+    </item>
+    <item>
+      <title>Yelp and Zillow Housing Price Index</title>
+      <link>http://localhost:1313/posts/yelpandzillow/</link>
+      <pubDate>Mon, 29 Jul 2024 01:52:23 -0500</pubDate>
+      <guid>http://localhost:1313/posts/yelpandzillow/</guid>
+      <description>Zillow Analysis Housing Price Prediction This analysis was motivated by the following question: Can the collected data from Yelp be used to approximate the average housing price of a zip code?&#xA;Data was collected from Yelp using its API and a model was created to try and predict the average cost of a house by zip code. If the model shows promise, perhaps it can be used to help predict future changes in housing price as the average price/rating/review count of a zip code&amp;rsquo;s restaurants increase or decrease.</description>
+    </item>
+    <item>
+      <title>Yelp Heat Maps</title>
+      <link>http://localhost:1313/posts/yelpheatmaps/</link>
+      <pubDate>Mon, 29 Jul 2024 01:52:23 -0500</pubDate>
+      <guid>http://localhost:1313/posts/yelpheatmaps/</guid>
+      <description>Welcome to the Heat Map Tool! Curious how restaurants are distributed across the city? Select any city from the below dropdown and choose from any variable in the adjacent list to view how restaurants are found throughout the selected city based on selected variable!&#xA;&lt;!DOCTYPE html&gt;&#xD;Heatmap&#xD;Select City:&#xD;Select Variable:&#xD;Review Count&#xD;Price&#xD;Rating&#xD;Update Map&#xD;</description>
+    </item>
+    <item>
+      <title>Yelp Tag Graphs</title>
+      <link>http://localhost:1313/posts/yelptaggraphs/</link>
+      <pubDate>Mon, 29 Jul 2024 01:52:23 -0500</pubDate>
+      <guid>http://localhost:1313/posts/yelptaggraphs/</guid>
+      <description>Welcome to the Tag Graphs Tool! Welcome to the Tag Graph Tool. The purpose of this tool is to provide visualization to the most popular types of restaurants in a given area. There are three different graphs one each for State, City and Zip Code. Each graph works the same just chose option(s) from the selection box and hit the &amp;ldquo;Generate Graph&amp;rdquo; button. For a more in depth guide please see the Jacksonville Example!</description>
+    </item>
+  </channel>
+</rss>
