@@ -1,3 +1,41 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:7b5262d627008ea49ff3e7ff8272ce4179a8ee91700bb4225e2252a7e80c304e
-size 1698
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tag Graphs</title>
+    <link rel="stylesheet" href="/css/tag_graphs_style.css">
+    <script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
+    <script src="/path/to/your-javascript-file.js" defer></script>
+</head>
+<body>    
+    <div class="graphs-container">
+        <div class="form-container">
+            <label for="target_states">Select State:</label>
+            <select id="target_states" multiple>
+                <!-- Options will be populated dynamically -->
+            </select>
+            <button onclick="updateGraph('states')">Generate State Graphs</button>
+            <div id="plotly-graph-states" class="plotly-graph-container"></div>
+        </div>
+
+        <div class="form-container">
+            <label for="target_cities">Select City:</label>
+            <select id="target_cities" multiple>
+                <!-- Options will be populated dynamically -->
+            </select>
+            <button onclick="updateGraph('cities')">Generate City Graphs</button>
+            <div id="plotly-graph-cities" class="plotly-graph-container"></div>
+        </div>
+
+        <div class="form-container">
+            <label for="target_zip_codes">Select ZIP Code:</label>
+            <select id="target_zip_codes" multiple>
+                <!-- Options will be populated dynamically -->
+            </select>
+            <button onclick="updateGraph('zip_codes')">Generate ZIP Code Graphs</button>
+            <div id="plotly-graph-zip_codes" class="plotly-graph-container"></div>
+        </div>
+    </div>
+</body>
+</html>

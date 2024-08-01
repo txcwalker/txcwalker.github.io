@@ -1,3 +1,44 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:736b010419f9ac48ea2e7caa9c38a904526eed0601f653bb24967b514f252a25
-size 1527
+<head>
+  <link rel="stylesheet" href="/css/table_style.css">
+</head>
+
+{{ $fileName := .Get "file" }}
+{{ $key := .Get "key" }}
+{{ $data := .Site.Data }}
+{{ with index $data $fileName }}
+  {{ with index . $key }}
+    <h2>{{ $key }}</h2>
+    <div class="table-container">
+      <table class="styled-table">
+        <thead>
+          <tr>
+            {{ if eq $key "Exponential Scaling" }}
+              <th class="capitalize">X</th>
+              <th class="capitalize">x<sup>2</sup></th>
+            {{ else }}
+              <!-- Default header generation -->
+              {{ with index . 0 }} <!-- Access the first object to get headers -->
+                {{ range $key, $value := . }} <!-- Iterate over its keys -->
+                  <th class="capitalize">{{ $key }}</th> <!-- Use key as header -->
+                {{ end }}
+              {{ end }}
+            {{ end }}
+          </tr>
+        </thead>
+        <tbody>
+          {{ range . }}
+            <tr {{ if and (eq $key "Yelp Search") (lt .Score 100) }}class="highlight-red"{{ end }} {{ if and (eq $key "Yelp Search") (eq .Score 160.61) }}class="highlight-green"{{ end }} {{ if and (eq $key "Yelp Search") (gt .Score 125) }}class="highlight-purple"{{ end }}>
+              {{ range . }}
+                <td>{{ . }}</td>
+              {{ end }}
+            </tr>
+          {{ end }}
+        </tbody>
+      </table>
+    </div>
+  {{ else }}
+    <p>No data found for key: {{ $key }}</p>
+  {{ end }}
+{{ else }}
+  <p>No data found for file: {{ $fileName }}</p>
+{{ end }}

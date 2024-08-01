@@ -1,3 +1,7 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:8c67a439df73fbdc49153b24858bbe3763cb6436465b2debbd3c691b8baa9877
-size 288
+{{- $fileName := .Get "file" -}}
+{{- $elementId := .Get "id" -}}
+
+<div id="{{ $elementId }}" class="plotly-map-container"></div>
+<link rel="stylesheet" href="/css/table_style.css">
+<script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
+<script src="/js/yelpzillow.js"></script>

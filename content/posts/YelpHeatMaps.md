@@ -1,3 +1,12 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:bee1996d2f69abee70367a96c73fb033fda7312de7952539fca8e072824ccb86
-size 379
++++
+title = 'Yelp Heat Maps'
+date = 2024-07-29T01:52:23-05:00
+draft = false
+weight = 4
++++
+
+# Welcome to the Heat Map Tool!
+
+Curious how restaurants are distributed across the city? Select any city from the below dropdown and choose from any variable in the adjacent list to view how restaurants are found throughout the selected city based on selected variable!
+
+{{< heatmap >}}

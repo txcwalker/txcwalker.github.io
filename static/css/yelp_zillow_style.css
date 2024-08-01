@@ -1,3 +1,7 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:ac3fc1d7f5d35f1034f74828fa06f699102123868c1ee5541b7d51916c79cd71
-size 254
+/* Style for all Plotly graph containers */
+.plotly-map-container {
+    width: 800px;  /* Width of the graph */
+    height: 600px; /* Height of the graph */
+    margin: 0 auto; /* Center the graph */
+    margin-bottom: 20px; /* Space between graphs */
+}

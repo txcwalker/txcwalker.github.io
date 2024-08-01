@@ -1,3 +1,21 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:19c5c8a63257e88fa6d6798d29034c4801d59fd384d45903b24860b6603c0c9b
-size 799
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Restaurant Search by ZIP Code</title>
+    <link rel="stylesheet" href="/css/search_score_tables_style.css">
+    <script src="https://cdn.jsdelivr.net/npm/@plotly/plotly.js-dist@2.14.0"></script> <!-- Include Plotly.js -->
+    <script defer src="/js/search.js"></script> <!-- Include your JavaScript file -->
+</head>
+<body>
+
+    <!-- Search Form -->
+    <form id="searchForm">
+        <label for="zipCodeDropdown">Select ZIP Code:</label>
+        <select id="zipCodeDropdown" name="zipCode"></select>
+        <button type="submit">Search</button>
+    </form>
+
+    <!-- Table Container for displaying results -->
+    <div id="tableContainer"></div>

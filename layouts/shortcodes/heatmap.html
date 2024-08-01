@@ -1,3 +1,41 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:5aca720428455ae509eeeecc82f0155add45275649d91f2a9731175e622c036b
-size 1524
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Heatmap</title>
+    <link rel="stylesheet" href="style.css">
+    <!-- Plotly.js -->
+    <script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
+    <!-- Mapbox GL JS -->
+    <script src="https://api.mapbox.com/mapbox-gl-js/v2.10.0/mapbox-gl.js"></script>
+    <link href="https://api.mapbox.com/mapbox-gl-js/v2.10.0/mapbox-gl.css" rel="stylesheet">
+
+</head>
+<body>
+    <div class="graph-container">
+        <div class="form-section">
+            <div class="form-elements">
+                <form id="heatmap-form">
+                    <label for="target_city">Select City:</label>
+                    <select id="target_city" name="target_city">
+                        <!-- Options will be populated by JavaScript -->
+                    </select>
+
+                    <label for="target_variable">Select Variable:</label>
+                    <select id="target_variable" name="target_variable">
+                        <option value="review_count">Review Count</option>
+                        <option value="price">Price</option>
+                        <option value="rating">Rating</option>
+                    </select>
+
+                    <button type="submit">Update Map</button>
+                </form>
+
+                <div id="plotly-map"></div>
+            </div>
+        </div>
+    </div>
+    <script src="/js/heatmaps.js"></script>
+</body>
+</html>

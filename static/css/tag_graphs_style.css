@@ -1,3 +1,63 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:3f0c54421570d0dcd5dcc54a1c8365f96df4ab0d8cf9c81b5e2df5fb1af9362b
-size 2055
+/* Center the container holding the form sections */
+.graphs-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 20px auto; /* Center and add margin to the container */
+    width: 100%; /* Full width */
+    max-width: 1200px; /* Maximum width */
+}
+
+/* Style for each form container */
+.form-container {
+    margin: 20px 0; /* Space out the forms vertically */
+    width: 600px; /* Width for form elements */
+    text-align: center; /* Center align text and elements */
+}
+
+/* Style for form elements */
+.form-elements {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* Style for dropdown and button */
+select {
+    margin-bottom: 10px; /* Add spacing between dropdown and button */
+    width: 100%; /* Full width of container */
+    max-width: 250px;
+    text-align: center; /* Center text inside dropdown */
+}
+
+button {
+    background-color: #007bff; /* Blue background color */
+    color: white; /* White text color */
+    border: none; /* Remove default border */
+    padding: 10px 20px; /* Add padding for better appearance */
+    border-radius: 5px; /* Rounded corners */
+    cursor: pointer; /* Pointer cursor on hover */
+    font-size: 16px; /* Font size */
+    width: 100%; /* Full width of container */
+    max-width: 250px;
+    transition: background-color 0.3s ease; /* Smooth transition for hover effect */
+}
+
+button:hover {
+    background-color: #0056b3; /* Darker blue background on hover */
+}
+
+/* Adjust the width and height of the graph containers */
+.plotly-graph-container {
+    width: 100%; /* Full width of its parent container */
+    height: 600px; /* Increased height for better visibility */
+    margin: 20px auto; /* Center and add vertical space */
+    border: 1px solid #ddd; /* Optional: border for visual separation */
+    box-shadow: 0 0 10px rgba(0,0,0,0.1); /* Optional: shadow for better visual separation */
+}
+
+/* Style the labels */
+label {
+    margin-bottom: 10px; /* Adds space below labels */
+    font-weight: bold; /* Makes the labels bold */
+}

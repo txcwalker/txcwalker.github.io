@@ -1,3 +1,18 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:66320489da6b4e60e2be2b420f3e78c0877dd596f7617cf3b87e0a21d3a8cefd
-size 547
++++
+title = 'Yelp Tag Graphs'
+date = 2024-07-29T01:52:23-05:00
+draft = false
+weight = 5
++++
+
+# Welcome to the Tag Graphs Tool!
+
+Welcome to the Tag Graph Tool. The purpose of this tool is to provide visualization to the most popular
+types of restaurants in a given area. There are three different graphs one each for State, City and Zip
+Code. Each graph works the same just chose option(s) from the selection box and hit the "Generate Graph"
+button. For a more in depth guide please see the Jacksonville Example!
+
+## Tag Graphs
+
+{{< taggraphs >}}
+

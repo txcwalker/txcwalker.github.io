@@ -1,3 +1,16 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:e23fce4e234e27c20ef3e50853a30e284029245874ed6717e91250f5838a66d1
-size 649
+document.addEventListener('DOMContentLoaded', function() {
+    // Function to load and plot the JSON data
+    function loadPlot(elementId, jsonFile) {
+        fetch(`/images/Housing_price/${jsonFile}`)
+            .then(response => response.json())
+            .then(data => {
+                Plotly.newPlot(elementId, data.data, data.layout);
+            })
+            .catch(error => console.error('Error loading plot:', error));
+    }
+
+    // Load each plot
+    loadPlot('residuals-plot', 'residuals_plot.json');
+    loadPlot('least-accurate-plot', 'least_accurate_plot.json');
+    loadPlot('most-accurate-plot', 'most_accurate_plot.json');
+});
