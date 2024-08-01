@@ -1,3 +1,4 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:dfef3a54b788728cd6e2d0a94d05c7609f7068cf86c60bade00f233ee78c8a35
-size 117
+[submodule "submodule_name"]
+	path = path/to/submodule
+	url = https://github.com/user/repo.git
+
