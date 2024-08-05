@@ -31,16 +31,15 @@
     
 
     
-      <link rel="canonical" href="http://localhost:1313/posts/yelpsearchscore/">
+      <link rel="canonical" href="http://localhost:1313/yelpsearchscore/">
     
 
-    <meta property="og:url" content="http://localhost:1313/posts/yelpsearchscore/">
+    <meta property="og:url" content="http://localhost:1313/yelpsearchscore/">
   <meta property="og:site_name" content="Cam&#39;s Portfolio">
   <meta property="og:title" content="Yelp Search Score">
   <meta property="og:description" content="Search Score After using Yelp to find the best restaurants ‘near me’ for the past decade plus, I have seen a decline in the accuracy and validity of their search algorithm. Too often the search results seemed random and incomplete. So after years of confusion, I finally decided to try and take a look under the hood, see if I could understand their search algorithm and results. Then finally take a stab at my own search algorithm and see how closely my results compared to theirs.">
   <meta property="og:locale" content="en-us">
   <meta property="og:type" content="article">
-    <meta property="article:section" content="posts">
     <meta property="article:published_time" content="2024-07-29T01:52:23-05:00">
     <meta property="article:modified_time" content="2024-07-29T01:52:23-05:00">
 
@@ -57,8 +56,6 @@
   <body class="ma0 avenir bg-near-white">
 
     
-   
-  
 
   <header>
     <div class="bg-black">
@@ -86,43 +83,17 @@
   </header>
 
 
-
     <main class="pb7" role="main">
       
-  
-  <article class="flex-l flex-wrap justify-between mw8 center ph3">
-    <header class="mt4 w-100">
-      <aside class="instapaper_ignoref b helvetica tracked ttu">
-          
-        Posts
-      </aside>
-      
-
-
-
-
-
-
-
-
-
-
-  <div id="sharing" class="mt3 ananke-socials">
-    
-  </div>
-
-
-      <h1 class="f1 athelas mt3 mb1">Yelp Search Score</h1>
-      
-      
-      
-      <time class="f6 mv4 dib tracked" datetime="2024-07-29T01:52:23-05:00">July 29, 2024</time>
-      
-
-      
-      
-    </header>
-    <div class="nested-copy-line-height lh-copy serif f4 nested-links mid-gray pr4-l w-two-thirds-l"><h1 id="search-score">Search Score</h1>
+  <div class="flex-l mt2 mw8 center">
+    <article class="center cf pv5 ph3 ph4-ns mw7">
+      <header>
+        <h1 class="f1">
+          Yelp Search Score
+        </h1>
+      </header>
+      <div class="nested-copy-line-height lh-copy f4 nested-links mid-gray">
+        <h1 id="search-score">Search Score</h1>
 <p>After using Yelp to find the best restaurants ‘near me’ for the past decade plus, I have seen a decline in the accuracy and validity of their search algorithm. Too often the search results seemed random and incomplete. So after years of confusion, I finally decided to try and take a look under the hood, see if I could understand their search algorithm and results. Then finally take a stab at my own search algorithm and see how closely my results compared to theirs.</p>
 <p>This started by using the Yelp API and accessing as much data as possible. The API has daily (about 2000 observations per call) and call (about 10 max calls) limits. So after gathering data for the better part of a month, the dataset was defined. Close to 100,000 total observations from over 50 major metropolitan areas around the United States. This is a small percentage of the total observations that Yelp has but it is big enough to run an analysis on, develop a model, and evaluate the results to form a few conclusions on the overall validity of both search algorithms.</p>
 <p>When accessing data from the Yelp API, there are a trove of variables that can be selected to accompany each observation. For the purposes of this discussion, there are two: Number of Reviews and Rating. With just these two variables, we should be able to understand the current Yelp algorithm and create a close replica of it as long as the current search algorithm is relatively unbiased.</p>
@@ -695,23 +666,10 @@
 
     
     <div id="tableContainer"></div>
-<ul class="pa0">
-  
-</ul>
-<div class="mt6 instapaper_ignoref">
-      
-      
+
       </div>
-    </div>
-
-    <aside class="w-30-l mt6-l">
-
-
-
-
-</aside>
-
-  </article>
+    </article>
+  </div>
 
     </main>
     <footer class="bg-black bottom-0 w-100 pa3" role="contentinfo">

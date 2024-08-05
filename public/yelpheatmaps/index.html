@@ -32,16 +32,15 @@
     
 
     
-      <link rel="canonical" href="http://localhost:1313/posts/yelpheatmaps/">
+      <link rel="canonical" href="http://localhost:1313/yelpheatmaps/">
     
 
-    <meta property="og:url" content="http://localhost:1313/posts/yelpheatmaps/">
+    <meta property="og:url" content="http://localhost:1313/yelpheatmaps/">
   <meta property="og:site_name" content="Cam&#39;s Portfolio">
   <meta property="og:title" content="Yelp Heat Maps">
   <meta property="og:description" content="Welcome to the Heat Map Tool! Curious how restaurants are distributed across the city? Select any city from the below dropdown and choose from any variable in the adjacent list to view how restaurants are found throughout the selected city based on selected variable! &lt;!DOCTYPE html&gt;HeatmapSelect City:Select Variable:Review CountPriceRatingUpdate Map">
   <meta property="og:locale" content="en-us">
   <meta property="og:type" content="article">
-    <meta property="article:section" content="posts">
     <meta property="article:published_time" content="2024-07-29T01:52:23-05:00">
     <meta property="article:modified_time" content="2024-07-29T01:52:23-05:00">
 
@@ -60,8 +59,6 @@
   <body class="ma0 avenir bg-near-white">
 
     
-   
-  
 
   <header>
     <div class="bg-black">
@@ -89,43 +86,17 @@
   </header>
 
 
-
     <main class="pb7" role="main">
       
-  
-  <article class="flex-l flex-wrap justify-between mw8 center ph3">
-    <header class="mt4 w-100">
-      <aside class="instapaper_ignoref b helvetica tracked ttu">
-          
-        Posts
-      </aside>
-      
-
-
-
-
-
-
-
-
-
-
-  <div id="sharing" class="mt3 ananke-socials">
-    
-  </div>
-
-
-      <h1 class="f1 athelas mt3 mb1">Yelp Heat Maps</h1>
-      
-      
-      
-      <time class="f6 mv4 dib tracked" datetime="2024-07-29T01:52:23-05:00">July 29, 2024</time>
-      
-
-      
-      
-    </header>
-    <div class="nested-copy-line-height lh-copy serif f4 nested-links mid-gray pr4-l w-two-thirds-l"><h1 id="welcome-to-the-heat-map-tool">Welcome to the Heat Map Tool!</h1>
+  <div class="flex-l mt2 mw8 center">
+    <article class="center cf pv5 ph3 ph4-ns mw7">
+      <header>
+        <h1 class="f1">
+          Yelp Heat Maps
+        </h1>
+      </header>
+      <div class="nested-copy-line-height lh-copy f4 nested-links mid-gray">
+        <h1 id="welcome-to-the-heat-map-tool">Welcome to the Heat Map Tool!</h1>
 <p>Curious how restaurants are distributed across the city? Select any city from the below dropdown and choose from any variable in the adjacent list to view how restaurants are found throughout the selected city based on selected variable!</p>
 <!DOCTYPE html>
 <html lang="en">
@@ -133,13 +104,22 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Heatmap</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="style.css"> 
+    
     
     <script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
+
     
     <script src="https://api.mapbox.com/mapbox-gl-js/v2.10.0/mapbox-gl.js"></script>
     <link href="https://api.mapbox.com/mapbox-gl-js/v2.10.0/mapbox-gl.css" rel="stylesheet">
 
+    <style>
+         
+        #plotly-map {
+            width: 100%;
+            height: 600px;
+        }
+    </style>
 </head>
 <body>
     <div class="graph-container">
@@ -158,34 +138,19 @@
                         <option value="rating">Rating</option>
                     </select>
 
-                    <button type="submit">Update Map</button>
+                    <button type="submit" style="margin-top: 20px;">Update Map</button>
                 </form>
 
                 <div id="plotly-map"></div>
             </div>
         </div>
     </div>
-    <script src="/js/heatmaps.js"></script>
-</body>
 </html>
 
-<ul class="pa0">
-  
-</ul>
-<div class="mt6 instapaper_ignoref">
-      
-      
+
       </div>
-    </div>
-
-    <aside class="w-30-l mt6-l">
-
-
-
-
-</aside>
-
-  </article>
+    </article>
+  </div>
 
     </main>
     <footer class="bg-black bottom-0 w-100 pa3" role="contentinfo">

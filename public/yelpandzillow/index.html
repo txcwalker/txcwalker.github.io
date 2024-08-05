@@ -32,17 +32,16 @@ Data was collected from Yelp using its API and a model was created to try and pr
     
 
     
-      <link rel="canonical" href="http://localhost:1313/posts/yelpandzillow/">
+      <link rel="canonical" href="http://localhost:1313/yelpandzillow/">
     
 
-    <meta property="og:url" content="http://localhost:1313/posts/yelpandzillow/">
+    <meta property="og:url" content="http://localhost:1313/yelpandzillow/">
   <meta property="og:site_name" content="Cam&#39;s Portfolio">
   <meta property="og:title" content="Yelp and Zillow Housing Price Index">
   <meta property="og:description" content="Zillow Analysis Housing Price Prediction This analysis was motivated by the following question: Can the collected data from Yelp be used to approximate the average housing price of a zip code?
 Data was collected from Yelp using its API and a model was created to try and predict the average cost of a house by zip code. If the model shows promise, perhaps it can be used to help predict future changes in housing price as the average price/rating/review count of a zip code’s restaurants increase or decrease.">
   <meta property="og:locale" content="en-us">
   <meta property="og:type" content="article">
-    <meta property="article:section" content="posts">
     <meta property="article:published_time" content="2024-07-29T01:52:23-05:00">
     <meta property="article:modified_time" content="2024-07-29T01:52:23-05:00">
 
@@ -61,8 +60,6 @@ Data was collected from Yelp using its API and a model was created to try and pr
   <body class="ma0 avenir bg-near-white">
 
     
-   
-  
 
   <header>
     <div class="bg-black">
@@ -90,43 +87,17 @@ Data was collected from Yelp using its API and a model was created to try and pr
   </header>
 
 
-
     <main class="pb7" role="main">
       
-  
-  <article class="flex-l flex-wrap justify-between mw8 center ph3">
-    <header class="mt4 w-100">
-      <aside class="instapaper_ignoref b helvetica tracked ttu">
-          
-        Posts
-      </aside>
-      
-
-
-
-
-
-
-
-
-
-
-  <div id="sharing" class="mt3 ananke-socials">
-    
-  </div>
-
-
-      <h1 class="f1 athelas mt3 mb1">Yelp and Zillow Housing Price Index</h1>
-      
-      
-      
-      <time class="f6 mv4 dib tracked" datetime="2024-07-29T01:52:23-05:00">July 29, 2024</time>
-      
-
-      
-      
-    </header>
-    <div class="nested-copy-line-height lh-copy serif f4 nested-links mid-gray pr4-l w-two-thirds-l"><h1 id="zillow-analysis">Zillow Analysis</h1>
+  <div class="flex-l mt2 mw8 center">
+    <article class="center cf pv5 ph3 ph4-ns mw7">
+      <header>
+        <h1 class="f1">
+          Yelp and Zillow Housing Price Index
+        </h1>
+      </header>
+      <div class="nested-copy-line-height lh-copy f4 nested-links mid-gray">
+        <h1 id="zillow-analysis">Zillow Analysis</h1>
 <h2 id="housing-price-prediction">Housing Price Prediction</h2>
 <p>This analysis was motivated by the following question: Can the collected data from Yelp be used to approximate the average housing price of a zip code?</p>
 <p>Data was collected from Yelp using its API and a model was created to try and predict the average cost of a house by zip code. If the model shows promise, perhaps it can be used to help predict future changes in housing price as the average price/rating/review count of a zip code&rsquo;s restaurants increase or decrease. This could help with improving city logistics, ease gentrification, provide investing opportunities, and much more. The idea is that popular restaurants could be a proxy variable representing an increase in interest in a particular area and thus an increase in the average price of housing.</p>
@@ -221,23 +192,10 @@ Data was collected from Yelp using its API and a model was created to try and pr
 <p>There is some promise to this model. It definitely is not perfect due to the combination of skewed data and the overall lack of data. It is unclear how much of the total Yelp data is included in the data set, but it is surely less than 10% and probably significantly less than that. Only 2000 of the 41,000 US zip codes are included. So, there is room for significant improvement in this department. Unfortunately, it is easy to identify this problem but not so easy to rectify.</p>
 <p>A 52% R <sup>2</sup> is not bad on its own, and with all of the learnings from this process, it is encouraging for the next steps that can be taken with a more complete version of the data set. Of course, it can be improved, and the change in these variables can be monitored month to month to help predict a change in housing price, but this data has plenty of use cases, many of which have not been conceived.</p>
 <p>The biggest roadblock to the model is its performance for the more expensive housing prices. Obviously, more data would help, but based on its sporadic performance when the price was greater than 750K, there need to be more adjustments to help this part of the model. Perhaps the data would respond better to a different type of analysis, or maybe just the housing prices greater than 750K (or some other value) should be evaluated by a different model (sort of like a piecewise function). The analysis has shown that this is an idea worth pursuing, even if the initial thought behind using the Yelp data seems to be irrelevant.</p>
-<ul class="pa0">
-  
-</ul>
-<div class="mt6 instapaper_ignoref">
-      
-      
+
       </div>
-    </div>
-
-    <aside class="w-30-l mt6-l">
-
-
-
-
-</aside>
-
-  </article>
+    </article>
+  </div>
 
     </main>
     <footer class="bg-black bottom-0 w-100 pa3" role="contentinfo">
