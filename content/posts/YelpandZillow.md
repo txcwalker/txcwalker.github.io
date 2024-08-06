@@ -117,7 +117,7 @@ Here are three graphs to show the biggest misses, closest predictions, and the f
 
 ## Residuals Plot
 
-{{< yelpzillow id="residuals-plot" json="static/data/residuals_plot.json" >}}
+{{< YelpZillow id="residuals-plot" json="data/residuals_plot.json" >}}
 
 
 The second map shows the least accurate predictions from the model. These are the biggest circles from the map just above. The size scaling is less important on these since they are the worst predictions. This is just an easy way to visualize the worst of the worst.
@@ -125,7 +125,7 @@ The second map shows the least accurate predictions from the model. These are th
 
 ## Least Accurate Residuals
 
-{{< yelpzillow id="least-accurate-plot" json="static/data/least_accurate_plot.json" >}}
+{{< YelpZillow id="least-accurate-plot" json="data/least_accurate_plot.json" >}}
 
 
 The final map shows the most accurate predictions from the model. These are the smallest circles from the first map. Again, as with the least accurate map, the size and scaling are all relative and not as important. This is just an easy way to visualize the best of the best.
@@ -133,7 +133,7 @@ The final map shows the most accurate predictions from the model. These are the 
 
 ## Most Accurate Predictions
 
-{{< yelpzillow id="most-accurate-plot" json="static/data/most_accurate_plot.json" >}}
+{{< YelpZillow id="most-accurate-plot" data/most_accurate_plot.json" >}}
 
 
 ## Conclusions
