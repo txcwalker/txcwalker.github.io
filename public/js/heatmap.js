@@ -1,6 +1,6 @@
 document.addEventListener('DOMContentLoaded', async function () {
     // Load city data and populate the dropdown
-    const response = await fetch('data/df5.json');
+    const response = await fetch('/data/df5.json');
     const data = await response.json();
 
     // Approved cities list
