@@ -1,5 +1,5 @@
 /* Apply styles to the <body> tag */
-body {
+body{
     padding: 20px; /* Space inside the body */
     margin: 0; /* Remove default margin */
     width: 100%; /* Full width of the viewport */

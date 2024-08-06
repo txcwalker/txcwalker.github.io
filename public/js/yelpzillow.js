@@ -1,6 +1,6 @@
 document.addEventListener('DOMContentLoaded', function() {
     function loadPlot(elementId, jsonFile) {
-        fetch(`/images/Housing_price/${jsonFile}`)
+        fetch(`/images/Housing_Price/${jsonFile}`)  // Adjust the path here if needed
             .then(response => {
                 if (!response.ok) {
                     throw new Error(`Network response was not ok: ${response.statusText}`);
