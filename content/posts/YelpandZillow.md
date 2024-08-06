@@ -133,7 +133,7 @@ The final map shows the most accurate predictions from the model. These are the 
 
 ## Most Accurate Predictions
 
-{{< YelpZillow id="most-accurate-plot" json ="/data/most_accurate_plot.json" >}}
+{{< YelpZillow id="most-accurate-plot" json="/data/most_accurate_plot.json" >}}
 
 
 ## Conclusions
