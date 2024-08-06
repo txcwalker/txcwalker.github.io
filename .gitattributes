@@ -1,4 +1,0 @@
-df10.json filter=lfs diff=lfs merge=lfs -text
-df5.json filter=lfs diff=lfs merge=lfs -text
-df6.json filter=lfs diff=lfs merge=lfs -text
-df7.json filter=lfs diff=lfs merge=lfs -text
