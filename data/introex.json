@@ -1,3 +1,6 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:e5086503ca8103d2d3cdd7ea85ae05caafcbaf50cc04d668d4a36682c8480a04
-size 148
+{
+  "Example":[   
+    {"Name": "Kokonut Grill","Review Count": 363,"Rating": 4,"Price": 2,"Zip Code": "23220","Country": "VI","State": "VA"}
+  ]
+}
+
