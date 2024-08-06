@@ -2,29 +2,29 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>https://txcwalker.github.io/portfolio_website/posts/yelpsearchscore/</loc>
+    <loc>http://localhost:1313/portfolio_website/posts/yelpsearchscore/</loc>
     <lastmod>2024-07-29T01:52:23-05:00</lastmod>
   </url><url>
-    <loc>https://txcwalker.github.io/portfolio_website/posts/yelpintroduction/</loc>
+    <loc>http://localhost:1313/portfolio_website/posts/yelpintroduction/</loc>
     <lastmod>2024-07-29T01:52:23-05:00</lastmod>
   </url><url>
-    <loc>https://txcwalker.github.io/portfolio_website/posts/yelpandzillow/</loc>
+    <loc>http://localhost:1313/portfolio_website/posts/yelpandzillow/</loc>
     <lastmod>2024-07-29T01:52:23-05:00</lastmod>
   </url><url>
-    <loc>https://txcwalker.github.io/portfolio_website/posts/yelpheatmaps/</loc>
+    <loc>http://localhost:1313/portfolio_website/posts/yelpheatmaps/</loc>
     <lastmod>2024-07-29T01:52:23-05:00</lastmod>
   </url><url>
-    <loc>https://txcwalker.github.io/portfolio_website/posts/yelptaggraphs/</loc>
+    <loc>http://localhost:1313/portfolio_website/posts/yelptaggraphs/</loc>
     <lastmod>2024-07-29T01:52:23-05:00</lastmod>
   </url><url>
-    <loc>https://txcwalker.github.io/portfolio_website/</loc>
+    <loc>http://localhost:1313/portfolio_website/</loc>
     <lastmod>2024-07-29T01:52:23-05:00</lastmod>
   </url><url>
-    <loc>https://txcwalker.github.io/portfolio_website/posts/</loc>
+    <loc>http://localhost:1313/portfolio_website/posts/</loc>
     <lastmod>2024-07-29T01:52:23-05:00</lastmod>
   </url><url>
-    <loc>https://txcwalker.github.io/portfolio_website/categories/</loc>
+    <loc>http://localhost:1313/portfolio_website/categories/</loc>
   </url><url>
-    <loc>https://txcwalker.github.io/portfolio_website/tags/</loc>
+    <loc>http://localhost:1313/portfolio_website/tags/</loc>
   </url>
 </urlset>
