@@ -6,14 +6,21 @@
     <description>Recent content on Cam&#39;s Portfolio</description>
     <generator>Hugo</generator>
     <language>en-us</language>
-    <lastBuildDate>Mon, 29 Jul 2024 01:52:23 -0500</lastBuildDate>
+    <lastBuildDate>Wed, 19 Mar 2025 01:52:23 -0500</lastBuildDate>
     <atom:link href="https://txcwalker.github.io/portfolio_website/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Yelp Search Score</title>
       <link>https://txcwalker.github.io/portfolio_website/posts/yelpsearchscore/</link>
       <pubDate>Mon, 29 Jul 2024 01:52:23 -0500</pubDate>
       <guid>https://txcwalker.github.io/portfolio_website/posts/yelpsearchscore/</guid>
-      <description>Search Score After using Yelp to find the best restaurants ‘near me’ for the past decade plus, I have seen a decline in the accuracy and validity of their search algorithm. Too often the search results seemed random and incomplete. So after years of confusion, I finally decided to try and take a look under the hood, see if I could understand their search algorithm and results. Then finally take a stab at my own search algorithm and see how closely my results compared to theirs.</description>
+      <description>Search Score After using Yelp to find the best restaurants ‘near me’ for more than a decade, I have seen a decline in the accuracy and validity of their search algorithm. Too often the search results seemed random and incomplete. So after years of confusion, I finally decided to try and take a look under the hood. See if I could understand their search algorithm and results. Then finally take a stab at my own search algorithm and see how closely my results compare to Yelp&amp;rsquo;s.</description>
+    </item>
+    <item>
+      <title>March Madness Overview</title>
+      <link>https://txcwalker.github.io/portfolio_website/posts/marchmadnessoverview/</link>
+      <pubDate>Wed, 19 Mar 2025 01:52:23 -0500</pubDate>
+      <guid>https://txcwalker.github.io/portfolio_website/posts/marchmadnessoverview/</guid>
+      <description>March Madness Introduction Every March college basketball captures the Country’s countries imagination. The tournament begins with 68 teams each of whom believe they can win the tournament and be crowned the best college basketball team in the country. The single elimination, win or go home, style of tournament creates excitement because anything can happen in one game. And it is true, anything can happen in one game. But what is the likelihood?</description>
     </item>
     <item>
       <title>Yelp Introduction</title>
@@ -27,7 +34,7 @@
       <link>https://txcwalker.github.io/portfolio_website/posts/yelpandzillow/</link>
       <pubDate>Mon, 29 Jul 2024 01:52:23 -0500</pubDate>
       <guid>https://txcwalker.github.io/portfolio_website/posts/yelpandzillow/</guid>
-      <description>Zillow Analysis Housing Price Prediction This analysis was motivated by the following question: Can the collected data from Yelp be used to approximate the average housing price of a zip code?&#xA;Data was collected from Yelp using its API and a model was created to try and predict the average cost of a house by zip code. If the model shows promise, perhaps it can be used to help predict future changes in housing price as the average price/rating/review count of a zip code&amp;rsquo;s restaurants increase or decrease.</description>
+      <description>Zillow Analysis Housing Price Prediction This analysis was motivated by the following question: Can the collected data from Yelp be used to approximate the average housing price of a zip code?&#xA;Data was collected from Yelp using its API and a model was created to try and predict the average cost of a house by zip code. If the model shows promise, it can be used to help predict future changes in housing price as the average price/rating/review count of a zip code&amp;rsquo;s restaurants increase or decrease.</description>
     </item>
     <item>
       <title>Yelp Heat Maps</title>
@@ -41,7 +48,35 @@
       <link>https://txcwalker.github.io/portfolio_website/posts/yelptaggraphs/</link>
       <pubDate>Mon, 29 Jul 2024 01:52:23 -0500</pubDate>
       <guid>https://txcwalker.github.io/portfolio_website/posts/yelptaggraphs/</guid>
-      <description>Welcome to the Tag Graphs Tool! Welcome to the Tag Graph Tool. The purpose of this tool is to provide visualization to the most popular types of restaurants in a given area. There are three different graphs one each for State, City and Zip Code. Each graph works the same just chose option(s) from the selection box and hit the &amp;ldquo;Generate Graph&amp;rdquo; button. For a more in depth guide please see the Jacksonville Example!</description>
+      <description>Welcome to the Tag Graphs Tool! Welcome to the Tag Graph Tool. The purpose of this tool is to provide visualization to the most popular types of restaurants in a given area. There are three different graphs one each for State, City and Zip Code. Each graph works the same just chose option(s) from the selection box and hit the &amp;ldquo;Generate Graph&amp;rdquo; button.&#xA;Tag Graphs &lt;!DOCTYPE html&gt;&#xD;Tag Graphs&#xD;Select State:&#xD;Generate State Graphs&#xD;Select City:&#xD;Generate City Graphs&#xD;Select ZIP Code:&#xD;Generate ZIP Code Graphs&#xD;</description>
+    </item>
+    <item>
+      <title>March Madness Final Four</title>
+      <link>https://txcwalker.github.io/portfolio_website/posts/marchmadnessfinalfour/</link>
+      <pubDate>Wed, 19 Mar 2025 01:52:23 -0500</pubDate>
+      <guid>https://txcwalker.github.io/portfolio_website/posts/marchmadnessfinalfour/</guid>
+      <description>March Madness Final Four After the bracket comes out on selection Sunday, the first and second question most people will ask you when comparing brackets is “Who is your national champion?” and “Who is in your final four?” Below is the sims 20 most common final fours. All of them have at least seeds one number one seed most of them at least 2. Notably the most common final four is all four one seeds happening a little over 8% of the time which is about 4 times more than it was projected last year.</description>
+    </item>
+    <item>
+      <title>March Madness Misseedings and Over/Underperformers</title>
+      <link>https://txcwalker.github.io/portfolio_website/posts/marchmadnessmisseedings/</link>
+      <pubDate>Wed, 19 Mar 2025 01:52:23 -0500</pubDate>
+      <guid>https://txcwalker.github.io/portfolio_website/posts/marchmadnessmisseedings/</guid>
+      <description>Seed Prediction It feels like every year the committee intentionally misseeds a couple of teams just to farm engagement and get people talking about the tournament. This year is unfortunately no different and perhaps even worse than most. Of course the primary body of work are the games you played in the regular season but that does not mean the conference tournaments should count for nothing. Below are the most egregious examples of teams that were over or underseeded.</description>
+    </item>
+    <item>
+      <title>March Madness Odds Search</title>
+      <link>https://txcwalker.github.io/portfolio_website/posts/marchmadnessodds/</link>
+      <pubDate>Wed, 19 Mar 2025 01:52:23 -0500</pubDate>
+      <guid>https://txcwalker.github.io/portfolio_website/posts/marchmadnessodds/</guid>
+      <description>Below is a table with the odds for every Team to make it to the following rounds Sweet Sixteen, Elite Eight, Final Four and Championship Winner. Simpley Select which team(s) you would like to view and hit &amp;ldquo;Show Selected Teams&amp;rdquo;&#xA;Select Teams:&#xD;Akron&#xD;Alabama&#xD;American&#xD;Arizona&#xD;Arkansas&#xD;Auburn&#xD;BYU&#xD;Baylor&#xD;Bryant&#xD;Clemson&#xD;Colorado St.&#xD;Connecticut&#xD;Creighton&#xD;Drake&#xD;Duke&#xD;Florida&#xD;Georgia&#xD;Gonzaga&#xD;Grand Canyon&#xD;High Point&#xD;Houston&#xD;Illinois&#xD;Iowa St.&#xD;Kansas&#xD;Kentucky&#xD;Liberty&#xD;Lipscomb&#xD;Louisville&#xD;Marquette&#xD;Maryland&#xD;McNeese&#xD;Memphis&#xD;Michigan&#xD;Michigan St.</description>
+    </item>
+    <item>
+      <title>March Madness Region Strength</title>
+      <link>https://txcwalker.github.io/portfolio_website/posts/marchmadnessregionstrength/</link>
+      <pubDate>Wed, 19 Mar 2025 01:52:23 -0500</pubDate>
+      <guid>https://txcwalker.github.io/portfolio_website/posts/marchmadnessregionstrength/</guid>
+      <description>Region Strength Ideally we want our potential champion to come from the path of least resistance. That is to say the less competitive games our champion can play the more likely they are to win the championship. In an effort to quantify this path of least resistance (at least to the final four) the metric Region strength was created. It is comprised of three components, Total Region Championships, Seed Prediction and Fragility.</description>
     </item>
   </channel>
 </rss>

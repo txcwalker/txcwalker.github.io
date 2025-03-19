@@ -1,0 +1,30 @@
+{{ $jsonResource := getJSON "data/seed_display.json" }}
+
+{{ if $jsonResource }}
+    {{ $data := index $jsonResource "seed_display" }}
+
+    <link rel="stylesheet" href="/css/table_style.css">
+
+    <table class="styled-table">
+        <thead>
+            <tr>
+                <th>Team</th>
+                <th>Seed</th>
+                <th>Seed_Prediction</th>
+                <th>Seed_Difference</th>  <!-- Manually ordered -->
+            </tr>
+        </thead>
+        <tbody>
+            {{ range $data }}
+                <tr>
+                    <td>{{ .Team }}</td>
+                    <td>{{ .Seed }}</td>
+                    <td>{{ .Seed_Prediction }}</td>
+                    <td>{{ .Seed_Difference }}</td>
+                </tr>
+            {{ end }}
+        </tbody>
+    </table>
+{{ else }}
+    <p>Error: JSON file not found.</p>
+{{ end }}

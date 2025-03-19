@@ -1,0 +1,438 @@
+{
+    "round_odds": [
+        {
+            "Team": "Akron",
+            "Sweet_Sixteen_Odds": 18768,
+            "Elite_Eight_Odds": 499900,
+            "Final_Four_Odds": 1000000,
+            "Championship_Odds": 1000000
+        },
+        {
+            "Team": "Alabama",
+            "Sweet_Sixteen_Odds": -442,
+            "Elite_Eight_Odds": -127,
+            "Final_Four_Odds": 342,
+            "Championship_Odds": 2098
+        },
+        {
+            "Team": "American",
+            "Sweet_Sixteen_Odds": 999900,
+            "Elite_Eight_Odds": 1000000,
+            "Final_Four_Odds": 1000000,
+            "Championship_Odds": 1000000
+        },
+        {
+            "Team": "Arizona",
+            "Sweet_Sixteen_Odds": -230,
+            "Elite_Eight_Odds": 456,
+            "Final_Four_Odds": 1163,
+            "Championship_Odds": 13233
+        },
+        {
+            "Team": "Arkansas",
+            "Sweet_Sixteen_Odds": 933,
+            "Elite_Eight_Odds": 4049,
+            "Final_Four_Odds": 28471,
+            "Championship_Odds": 999900
+        },
+        {
+            "Team": "Auburn",
+            "Sweet_Sixteen_Odds": -643,
+            "Elite_Eight_Odds": -254,
+            "Final_Four_Odds": -123,
+            "Championship_Odds": 449
+        },
+        {
+            "Team": "BYU",
+            "Sweet_Sixteen_Odds": 307,
+            "Elite_Eight_Odds": 1155,
+            "Final_Four_Odds": 5998,
+            "Championship_Odds": 62400
+        },
+        {
+            "Team": "Baylor",
+            "Sweet_Sixteen_Odds": 1485,
+            "Elite_Eight_Odds": 3645,
+            "Final_Four_Odds": 12721,
+            "Championship_Odds": 1000000
+        },
+        {
+            "Team": "Bryant",
+            "Sweet_Sixteen_Odds": 90809,
+            "Elite_Eight_Odds": 1000000,
+            "Final_Four_Odds": 1000000,
+            "Championship_Odds": 1000000
+        },
+        {
+            "Team": "Clemson",
+            "Sweet_Sixteen_Odds": 133,
+            "Elite_Eight_Odds": 889,
+            "Final_Four_Odds": 2921,
+            "Championship_Odds": 36937
+        },
+        {
+            "Team": "Colorado St.",
+            "Sweet_Sixteen_Odds": 658,
+            "Elite_Eight_Odds": 9334,
+            "Final_Four_Odds": 49900,
+            "Championship_Odds": 999900
+        },
+        {
+            "Team": "Connecticut",
+            "Sweet_Sixteen_Odds": 1983,
+            "Elite_Eight_Odds": 6035,
+            "Final_Four_Odds": 16029,
+            "Championship_Odds": 249900
+        },
+        {
+            "Team": "Creighton",
+            "Sweet_Sixteen_Odds": 2610,
+            "Elite_Eight_Odds": 8829,
+            "Final_Four_Odds": 27678,
+            "Championship_Odds": 999900
+        },
+        {
+            "Team": "Drake",
+            "Sweet_Sixteen_Odds": 5748,
+            "Elite_Eight_Odds": 47519,
+            "Final_Four_Odds": 333233,
+            "Championship_Odds": 1000000
+        },
+        {
+            "Team": "Duke",
+            "Sweet_Sixteen_Odds": -768,
+            "Elite_Eight_Odds": -277,
+            "Final_Four_Odds": -126,
+            "Championship_Odds": 328
+        },
+        {
+            "Team": "Florida",
+            "Sweet_Sixteen_Odds": -937,
+            "Elite_Eight_Odds": -283,
+            "Final_Four_Odds": -139,
+            "Championship_Odds": 373
+        },
+        {
+            "Team": "Georgia",
+            "Sweet_Sixteen_Odds": 2518,
+            "Elite_Eight_Odds": 6436,
+            "Final_Four_Odds": 23156,
+            "Championship_Odds": 999900
+        },
+        {
+            "Team": "Gonzaga",
+            "Sweet_Sixteen_Odds": 641,
+            "Elite_Eight_Odds": 1293,
+            "Final_Four_Odds": 3409,
+            "Championship_Odds": 45355
+        },
+        {
+            "Team": "Grand Canyon",
+            "Sweet_Sixteen_Odds": 11394,
+            "Elite_Eight_Odds": 999900,
+            "Final_Four_Odds": 1000000,
+            "Championship_Odds": 1000000
+        },
+        {
+            "Team": "High Point",
+            "Sweet_Sixteen_Odds": 10653,
+            "Elite_Eight_Odds": 249900,
+            "Final_Four_Odds": 1000000,
+            "Championship_Odds": 1000000
+        },
+        {
+            "Team": "Houston",
+            "Sweet_Sixteen_Odds": -477,
+            "Elite_Eight_Odds": -212,
+            "Final_Four_Odds": 113,
+            "Championship_Odds": 605
+        },
+        {
+            "Team": "Illinois",
+            "Sweet_Sixteen_Odds": 177,
+            "Elite_Eight_Odds": 716,
+            "Final_Four_Odds": 2560,
+            "Championship_Odds": 30203
+        },
+        {
+            "Team": "Iowa St.",
+            "Sweet_Sixteen_Odds": -184,
+            "Elite_Eight_Odds": 186,
+            "Final_Four_Odds": 712,
+            "Championship_Odds": 7253
+        },
+        {
+            "Team": "Kansas",
+            "Sweet_Sixteen_Odds": 250,
+            "Elite_Eight_Odds": 796,
+            "Final_Four_Odds": 3590,
+            "Championship_Odds": 52532
+        },
+        {
+            "Team": "Kentucky",
+            "Sweet_Sixteen_Odds": -127,
+            "Elite_Eight_Odds": 383,
+            "Final_Four_Odds": 1318,
+            "Championship_Odds": 22122
+        },
+        {
+            "Team": "Liberty",
+            "Sweet_Sixteen_Odds": 3563,
+            "Elite_Eight_Odds": 124900,
+            "Final_Four_Odds": 1000000,
+            "Championship_Odds": 1000000
+        },
+        {
+            "Team": "Lipscomb",
+            "Sweet_Sixteen_Odds": 18082,
+            "Elite_Eight_Odds": 249900,
+            "Final_Four_Odds": 1000000,
+            "Championship_Odds": 1000000
+        },
+        {
+            "Team": "Louisville",
+            "Sweet_Sixteen_Odds": 925,
+            "Elite_Eight_Odds": 2019,
+            "Final_Four_Odds": 5647,
+            "Championship_Odds": 111011
+        },
+        {
+            "Team": "Marquette",
+            "Sweet_Sixteen_Odds": 379,
+            "Elite_Eight_Odds": 1185,
+            "Final_Four_Odds": 5680,
+            "Championship_Odds": 99900
+        },
+        {
+            "Team": "Maryland",
+            "Sweet_Sixteen_Odds": -381,
+            "Elite_Eight_Odds": 370,
+            "Final_Four_Odds": 808,
+            "Championship_Odds": 10001
+        },
+        {
+            "Team": "McNeese",
+            "Sweet_Sixteen_Odds": 4754,
+            "Elite_Eight_Odds": 99900,
+            "Final_Four_Odds": 1000000,
+            "Championship_Odds": 1000000
+        },
+        {
+            "Team": "Memphis",
+            "Sweet_Sixteen_Odds": 1390,
+            "Elite_Eight_Odds": 20733,
+            "Final_Four_Odds": 83233,
+            "Championship_Odds": 1000000
+        },
+        {
+            "Team": "Michigan",
+            "Sweet_Sixteen_Odds": 178,
+            "Elite_Eight_Odds": 1197,
+            "Final_Four_Odds": 3147,
+            "Championship_Odds": 43378
+        },
+        {
+            "Team": "Michigan St.",
+            "Sweet_Sixteen_Odds": -271,
+            "Elite_Eight_Odds": 134,
+            "Final_Four_Odds": 518,
+            "Championship_Odds": 5081
+        },
+        {
+            "Team": "Mississippi",
+            "Sweet_Sixteen_Odds": 316,
+            "Elite_Eight_Odds": 940,
+            "Final_Four_Odds": 3837,
+            "Championship_Odds": 99900
+        },
+        {
+            "Team": "Mississippi St.",
+            "Sweet_Sixteen_Odds": 1823,
+            "Elite_Eight_Odds": 5364,
+            "Final_Four_Odds": 20308,
+            "Championship_Odds": 1000000
+        },
+        {
+            "Team": "Missouri",
+            "Sweet_Sixteen_Odds": 188,
+            "Elite_Eight_Odds": 467,
+            "Final_Four_Odds": 2108,
+            "Championship_Odds": 22122
+        },
+        {
+            "Team": "Montana",
+            "Sweet_Sixteen_Odds": 124900,
+            "Elite_Eight_Odds": 1000000,
+            "Final_Four_Odds": 1000000,
+            "Championship_Odds": 1000000
+        },
+        {
+            "Team": "Nebraska Omaha",
+            "Sweet_Sixteen_Odds": 199900,
+            "Elite_Eight_Odds": 1000000,
+            "Final_Four_Odds": 1000000,
+            "Championship_Odds": 1000000
+        },
+        {
+            "Team": "New Mexico",
+            "Sweet_Sixteen_Odds": 1569,
+            "Elite_Eight_Odds": 6073,
+            "Final_Four_Odds": 43378,
+            "Championship_Odds": 999900
+        },
+        {
+            "Team": "Norfolk St.",
+            "Sweet_Sixteen_Odds": 999900,
+            "Elite_Eight_Odds": 1000000,
+            "Final_Four_Odds": 1000000,
+            "Championship_Odds": 1000000
+        },
+        {
+            "Team": "North Carolina",
+            "Sweet_Sixteen_Odds": 835,
+            "Elite_Eight_Odds": 2986,
+            "Final_Four_Odds": 16293,
+            "Championship_Odds": 333233
+        },
+        {
+            "Team": "Oklahoma",
+            "Sweet_Sixteen_Odds": 1970,
+            "Elite_Eight_Odds": 5888,
+            "Final_Four_Odds": 19508,
+            "Championship_Odds": 249900
+        },
+        {
+            "Team": "Oregon",
+            "Sweet_Sixteen_Odds": 270,
+            "Elite_Eight_Odds": 2445,
+            "Final_Four_Odds": 7712,
+            "Championship_Odds": 124900
+        },
+        {
+            "Team": "Purdue",
+            "Sweet_Sixteen_Odds": -118,
+            "Elite_Eight_Odds": 662,
+            "Final_Four_Odds": 2098,
+            "Championship_Odds": 29312
+        },
+        {
+            "Team": "Robert Morris",
+            "Sweet_Sixteen_Odds": 142757,
+            "Elite_Eight_Odds": 1000000,
+            "Final_Four_Odds": 1000000,
+            "Championship_Odds": 1000000
+        },
+        {
+            "Team": "Saint Mary's",
+            "Sweet_Sixteen_Odds": 681,
+            "Elite_Eight_Odds": 2014,
+            "Final_Four_Odds": 13414,
+            "Championship_Odds": 1000000
+        },
+        {
+            "Team": "St. John's",
+            "Sweet_Sixteen_Odds": -161,
+            "Elite_Eight_Odds": 229,
+            "Final_Four_Odds": 1012,
+            "Championship_Odds": 12095
+        },
+        {
+            "Team": "Tennessee",
+            "Sweet_Sixteen_Odds": -405,
+            "Elite_Eight_Odds": -138,
+            "Final_Four_Odds": 245,
+            "Championship_Odds": 1500
+        },
+        {
+            "Team": "Texas A&M",
+            "Sweet_Sixteen_Odds": -131,
+            "Elite_Eight_Odds": 608,
+            "Final_Four_Odds": 1578,
+            "Championship_Odds": 23710
+        },
+        {
+            "Team": "Texas Tech",
+            "Sweet_Sixteen_Odds": -173,
+            "Elite_Eight_Odds": 162,
+            "Final_Four_Odds": 681,
+            "Championship_Odds": 5888
+        },
+        {
+            "Team": "Troy",
+            "Sweet_Sixteen_Odds": 32158,
+            "Elite_Eight_Odds": 499900,
+            "Final_Four_Odds": 1000000,
+            "Championship_Odds": 1000000
+        },
+        {
+            "Team": "UC San Diego",
+            "Sweet_Sixteen_Odds": 1521,
+            "Elite_Eight_Odds": 18419,
+            "Final_Four_Odds": 99900,
+            "Championship_Odds": 1000000
+        },
+        {
+            "Team": "UCLA",
+            "Sweet_Sixteen_Odds": 485,
+            "Elite_Eight_Odds": 1291,
+            "Final_Four_Odds": 5518,
+            "Championship_Odds": 71329
+        },
+        {
+            "Team": "UNC Wilmington",
+            "Sweet_Sixteen_Odds": 66567,
+            "Elite_Eight_Odds": 499900,
+            "Final_Four_Odds": 1000000,
+            "Championship_Odds": 1000000
+        },
+        {
+            "Team": "Utah St.",
+            "Sweet_Sixteen_Odds": 3674,
+            "Elite_Eight_Odds": 17757,
+            "Final_Four_Odds": 166567,
+            "Championship_Odds": 1000000
+        },
+        {
+            "Team": "VCU",
+            "Sweet_Sixteen_Odds": 991,
+            "Elite_Eight_Odds": 5425,
+            "Final_Four_Odds": 41567,
+            "Championship_Odds": 1000000
+        },
+        {
+            "Team": "Vanderbilt",
+            "Sweet_Sixteen_Odds": 1695,
+            "Elite_Eight_Odds": 7253,
+            "Final_Four_Odds": 55456,
+            "Championship_Odds": 499900
+        },
+        {
+            "Team": "Wisconsin",
+            "Sweet_Sixteen_Odds": -196,
+            "Elite_Eight_Odds": 255,
+            "Final_Four_Odds": 1083,
+            "Championship_Odds": 9704
+        },
+        {
+            "Team": "Wofford",
+            "Sweet_Sixteen_Odds": 166567,
+            "Elite_Eight_Odds": 1000000,
+            "Final_Four_Odds": 1000000,
+            "Championship_Odds": 1000000
+        },
+        {
+            "Team": "Xavier",
+            "Sweet_Sixteen_Odds": 1211,
+            "Elite_Eight_Odds": 7900,
+            "Final_Four_Odds": 49900,
+            "Championship_Odds": 999900
+        },
+        {
+            "Team": "Yale",
+            "Sweet_Sixteen_Odds": 8596,
+            "Elite_Eight_Odds": 249900,
+            "Final_Four_Odds": 1000000,
+            "Championship_Odds": 1000000
+        }
+    ]
+}

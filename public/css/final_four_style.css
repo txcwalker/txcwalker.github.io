@@ -1,0 +1,56 @@
+/* General Page Styling */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    text-align: center;
+    margin: 0;
+    padding: 20px;
+}
+
+/* Ensure All Content is Centered */
+.content-wrapper {
+    width: 90%;
+    max-width: 900px;
+    margin: 0 auto; /* Center the content properly */
+}
+
+/* Center Final Four Finder Title */
+h1, h2, h3 {
+    text-align: center;
+}
+
+/* Dropdowns */
+#team-dropdowns select {
+    margin: 5px;
+    padding: 10px;
+    font-size: 16px;
+    width: 80%;
+    max-width: 300px;
+}
+
+/* Search Button */
+button {
+    background-color: #377eb8;
+    color: white;
+    padding: 10px 20px;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+    margin-top: 10px;
+    border-radius: 5px;
+    transition: background 0.3s;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+/* Graph Container - Ensure Full Width */
+#graph-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 20px auto; /* Center and add margin to the container */
+    width: 100%; /* Full width */
+    max-width: 1200px; /* Maximum width */
+}

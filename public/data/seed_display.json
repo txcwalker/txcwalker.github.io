@@ -1,0 +1,388 @@
+{
+    "seed_display": [
+        {
+            "Team": "TCU",
+            "Seed": 9,
+            "Seed_Prediction": 11,
+            "Seed_Difference": 2
+        },
+        {
+            "Team": "Samford",
+            "Seed": 13,
+            "Seed_Prediction": 13,
+            "Seed_Difference": 0
+        },
+        {
+            "Team": "Purdue",
+            "Seed": 1,
+            "Seed_Prediction": 1,
+            "Seed_Difference": 0
+        },
+        {
+            "Team": "Oakland",
+            "Seed": 14,
+            "Seed_Prediction": 15,
+            "Seed_Difference": 1
+        },
+        {
+            "Team": "BYU",
+            "Seed": 6,
+            "Seed_Prediction": 8,
+            "Seed_Difference": 2
+        },
+        {
+            "Team": "Marquette",
+            "Seed": 2,
+            "Seed_Prediction": 3,
+            "Seed_Difference": 1
+        },
+        {
+            "Team": "Vermont",
+            "Seed": 13,
+            "Seed_Prediction": 13,
+            "Seed_Difference": 0
+        },
+        {
+            "Team": "Connecticut",
+            "Seed": 1,
+            "Seed_Prediction": 1,
+            "Seed_Difference": 0
+        },
+        {
+            "Team": "Gonzaga",
+            "Seed": 5,
+            "Seed_Prediction": 10,
+            "Seed_Difference": 5
+        },
+        {
+            "Team": "Long Beach St.",
+            "Seed": 15,
+            "Seed_Prediction": 15,
+            "Seed_Difference": 0
+        },
+        {
+            "Team": "Stetson",
+            "Seed": 16,
+            "Seed_Prediction": 16,
+            "Seed_Difference": 0
+        },
+        {
+            "Team": "Yale",
+            "Seed": 13,
+            "Seed_Prediction": 13,
+            "Seed_Difference": 0
+        },
+        {
+            "Team": "Illinois",
+            "Seed": 3,
+            "Seed_Prediction": 5,
+            "Seed_Difference": 2
+        },
+        {
+            "Team": "Mississippi St.",
+            "Seed": 8,
+            "Seed_Prediction": 9,
+            "Seed_Difference": 1
+        },
+        {
+            "Team": "N.C. State",
+            "Seed": 11,
+            "Seed_Prediction": 11,
+            "Seed_Difference": 0
+        },
+        {
+            "Team": "Saint Mary's",
+            "Seed": 5,
+            "Seed_Prediction": 11,
+            "Seed_Difference": 6
+        },
+        {
+            "Team": "Clemson",
+            "Seed": 6,
+            "Seed_Prediction": 9,
+            "Seed_Difference": 3
+        },
+        {
+            "Team": "Florida Atlantic",
+            "Seed": 8,
+            "Seed_Prediction": 8,
+            "Seed_Difference": 0
+        },
+        {
+            "Team": "Akron",
+            "Seed": 14,
+            "Seed_Prediction": 15,
+            "Seed_Difference": 1
+        },
+        {
+            "Team": "Wagner",
+            "Seed": 16,
+            "Seed_Prediction": 16,
+            "Seed_Difference": 0
+        },
+        {
+            "Team": "Grambling St.",
+            "Seed": 16,
+            "Seed_Prediction": 16,
+            "Seed_Difference": 0
+        },
+        {
+            "Team": "Dayton",
+            "Seed": 7,
+            "Seed_Prediction": 9,
+            "Seed_Difference": 2
+        },
+        {
+            "Team": "Iowa St.",
+            "Seed": 2,
+            "Seed_Prediction": 3,
+            "Seed_Difference": 1
+        },
+        {
+            "Team": "Drake",
+            "Seed": 10,
+            "Seed_Prediction": 12,
+            "Seed_Difference": 2
+        },
+        {
+            "Team": "Colgate",
+            "Seed": 14,
+            "Seed_Prediction": 15,
+            "Seed_Difference": 1
+        },
+        {
+            "Team": "Tennessee",
+            "Seed": 2,
+            "Seed_Prediction": 3,
+            "Seed_Difference": 1
+        },
+        {
+            "Team": "Nevada",
+            "Seed": 10,
+            "Seed_Prediction": 8,
+            "Seed_Difference": -2
+        },
+        {
+            "Team": "North Carolina",
+            "Seed": 1,
+            "Seed_Prediction": 3,
+            "Seed_Difference": 2
+        },
+        {
+            "Team": "Alabama",
+            "Seed": 4,
+            "Seed_Prediction": 8,
+            "Seed_Difference": 4
+        },
+        {
+            "Team": "Houston",
+            "Seed": 1,
+            "Seed_Prediction": 1,
+            "Seed_Difference": 0
+        },
+        {
+            "Team": "Saint Peter's",
+            "Seed": 15,
+            "Seed_Prediction": 16,
+            "Seed_Difference": 1
+        },
+        {
+            "Team": "McNeese St.",
+            "Seed": 12,
+            "Seed_Prediction": 12,
+            "Seed_Difference": 0
+        },
+        {
+            "Team": "San Diego St.",
+            "Seed": 5,
+            "Seed_Prediction": 5,
+            "Seed_Difference": 0
+        },
+        {
+            "Team": "Kansas",
+            "Seed": 4,
+            "Seed_Prediction": 6,
+            "Seed_Difference": 2
+        },
+        {
+            "Team": "Duquesne",
+            "Seed": 11,
+            "Seed_Prediction": 11,
+            "Seed_Difference": 0
+        },
+        {
+            "Team": "Utah St.",
+            "Seed": 8,
+            "Seed_Prediction": 6,
+            "Seed_Difference": -2
+        },
+        {
+            "Team": "Grand Canyon",
+            "Seed": 12,
+            "Seed_Prediction": 12,
+            "Seed_Difference": 0
+        },
+        {
+            "Team": "Texas A&M",
+            "Seed": 9,
+            "Seed_Prediction": 10,
+            "Seed_Difference": 1
+        },
+        {
+            "Team": "Longwood",
+            "Seed": 16,
+            "Seed_Prediction": 16,
+            "Seed_Difference": 0
+        },
+        {
+            "Team": "Wisconsin",
+            "Seed": 5,
+            "Seed_Prediction": 6,
+            "Seed_Difference": 1
+        },
+        {
+            "Team": "Auburn",
+            "Seed": 4,
+            "Seed_Prediction": 2,
+            "Seed_Difference": -2
+        },
+        {
+            "Team": "James Madison",
+            "Seed": 12,
+            "Seed_Prediction": 12,
+            "Seed_Difference": 0
+        },
+        {
+            "Team": "Kentucky",
+            "Seed": 3,
+            "Seed_Prediction": 4,
+            "Seed_Difference": 1
+        },
+        {
+            "Team": "Michigan St.",
+            "Seed": 9,
+            "Seed_Prediction": 9,
+            "Seed_Difference": 0
+        },
+        {
+            "Team": "UAB",
+            "Seed": 12,
+            "Seed_Prediction": 15,
+            "Seed_Difference": 3
+        },
+        {
+            "Team": "South Carolina",
+            "Seed": 6,
+            "Seed_Prediction": 4,
+            "Seed_Difference": -2
+        },
+        {
+            "Team": "Charleston",
+            "Seed": 13,
+            "Seed_Prediction": 13,
+            "Seed_Difference": 0
+        },
+        {
+            "Team": "Texas",
+            "Seed": 7,
+            "Seed_Prediction": 9,
+            "Seed_Difference": 2
+        },
+        {
+            "Team": "Texas Tech",
+            "Seed": 6,
+            "Seed_Prediction": 8,
+            "Seed_Difference": 2
+        },
+        {
+            "Team": "Morehead St.",
+            "Seed": 14,
+            "Seed_Prediction": 14,
+            "Seed_Difference": 0
+        },
+        {
+            "Team": "Baylor",
+            "Seed": 3,
+            "Seed_Prediction": 3,
+            "Seed_Difference": 0
+        },
+        {
+            "Team": "Colorado",
+            "Seed": 10,
+            "Seed_Prediction": 6,
+            "Seed_Difference": -4
+        },
+        {
+            "Team": "Nebraska",
+            "Seed": 8,
+            "Seed_Prediction": 8,
+            "Seed_Difference": 0
+        },
+        {
+            "Team": "Duke",
+            "Seed": 4,
+            "Seed_Prediction": 3,
+            "Seed_Difference": -1
+        },
+        {
+            "Team": "New Mexico",
+            "Seed": 11,
+            "Seed_Prediction": 4,
+            "Seed_Difference": -7
+        },
+        {
+            "Team": "Florida",
+            "Seed": 7,
+            "Seed_Prediction": 8,
+            "Seed_Difference": 1
+        },
+        {
+            "Team": "Washington St.",
+            "Seed": 7,
+            "Seed_Prediction": 10,
+            "Seed_Difference": 3
+        },
+        {
+            "Team": "Oregon",
+            "Seed": 11,
+            "Seed_Prediction": 6,
+            "Seed_Difference": -5
+        },
+        {
+            "Team": "Creighton",
+            "Seed": 3,
+            "Seed_Prediction": 3,
+            "Seed_Difference": 0
+        },
+        {
+            "Team": "Colorado St.",
+            "Seed": 10,
+            "Seed_Prediction": 5,
+            "Seed_Difference": -5
+        },
+        {
+            "Team": "Western Kentucky",
+            "Seed": 15,
+            "Seed_Prediction": 14,
+            "Seed_Difference": -1
+        },
+        {
+            "Team": "South Dakota St.",
+            "Seed": 15,
+            "Seed_Prediction": 16,
+            "Seed_Difference": 1
+        },
+        {
+            "Team": "Northwestern",
+            "Seed": 9,
+            "Seed_Prediction": 8,
+            "Seed_Difference": -1
+        },
+        {
+            "Team": "Arizona",
+            "Seed": 2,
+            "Seed_Prediction": 2,
+            "Seed_Difference": 0
+        }
+    ]
+}

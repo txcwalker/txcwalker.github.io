@@ -1,0 +1,32 @@
+{{ $jsonResource := getJSON "data/region_strength.json" }}
+
+{{ if $jsonResource }}
+    {{ $data := index $jsonResource "Region_Strength" }}
+
+    <link rel="stylesheet" href="/css/table_style.css">
+
+    <table class="styled-table">
+        <thead>
+            <tr>
+                <th>Team_Region</th>
+                <th>Total_Region_Championships</th>
+                <th>Fragility_Score</th>
+                <th>Seed_Prediction</th>
+                <th>Region_Difficulty</th>  <!-- Manually ordered -->
+            </tr>
+        </thead>
+        <tbody>
+            {{ range $data }}
+                <tr>
+                    <td>{{ .Team_Region }}</td>
+                    <td>{{ printf "%.4f" .Total_Region_Championships }}</td>
+                    <td>{{ printf "%.4f" .Fragility_Score }}</td>
+                    <td>{{ printf "%.4f" .Seed_Prediction }}</td>
+                    <td>{{ printf "%.4f" .Region_Difficulty }}</td>
+                </tr>
+            {{ end }}
+        </tbody>
+    </table>
+{{ else }}
+    <p>Error: JSON file not found.</p>
+{{ end }}

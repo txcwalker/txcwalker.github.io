@@ -1,0 +1,49 @@
+{{ $jsonResource := getJSON "data/round_odds.json" }}
+
+{{ if $jsonResource }}
+    {{ $data := index $jsonResource "round_odds" }}
+
+    <link rel="stylesheet" href="/css/table_style.css">
+
+    <!-- Team Selection Dropdown -->
+    <label for="teamSelect">Select Teams:</label>
+    <select id="teamSelect" multiple>
+        {{ range $data }}
+            <option value="{{ .Team }}">{{ .Team }}</option>
+        {{ end }}
+    </select>
+
+    <!-- Button to trigger search -->
+    <button id="searchButton">Show Selected Teams</button>
+
+    <!-- Scrollable Table Container -->
+    <div class="table-container">
+        <table class="styled-table" id="oddsTable" style="display: none;">
+            <thead>
+                <tr>
+                    <th onclick="sortTable(0)">Team</th>
+                    <th onclick="sortTable(1)">Sweet Sixteen Odds</th>
+                    <th onclick="sortTable(2)">Elite Eight Odds</th>
+                    <th onclick="sortTable(3)">Final Four Odds</th>
+                    <th onclick="sortTable(4)">Championship Odds</th>
+                </tr>
+            </thead>
+            <tbody>
+                {{ range $data }}
+                    <tr class="team-row" data-team="{{ .Team }}" style="display: none;">
+                        <td>{{ .Team }}</td>
+                        <td>{{ .Sweet_Sixteen_Odds }}</td>
+                        <td>{{ .Elite_Eight_Odds }}</td>
+                        <td>{{ .Final_Four_Odds }}</td>
+                        <td>{{ .Championship_Odds }}</td>
+                    </tr>
+                {{ end }}
+            </tbody>
+        </table>
+    </div>
+
+    <!-- Include JavaScript -->
+    <script src="/js/round_odds.js"></script>
+{{ else }}
+    <p>Error: JSON file not found.</p>
+{{ end }}

@@ -10,7 +10,7 @@ weight = 5
 Welcome to the Tag Graph Tool. The purpose of this tool is to provide visualization to the most popular
 types of restaurants in a given area. There are three different graphs one each for State, City and Zip
 Code. Each graph works the same just chose option(s) from the selection box and hit the "Generate Graph"
-button. For a more in depth guide please see the Jacksonville Example!
+button.
 
 ## Tag Graphs
 

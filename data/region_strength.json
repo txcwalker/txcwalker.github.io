@@ -1,0 +1,32 @@
+{
+    "Region_Strength": [
+        {
+            "Team_Region": "East",
+            "Seed_Prediction": 7.25,
+            "Fragility_Score": 0.5566,
+            "Total_Region_Championships": 0.3126,
+            "Region_Difficulty": 0.3071
+        },
+        {
+            "Team_Region": "Midwest",
+            "Seed_Prediction": 7.2857,
+            "Fragility_Score": 0.4699,
+            "Total_Region_Championships": 0.2315,
+            "Region_Difficulty": 0.2684
+        },
+        {
+            "Team_Region": "South",
+            "Seed_Prediction": 6.6154,
+            "Fragility_Score": 0.5514,
+            "Total_Region_Championships": 0.2003,
+            "Region_Difficulty": 0.213
+        },
+        {
+            "Team_Region": "West",
+            "Seed_Prediction": 7.4545,
+            "Fragility_Score": 0.5813,
+            "Total_Region_Championships": 0.2556,
+            "Region_Difficulty": 0.2349
+        }
+    ]
+}

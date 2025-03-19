@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="en-us">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    
+    <title>March Madness Region Strength | Cam&#39;s Portfolio</title>
+    <meta name="viewport" content="width=device-width,minimum-scale=1">
+    <meta name="description" content="Region Strength Ideally we want our potential champion to come from the path of least resistance. That is to say the less competitive games our champion can play the more likely they are to win the championship. In an effort to quantify this path of least resistance (at least to the final four) the metric Region strength was created. It is comprised of three components, Total Region Championships, Seed Prediction and Fragility.">
+    <meta name="generator" content="Hugo 0.125.6">
+    
+    
+    
+    
+      <meta name="robots" content="noindex, nofollow">
+    
+    
+
+    
+<link rel="stylesheet" href="/portfolio_website/ananke/css/main.min.css" >
+
+
+
+    
+
+    
+      
+
+    
+
+    
+
+    
+      <link rel="canonical" href="https://txcwalker.github.io/portfolio_website/posts/marchmadnessregionstrength/">
+    
+
+    <meta property="og:url" content="https://txcwalker.github.io/portfolio_website/posts/marchmadnessregionstrength/">
+  <meta property="og:site_name" content="Cam&#39;s Portfolio">
+  <meta property="og:title" content="March Madness Region Strength">
+  <meta property="og:description" content="Region Strength Ideally we want our potential champion to come from the path of least resistance. That is to say the less competitive games our champion can play the more likely they are to win the championship. In an effort to quantify this path of least resistance (at least to the final four) the metric Region strength was created. It is comprised of three components, Total Region Championships, Seed Prediction and Fragility.">
+  <meta property="og:locale" content="en-us">
+  <meta property="og:type" content="article">
+    <meta property="article:section" content="posts">
+    <meta property="article:published_time" content="2025-03-19T01:52:23-05:00">
+    <meta property="article:modified_time" content="2025-03-19T01:52:23-05:00">
+
+  <meta itemprop="name" content="March Madness Region Strength">
+  <meta itemprop="description" content="Region Strength Ideally we want our potential champion to come from the path of least resistance. That is to say the less competitive games our champion can play the more likely they are to win the championship. In an effort to quantify this path of least resistance (at least to the final four) the metric Region strength was created. It is comprised of three components, Total Region Championships, Seed Prediction and Fragility.">
+  <meta itemprop="datePublished" content="2025-03-19T01:52:23-05:00">
+  <meta itemprop="dateModified" content="2025-03-19T01:52:23-05:00">
+  <meta itemprop="wordCount" content="771"><meta name="twitter:card" content="summary"><meta name="twitter:title" content="March Madness Region Strength">
+<meta name="twitter:description" content="Region Strength Ideally we want our potential champion to come from the path of least resistance. That is to say the less competitive games our champion can play the more likely they are to win the championship. In an effort to quantify this path of least resistance (at least to the final four) the metric Region strength was created. It is comprised of three components, Total Region Championships, Seed Prediction and Fragility.">
+
+	
+  </head>
+
+  <body class="ma0 avenir bg-near-white">
+
+    
+   
+  
+
+  <header>
+    <div class="bg-black">
+      <nav class="pv3 ph3 ph4-ns" role="navigation">
+  <div class="flex-l justify-between items-center center">
+    <a href="/portfolio_website/" class="f3 fw2 hover-white no-underline white-90 dib">
+      
+        Cam&#39;s Portfolio
+      
+    </a>
+    <div class="flex-l items-center">
+      
+
+      
+      
+<div class="ananke-socials">
+  
+</div>
+
+    </div>
+  </div>
+</nav>
+
+    </div>
+  </header>
+
+
+
+    <main class="pb7" role="main">
+      
+  
+  <article class="flex-l flex-wrap justify-between mw8 center ph3">
+    <header class="mt4 w-100">
+      <aside class="instapaper_ignoref b helvetica tracked ttu">
+          
+        Posts
+      </aside>
+      
+
+
+
+
+
+
+
+
+
+
+  <div id="sharing" class="mt3 ananke-socials">
+    
+  </div>
+
+
+      <h1 class="f1 athelas mt3 mb1">March Madness Region Strength</h1>
+      
+      
+      
+      <time class="f6 mv4 dib tracked" datetime="2025-03-19T01:52:23-05:00">March 19, 2025</time>
+      
+
+      
+      
+    </header>
+    <div class="nested-copy-line-height lh-copy serif f4 nested-links mid-gray pr4-l w-two-thirds-l"><h1 id="region-strength">Region Strength</h1>
+<p>Ideally we want our potential champion to come from the path of least resistance. That is to say the less competitive games our champion can play the more likely they are to win the championship. In an effort to quantify this path of least resistance (at least to the final four) the metric Region strength was created. It is comprised of three components, Total Region Championships, Seed Prediction and Fragility.</p>
+<p><strong>Total Region Championships:</strong> This is pretty straightforward how many times does each region win the championship in the simulation</p>
+<p><strong>Fragility:</strong> This is a percentage of the time one team is winning the region. This bound between 0 and 1. As it is approaches one the region is extremely fragile, there is one heavy favorite but if this team loses it is open season. As it approaches 0 the region is competitive. Regions can move from Competitive to Fragile and vice versa based on results in the early rounds of the tournament. In general we want our champion to come from a Fragile region where they are the favorite.</p>
+<p><strong>Seed Prediction:</strong> This is the last part of Region strength and relies on an algorithm to assign seeds to the teams in the tournament. In a region is perfectly balanced it should have on of each seed in the algorithms opinion. Which would mean the average seed of the region is 8.5. The lower the value the more strong teams are in the region and the more competitive/difficult the region will be to win. This will be discussed as an analysis point more in depth.</p>
+<p>The final step of the metric is to combine the parts so that each is approximately weighted the same. I&rsquo;ll spare you the actual math for this and the results for each part are displayed in the table below.</p>
+
+
+
+    
+
+    <link rel="stylesheet" href="/css/table_style.css">
+
+    <table class="styled-table">
+        <thead>
+            <tr>
+                <th>Team_Region</th>
+                <th>Total_Region_Championships</th>
+                <th>Fragility_Score</th>
+                <th>Seed_Prediction</th>
+                <th>Region_Difficulty</th>  
+            </tr>
+        </thead>
+        <tbody>
+            
+                <tr>
+                    <td>East</td>
+                    <td>0.3126</td>
+                    <td>0.5566</td>
+                    <td>7.2500</td>
+                    <td>0.3071</td>
+                </tr>
+            
+                <tr>
+                    <td>Midwest</td>
+                    <td>0.2315</td>
+                    <td>0.4699</td>
+                    <td>7.2857</td>
+                    <td>0.2684</td>
+                </tr>
+            
+                <tr>
+                    <td>South</td>
+                    <td>0.2003</td>
+                    <td>0.5514</td>
+                    <td>6.6154</td>
+                    <td>0.2130</td>
+                </tr>
+            
+                <tr>
+                    <td>West</td>
+                    <td>0.2556</td>
+                    <td>0.5813</td>
+                    <td>7.4545</td>
+                    <td>0.2349</td>
+                </tr>
+            
+        </tbody>
+    </table>
+
+
+<ol>
+<li>
+<p>East: As we can see the East is pretty clearly The most difficult region, it has the highest Region Championship Percentage and a competitive Average Seed Prediction of 7.25 Second only to the South. It is a relatively fragile region being won by Duke more than 55% of the time The most common winners after that Alabama at a respectable 22.62% and then Both Wisconsin and Arizona at around 8% of the time. Clearly this is a region Dominated by the top two seeds but really by Duke&hellip; this is going to be a theme.</p>
+</li>
+<li>
+<p>West: The west is the most Fragile of every Region with Florida winning almost 60% of the time (58.13%). In conjunction with their nearly 23% Championship percentage and the regions 25.6% Championship percentage we can see this one of the weaker regions. However if Florida were to lose the flood gates come open. Texas Tech (13%), Maryland (11%), St. John&rsquo;s (9%), Missouri (4.5%), and even Kansas (3%) all massively benefit. If Florida is to lose the region becomes what March Madness Embraces: Chaos</p>
+</li>
+<li>
+<p>South: This region is simaltaneously the most competitive and overall weakest of the bunch The seed prediction is so low because the seed model (different than the model for the sims) Thinks UNC is drastically underseeded&hellip; we shall see on that. Auburn is winning this region nearly 20% of the time and the championship  over 18% of the time which means a Non Auburn champion is coming out of the South less than 2% of the time, hence its week rating. That being said there are some interesting factors at play here, a potential peaking UNC, Tom Izzo and Michigan St., A very loseable game for Auburn against Louisville (assuming the Cardinals win). If the Tigers are unable to make it out Michigan St and Iowa St are the two most liklely to place them at 16% and 12% respectively.</p>
+</li>
+<li>
+<p>Midwest: According to the metric this is second strongest region on paper. Its has by far the lowest seed prediction at an average of 6.6 Thanks in large part to a drastically underseeded Gonzaga and strong seeds across the board (with the exception of both Purdue and Kentucky but they are within a reasonable range). While Houston is winning the region 46% of the time Tennessee is coming a relatively close second at 29%. It is highly likely that one of these teams is to win the region in the scenario where this not the case the Midwest becomes the West with Florida losing, full on armaggeden with Kentucky, Purdue, Illinois, Clemson, Gonzaga and even UCLA making a competitive claim to the regional crown</p>
+</li>
+</ol>
+<ul class="pa0">
+  
+</ul>
+<div class="mt6 instapaper_ignoref">
+      
+      
+      </div>
+    </div>
+
+    <aside class="w-30-l mt6-l">
+
+
+
+
+</aside>
+
+  </article>
+
+    </main>
+    <footer class="bg-black bottom-0 w-100 pa3" role="contentinfo">
+  <div class="flex justify-between">
+  <a class="f4 fw4 hover-white no-underline white-70 dn dib-ns pv2 ph3" href="https://txcwalker.github.io/portfolio_website/" >
+    &copy;  Cam's Portfolio 2025 
+  </a>
+    <div>
+<div class="ananke-socials">
+  
+</div>
+</div>
+  </div>
+</footer>
+
+  </body>
+</html>
