@@ -2,7 +2,7 @@
 title = 'Yelp Heat Maps'
 date = 2024-07-29T01:52:23-05:00
 draft = false
-weight = 4
+weight = 5
 +++
 
 # Welcome to the Heat Map Tool!

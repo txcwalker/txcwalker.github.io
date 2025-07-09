@@ -2,44 +2,47 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>https://txcwalker.github.io/posts/yelpsearchscore/</loc>
+    <loc>http://localhost:1313/posts/linkedinbotprediction/</loc>
+    <lastmod>2025-07-05T01:52:23-05:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/posts/marchmadnessoverview/</loc>
+    <lastmod>2025-03-19T01:52:23-05:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/posts/yelpintroduction/</loc>
     <lastmod>2024-07-29T01:52:23-05:00</lastmod>
   </url><url>
-    <loc>https://txcwalker.github.io/posts/marchmadnessoverview/</loc>
-    <lastmod>2025-03-19T01:52:23-05:00</lastmod>
-  </url><url>
-    <loc>https://txcwalker.github.io/posts/yelpintroduction/</loc>
+    <loc>http://localhost:1313/posts/yelpandzillow/</loc>
     <lastmod>2024-07-29T01:52:23-05:00</lastmod>
   </url><url>
-    <loc>https://txcwalker.github.io/posts/yelpandzillow/</loc>
+    <loc>http://localhost:1313/posts/yelpsearchscore/</loc>
     <lastmod>2024-07-29T01:52:23-05:00</lastmod>
   </url><url>
-    <loc>https://txcwalker.github.io/posts/yelpheatmaps/</loc>
+    <loc>http://localhost:1313/posts/yelpheatmaps/</loc>
     <lastmod>2024-07-29T01:52:23-05:00</lastmod>
   </url><url>
-    <loc>https://txcwalker.github.io/posts/yelptaggraphs/</loc>
+    <loc>http://localhost:1313/posts/yelptaggraphs/</loc>
     <lastmod>2024-07-29T01:52:23-05:00</lastmod>
   </url><url>
-    <loc>https://txcwalker.github.io/posts/marchmadnessfinalfour/</loc>
+    <loc>http://localhost:1313/posts/marchmadnessfinalfour/</loc>
     <lastmod>2025-03-19T01:52:23-05:00</lastmod>
   </url><url>
-    <loc>https://txcwalker.github.io/posts/marchmadnessmisseedings/</loc>
+    <loc>http://localhost:1313/posts/marchmadnessmisseedings/</loc>
     <lastmod>2025-03-19T01:52:23-05:00</lastmod>
   </url><url>
-    <loc>https://txcwalker.github.io/posts/marchmadnessodds/</loc>
+    <loc>http://localhost:1313/posts/marchmadnessregionstrength/</loc>
     <lastmod>2025-03-19T01:52:23-05:00</lastmod>
   </url><url>
-    <loc>https://txcwalker.github.io/posts/marchmadnessregionstrength/</loc>
+    <loc>http://localhost:1313/posts/marchmadnessodds/</loc>
     <lastmod>2025-03-19T01:52:23-05:00</lastmod>
   </url><url>
-    <loc>https://txcwalker.github.io/</loc>
-    <lastmod>2025-03-19T01:52:23-05:00</lastmod>
+    <loc>http://localhost:1313/</loc>
+    <lastmod>2025-07-05T01:52:23-05:00</lastmod>
   </url><url>
-    <loc>https://txcwalker.github.io/posts/</loc>
-    <lastmod>2025-03-19T01:52:23-05:00</lastmod>
+    <loc>http://localhost:1313/posts/</loc>
+    <lastmod>2025-07-05T01:52:23-05:00</lastmod>
   </url><url>
-    <loc>https://txcwalker.github.io/categories/</loc>
+    <loc>http://localhost:1313/categories/</loc>
   </url><url>
-    <loc>https://txcwalker.github.io/tags/</loc>
+    <loc>http://localhost:1313/tags/</loc>
   </url>
 </urlset>

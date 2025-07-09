@@ -2,7 +2,7 @@
 title = 'Yelp Tag Graphs'
 date = 2024-07-29T01:52:23-05:00
 draft = false
-weight = 5
+weight = 6
 +++
 
 # Welcome to the Tag Graphs Tool!

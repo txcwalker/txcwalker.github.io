@@ -2,7 +2,7 @@
 title = 'Yelp Search Score'
 date = 2024-07-29T01:52:23-05:00
 draft = false
-weight = 1
+weight = 4
 +++
 
 
