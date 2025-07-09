@@ -7,7 +7,7 @@ weight = 1
 
 ## Introduction:
 
-This project first started out as me getting a phishing message on LinkedIn. I was annoyed that I got my hopes up, however brief, and realized that I could probably make some sort of model to evaluate if messages were sent with benevolent or malign intent. After doing a bit of research, testing and finally some coding I was able to get a model and app (check that out here “”) which I am happy with for a first run.
+This project first started out as me getting a phishing message on LinkedIn. I was annoyed that I got my hopes up, however brief, and realized that I could probably make some sort of model to evaluate if messages were sent with benevolent or malign intent. After doing a bit of research, testing and finally some coding I was able to get a model and app (check that out here “https://gonephishing.streamlit.app/”).
 
 Pretty much everyone has received some kind of phishing message. Whether it be through your work, personal, school or any email. Odd text messages or DMs from random numbers or accounts. Normally they can be pretty easy to identify. The phrasing is weird, there are misspellings, the content is often times not of interest. There are still plenty of these kinds of messages out there, easy to identify, report and ignore. However there are actors that have improved phishing and made it more difficult to tell whether or not the message is real (Remember, you never have to click a link in an email or message you can also go to your accounts on your own!). Before getting into the the specifics of the analysis I want to go over both the data and model used for this exploration into phishing. 
 
