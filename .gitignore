@@ -12,3 +12,9 @@ Thumbs.db
 
 # Hugo logs / caches (if you ever run hugo with caching flags)
 hugo_stats.json
+public/
+resources/_gen/
+node_modules/
+.DS_Store
+Thumbs.db
+hugo_stats.json
