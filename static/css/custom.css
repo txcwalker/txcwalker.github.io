@@ -1,0 +1,4 @@
+.btn { display:inline-block; padding:.55rem .9rem; margin:.25rem .5rem .25rem 0;
+       border:1px solid #3b82f6; border-radius:.5rem; text-decoration:none; }
+.btn:hover { filter:brightness(1.07); text-decoration:none; }
+.btn-primary { background:#3b82f6; color:#fff; border-color:#3b82f6; }

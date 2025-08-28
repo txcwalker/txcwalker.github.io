@@ -1,0 +1,55 @@
+{{- if .Page.TableOfContents -}}
+<style>
+/* ---- easy knobs to tune ---- */
+:root{
+  --toc-lift: 40rem;        /* raise/lower the TOC box (increase to move it higher) */
+  --toc-sticky: 4rem;      /* distance from top of viewport while scrolling */
+  --h1-bottom-gap: .75rem; /* space under the page title (H1) */
+  --h2-first-top: .5rem;   /* top margin for the first H2 */
+}
+
+/* TOC in a right rail on wide screens; stacks inline on small screens */
+.toc-card{
+  float:right;
+  width:280px;
+  margin-top: calc(-1 * var(--toc-lift));  /* pulls it up next to the title */
+  margin-left:1.25rem;
+  margin-bottom:1rem;
+
+  position:sticky; top: var(--toc-sticky);
+  max-height:75vh; overflow:auto;
+  border-radius:12px; padding:1rem;
+  background:rgba(255,255,255,.04); box-shadow:0 2px 10px rgba(0,0,0,.12);
+  z-index:2;
+}
+.toc-title{font-weight:600; margin-bottom:.5rem}
+.toc-card ul{list-style:none; padding-left:.75rem}
+.toc-card a{text-decoration:none}
+
+/* Push into the outer gutter on wide screens */
+@media (min-width:1280px){
+  .toc-card{ width:300px; margin-right:-320px; }
+}
+@media (min-width:1536px){
+  .toc-card{ width:320px; margin-right:-360px; }
+}
+
+/* Small screens: no gutter tricks */
+@media (max-width:1100px){
+  .toc-card{ float:none; width:auto; position:relative; top:auto; margin:1rem 0 0 0; }
+}
+
+/* Close the gap under the title, only on pages that have a TOC */
+:root:has(.toc-card) h1{ margin-bottom: var(--h1-bottom-gap) !important; }
+:root:has(.toc-card) h2:first-of-type{ margin-top: var(--h2-first-top) !important; }
+
+/* Prevent float collapse */
+.toc-clear{ clear: both; }
+</style>
+
+<aside class="toc-card" aria-label="Table of Contents">
+  <div class="toc-title">Table of Contents</div>
+  {{ .Page.TableOfContents | safeHTML }}
+</aside>
+<div class="toc-clear"></div>
+{{- end -}}

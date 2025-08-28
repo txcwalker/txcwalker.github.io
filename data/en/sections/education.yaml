@@ -1,0 +1,21 @@
+section:
+  id: education
+  name: Education
+  enable: true
+  weight: 40
+  showOnNavbar: true
+
+degrees:
+  - name: Bachelor of Science in Applied Mathematics
+    institution:
+      name: San Diego State University
+      url: "https://www.sdsu.edu"    
+      logo: "images/education/sdsu.png"    
+    details:
+      - "Minors: Economics and Statistics"
+
+  - name: Study Abroad Semester
+    institution:
+      name: University of Zurich
+      url: "https://www.uzh.ch"         
+      logo: "images/education/uzh.png"     

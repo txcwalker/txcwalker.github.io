@@ -1,0 +1,26 @@
+section:
+  id: skills
+  name: Skills
+  enable: true
+  weight: 50
+  showOnNavbar: true
+
+skills:
+  - name: Python
+    # icon: "fab fa-python"
+    summary: Data wrangling, APIs, ETL, plotting; pandas, numpy, requests.
+  - name: Machine Learning
+    # icon: "fas fa-robot"
+    summary: XGBoost, Random Forests, sklearn; model eval, SHAP, pipelines.
+  - name: Cloud Computing
+    # icon: "fas fa-cloud"
+    summary: AWS (RDS/S3/EC2), GitHub Actions CI; daily ETL jobs and deploys.
+  - name: Microsoft Office
+    # icon: "fas fa-file-alt"
+    summary: Excel (pivot, PowerQuery), PowerPoint storyboards, Word reports.
+  - name: Git / GitHub
+    # icon: "fab fa-git-alt"
+    summary: Branching, PRs, Actions, versioned data pipelines.
+
+
+

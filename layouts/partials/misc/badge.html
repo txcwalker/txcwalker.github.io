@@ -1,0 +1,9 @@
+﻿{{/* Accept both string and object badges */}}
+{{- $isString := eq (printf "%T" .) "string" -}}
+{{- if $isString -}}
+  <span class="badge badge-secondary">{{ . }}</span>
+{{- else -}}
+  {{- $type := .type | default "secondary" -}}
+  {{- $text := or .text .name .label "" -}}
+  <span class="badge badge-{{ $type }}">{{ $text }}</span>
+{{- end -}}

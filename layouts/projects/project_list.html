@@ -1,0 +1,13 @@
+{{ define "main" }}
+  <main class="container">
+    {{ with .Content }}
+      <div class="prose" style="margin-bottom:1.5rem;">{{ . }}</div>
+    {{ end }}
+
+    {{/* Read data/en/sections/projects.yaml directly (English-only) */}}
+    {{ $proj := site.Data.en.sections.projects }}
+
+    {{/* Use the theme's grid partial */}}
+    {{ partial "sections/projects.html" $proj }}
+  </main>
+{{ end }}

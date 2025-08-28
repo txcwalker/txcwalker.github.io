@@ -1,0 +1,13 @@
+section:
+  id: featured-posts
+  name: Featured Posts
+  enable: true
+  weight: 60
+  showOnNavbar: true
+
+# IMPORTANT: list of post paths Hugo can resolve with site.GetPage
+posts:
+  - "posts/databaseball/databaseball"
+  - "posts/marchmadness/MarchMadnessOverview"
+  - "posts/yelp/YelpandZillow"
+

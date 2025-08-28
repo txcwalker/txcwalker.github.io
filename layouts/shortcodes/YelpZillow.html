@@ -1,7 +1,11 @@
 {{- $fileName := .Get "file" -}}
 {{- $elementId := .Get "id" -}}
 
-<div id="{{ $elementId }}" class="plotly-map-container"></div>
 <link rel="stylesheet" href="/css/table_style.css">
 <script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
+
+<div id="residuals-plot" class="plotly-map-container"></div>
+<div id="least-accurate-plot" class="plotly-map-container" style="margin-top:1rem;"></div>
+<div id="most-accurate-plot" class="plotly-map-container" style="margin-top:1rem;"></div>
+
 <script src="/js/yelpzillow.js"></script>
