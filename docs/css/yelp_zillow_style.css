@@ -1,0 +1,7 @@
+/* Style for all Plotly graph containers */
+.plotly-map-container {
+    width: 800px;  /* Width of the graph */
+    height: 600px; /* Height of the graph */
+    margin: 0 auto; /* Center the graph */
+    margin-bottom: 20px; /* Space between graphs */
+}

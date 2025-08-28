@@ -1,0 +1,990 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Yelp Search Score</title>
+    <meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<meta http-equiv="X-UA-Compatible" content="ie=edge" />
+
+<link rel="stylesheet" href="/application.d9b7c023d62f07d7917d76909fc1c2c50f6948d7eccf9ef84a7e9732aea40e6a.css" integrity="sha256-2bfAI9YvB9eRfXaQn8HCxQ9pSNfsz574Sn6XMq6kDmo=" />
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<meta property="og:title" content="Cam&#39;s Portfolio"/>
+<meta property="og:type" content="website"/>
+<meta property="og:description" content=""/>
+<meta property="og:image" content="/images/avatar.svg">
+<meta property="og:url" content="https://txcwalker.github.io/">
+
+    
+<meta name="description" content="Yelp Search Score" />
+
+
+
+    
+
+
+
+
+
+    <script integrity="sha256-6N/HdTRW44DtfcdqA1u42Z4XgmL1dEmNmLPaA2sgp1o=">
+     let theme = localStorage.getItem('theme-scheme') || localStorage.getItem('darkmode:color-scheme') || 'light'
+if (theme === 'system') {
+  if (window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches) {
+    theme = 'dark'
+  } else {
+    theme = 'light'
+  }
+}
+document.documentElement.setAttribute('data-theme', theme)
+
+    </script>
+    
+  </head>
+
+  <body class="type-posts kind-page" data-bs-spy="scroll" data-bs-target="#TableOfContents" data-bs-offset="80">
+    <div class="container-fluid bg-secondary wrapper">
+      
+      
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+
+
+
+  
+
+
+<nav class="navbar navbar-expand-xl top-navbar shadow " id="top-navbar">
+  <div class="container">
+    
+    <button class="navbar-toggler navbar-light" id="sidebar-toggler" type="button">
+      <i data-feather="sidebar"></i>
+    </button>
+    
+    <a class="navbar-brand" href="/">
+      Cam&#39;s Portfolio</a>
+    <button
+      class="navbar-toggler navbar-light"
+      id="navbar-toggler"
+      type="button"
+      data-bs-toggle="collapse"
+      data-bs-target="#top-nav-items"
+      aria-label="menu"
+    >
+      <i data-feather="menu"></i>
+    </button>
+
+    <div class="collapse navbar-collapse dynamic-navbar" id="top-nav-items">
+      <ul class="nav navbar-nav ms-auto">
+        <li class="nav-item">
+          <a class="nav-link" href="/#home">Home</a>
+        </li>
+        
+          
+          
+            
+              
+              
+                <li class="nav-item">
+                  <a class="nav-link" href="/#about">About</a>
+                </li>
+              
+            
+            
+              
+              
+                <li class="nav-item">
+                  <a class="nav-link" href="/#projects">Projects</a>
+                </li>
+              
+            
+            
+              
+              
+                <li class="nav-item">
+                  <a class="nav-link" href="/#experiences">Experiences</a>
+                </li>
+              
+            
+            
+              
+              
+                <li class="nav-item">
+                  <a class="nav-link" href="/#education">Education</a>
+                </li>
+              
+            
+            
+              
+              
+            
+            
+              
+              
+            
+            
+              
+              
+            
+          
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">More</a>
+            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                
+                
+                  
+                    
+                    
+                  
+                  
+                    
+                    
+                  
+                  
+                    
+                    
+                  
+                  
+                    
+                    
+                  
+                  
+                    
+                    
+                      <a class="dropdown-item" href="/#skills">Skills</a>
+                    
+                  
+                  
+                    
+                    
+                      <a class="dropdown-item" href="/#featured-posts">Featured Posts</a>
+                    
+                  
+                  
+                    
+                    
+                      <a class="dropdown-item" href="/#recent-posts">Recent Posts</a>
+                    
+                  
+              </div>
+            </li>
+          
+        
+        
+          <div id="top-navbar-divider"></div>
+        
+        
+          <li class="nav-item">
+            <a class="nav-link" id="blog-link" href="/posts">Posts</a>
+          </li>
+        
+        
+        
+        
+        
+      </ul>
+    </div>
+  </div>
+  
+  
+  
+  
+</nav>
+
+
+
+      
+      
+  <section class="sidebar-section" id="sidebar-section">
+    <div class="sidebar-holder">
+      <div class="sidebar" id="sidebar">
+        <form class="mx-auto" method="get" action="/search">
+          <input type="text" name="keyword" value="" placeholder="Search" data-search="" id="search-box" />
+        </form>
+        <div class="sidebar-tree">
+          <ul class="tree" id="tree">
+            <li id="list-heading"><a href="/posts/" data-filter="all">Posts</a></li>
+            <div class="subtree">
+                
+  
+  
+  
+  
+  
+    
+    <li>
+      <i data-feather="plus-circle"></i><a class=" list-link" href="/posts/databaseball/"> Databaseball</a>
+      
+      <ul class="">
+        
+  
+  
+  
+  
+  
+    
+    <li><a class=" list-link" href="/posts/databaseball/databaseball/" title="Databaseball Overview">Databaseball Overview</a></li>
+  
+
+
+      </ul>
+    </li>
+  
+
+  
+  
+  
+  
+  
+    
+    <li>
+      <i data-feather="plus-circle"></i><a class=" list-link" href="/posts/marchmadness/"> March Madness</a>
+      
+      <ul class="">
+        
+  
+  
+  
+  
+  
+    
+    <li><a class=" list-link" href="/posts/marchmadness/marchmadnessoverview/" title="March Madness Overview">March Madness Overview</a></li>
+  
+
+  
+  
+  
+  
+  
+    
+    <li><a class=" list-link" href="/posts/marchmadness/marchmadnessfinalfour/" title="March Madness Final Four">March Madness Final Four</a></li>
+  
+
+  
+  
+  
+  
+  
+    
+    <li><a class=" list-link" href="/posts/marchmadness/marchmadnessodds/" title="March Madness Odds Search">March Madness Odds Search</a></li>
+  
+
+  
+  
+  
+  
+  
+    
+    <li><a class=" list-link" href="/posts/marchmadness/marchmadnessmisseedings/" title="March Madness Misseedings and Over/Underperformers">March Madness Misseedings and Over/Underperformers</a></li>
+  
+
+  
+  
+  
+  
+  
+    
+    <li><a class=" list-link" href="/posts/marchmadness/marchmadnessregionstrength/" title="March Madness Region Strength">March Madness Region Strength</a></li>
+  
+
+
+      </ul>
+    </li>
+  
+
+  
+  
+  
+  
+    
+    
+  
+  
+    
+    <li>
+      <i data-feather="minus-circle"></i><a class="active list-link" href="/posts/yelp/"> Yelp/Zillow</a>
+      
+      <ul class="active">
+        
+  
+  
+  
+  
+  
+    
+    <li><a class=" list-link" href="/posts/yelp/yelpintroduction/" title="Yelp Introduction">Yelp Introduction</a></li>
+  
+
+  
+  
+  
+  
+    
+    
+  
+  
+    
+    <li><a class="active list-link" href="/posts/yelp/yelpsearchscore/" title="Yelp Search Score">Yelp Search Score</a></li>
+  
+
+  
+  
+  
+  
+  
+    
+    <li><a class=" list-link" href="/posts/yelp/yelpandzillow/" title="Yelp and Zillow Housing Price Index">Yelp and Zillow Housing Price Index</a></li>
+  
+
+  
+  
+  
+  
+  
+    
+    <li><a class=" list-link" href="/posts/yelp/yelptaggraphs/" title="Yelp Tag Graphs">Yelp Tag Graphs</a></li>
+  
+
+  
+  
+  
+  
+  
+    
+    <li><a class=" list-link" href="/posts/yelp/yelpheatmaps/" title="Yelp Heat Maps">Yelp Heat Maps</a></li>
+  
+
+
+      </ul>
+    </li>
+  
+
+  
+  
+  
+  
+  
+    
+    <li>
+      <i data-feather="plus-circle"></i><a class=" list-link" href="/posts/phishing/"> Phishing</a>
+      
+      <ul class="">
+        
+  
+  
+  
+  
+  
+    
+    <li><a class=" list-link" href="/posts/phishing/linkedinbotprediction/" title="Phishing Prediction">Phishing Prediction</a></li>
+  
+
+
+      </ul>
+    </li>
+  
+
+
+            </div>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+      
+      
+<section class="content-section" id="content-section">
+  <div class="content">
+    <div class="container p-0 read-area">
+      
+      <div class="hero-area col-sm-12" id="hero-area" style='background-image: url(/images/posts/pasteldenata.jpg);'>
+      </div>
+
+      
+      <div class="page-content">
+        
+        <div class="author-profile ms-auto align-self-lg-center">
+          <img class="rounded-circle" src='/images/avatar.svg' alt="Author Image">
+          <h5 class="author-name">Cam</h5>
+          <p class="text-muted">Monday, July 29, 2024 | 7 minutes</p>
+        </div>
+        
+
+        <div class="title">
+          <h1>Yelp Search Score</h1>
+        </div>
+
+        
+
+        
+        <div class="post-content" id="post-content">
+          <style>
+ 
+:root{
+  --toc-lift: 40rem;         
+  --toc-sticky: 4rem;       
+  --h1-bottom-gap: .75rem;  
+  --h2-first-top: .5rem;    
+}
+
+ 
+.toc-card{
+  float:right;
+  width:280px;
+  margin-top: calc(-1 * var(--toc-lift));   
+  margin-left:1.25rem;
+  margin-bottom:1rem;
+
+  position:sticky; top: var(--toc-sticky);
+  max-height:75vh; overflow:auto;
+  border-radius:12px; padding:1rem;
+  background:rgba(255,255,255,.04); box-shadow:0 2px 10px rgba(0,0,0,.12);
+  z-index:2;
+}
+.toc-title{font-weight:600; margin-bottom:.5rem}
+.toc-card ul{list-style:none; padding-left:.75rem}
+.toc-card a{text-decoration:none}
+
+ 
+@media (min-width:1280px){
+  .toc-card{ width:300px; margin-right:-320px; }
+}
+@media (min-width:1536px){
+  .toc-card{ width:320px; margin-right:-360px; }
+}
+
+ 
+@media (max-width:1100px){
+  .toc-card{ float:none; width:auto; position:relative; top:auto; margin:1rem 0 0 0; }
+}
+
+ 
+:root:has(.toc-card) h1{ margin-bottom: var(--h1-bottom-gap) !important; }
+:root:has(.toc-card) h2:first-of-type{ margin-top: var(--h2-first-top) !important; }
+
+ 
+.toc-clear{ clear: both; }
+</style>
+
+<aside class="toc-card" aria-label="Table of Contents">
+  <div class="toc-title">Table of Contents</div>
+  <nav id="TableOfContents">
+  <ul>
+    <li><a href="#search-score">Search Score</a></li>
+    <li><a href="#find-top-restaurants-by-zip-code">Find Top Restaurants by ZIP Code</a></li>
+  </ul>
+</nav>
+</aside>
+<div class="toc-clear"></div>
+<h1 id="search-score">Search Score</h1>
+<p>After using Yelp to find the best restaurants ‘near me’ for more than a decade, I have seen a decline in the accuracy and validity of their search algorithm. Too often the search results seemed random and incomplete. So after years of confusion, I finally decided to try and take a look under the hood. See if I could understand their search algorithm and results. Then finally take a stab at my own search algorithm and see how closely my results compare to Yelp&rsquo;s.</p>
+<p>This started by using the Yelp API and accessing as much data as possible. The API has daily call limit (about 10 max calls) and a call limit of about 2000 observations per call. So after gathering data over several weeks, the dataset was defined. After cleaning close to 100,000 total observations from over 50 major metropolitan areas around the United States. This is a small percentage of the total observations that Yelp has but it is big enough to run an analysis on, develop a model, and evaluate the results to form a few conclusions on the overall validity of both search algorithms.</p>
+<p>When accessing data from the Yelp API, there are plenty of variables that can be selected to accompany each observation. For the purposes of this discussion, there are two: Number of Reviews and Rating. With just these two variables, we should be able to understand the current Yelp algorithm and create a close replica of it as long as the current search algorithm is relatively unbiased.</p>
+<p>Let’s start with creating a version of Yelp&rsquo;s search algorithm. It should show the user the best restaurants near them in an objective, unbiased order. The metric should rate the restaurant’s quality and have some verification component. The two variables mentioned earlier (Reviews and Rating) are a perfect and concise way to accomplish this task. The Rating is the measure of quality (on a scale of 1-5, where 5 is best) and the Number of Reviews is an easy way to verify the rating; the more reviews a place has, the more accurate the rating.</p>
+<p>It would be a dream to be able to multiply these numbers together, arrive at a score, and then sort our results on this number, but the scales of these numbers prevent this from being accurate. The Number of Reviews would have significantly more impact; imagine the following example:</p>
+<p>Recommendation Score = Rating * Number of Reviews</p>
+<p>Restaurant Score 1 = 5 * 50 = 250</p>
+<p>Restaurant Score 2 = 4 * 100 = 400</p>
+<p>Obviously, Restaurant 1 should have a way higher ranking, but it is nearly half of Restaurant 2. To accommodate for this, each number will be scaled in the following way. The Rating is the most important part of evaluating the restaurant. Lower values should be punished and higher values should be rewarded, so this number will be squared. As for the Number of Reviews, this is important but after a certain amount of reviews, the rating is going to become stable. So this number is important but should have diminishing returns. A perfect way to scale this down is a log function, in this case, the natural log. The scaling can be seen below, and now the algorithm is as follows:</p>
+<p><strong>Recommendation Score = Rating <sup>2</sup> * ln(Number of Reviews)</strong></p>
+<!-- x vs ln(x) -->
+
+
+
+
+  
+  
+  
+  
+    <table>
+      <thead>
+        <tr><th>ln(x)</th><th>x</th></tr>
+      </thead>
+      <tbody><tr><td>0</td><td>1</td></tr><tr><td>2.302585</td><td>10</td></tr><tr><td>4.60517</td><td>100</td></tr><tr><td>6.907755</td><td>1000</td></tr></tbody>
+    </table>
+  
+
+
+<!-- x vs x2 -->
+
+
+
+
+  
+  
+  
+  
+    <table>
+      <thead>
+        <tr><th>x</th><th>x2</th></tr>
+      </thead>
+      <tbody><tr><td>1</td><td>1</td></tr><tr><td>1.5</td><td>2.25</td></tr><tr><td>2</td><td>4</td></tr><tr><td>2.5</td><td>6.25</td></tr><tr><td>3</td><td>9</td></tr><tr><td>3.5</td><td>12.25</td></tr><tr><td>4</td><td>16</td></tr><tr><td>4.5</td><td>20.25</td></tr><tr><td>5</td><td>25</td></tr></tbody>
+    </table>
+  
+
+
+<p>Now that we have a simple version of how a search score and recommendation algorithm looks, let&rsquo;s test it out and evaluate both it and the version that Yelp uses!</p>
+<!-- Example -->
+
+
+
+
+  
+  
+  
+  
+    <table>
+      <thead>
+        <tr><th>City</th><th>Top Ten Percentage</th><th>Zip Code</th></tr>
+      </thead>
+      <tbody><tr><td>Downtown LA</td><td>10%</td><td>90013</td></tr></tbody>
+    </table>
+  
+
+
+<p>A couple of quick notes before the conclusions. First, a reminder, as the API only gave the rating in half-number intervals. So the Wurstkuche is rounded down from 4.2 to 4.0. Additionally, there is a small difference in the number of reviews for Wurstkuche because these results were not taken at the same time (few days difference). The Green Highlighted observation is what both models agree on, the purple highlighted observations are ones that would be in the model&rsquo;s top ten if they were in the data set and red highlighted observations are red flags.</p>
+<!-- Yelp Search table -->
+
+
+
+
+  
+  
+  
+  
+    <table>
+      <thead>
+        <tr><th>Rating</th><th>Restaurant</th><th>Reviews</th><th>Score</th></tr>
+      </thead>
+      <tbody><tr><td>4.8</td><td>Kaminari Gyoza Bar</td><td>123</td><td>110.87</td></tr><tr><td>4.4</td><td>Marugame Monzo</td><td>4700</td><td>163.69</td></tr><tr><td>4.5</td><td>Tsuujita Artisan Noodle - Arts District</td><td>12</td><td>50.32</td></tr><tr><td>4.4</td><td>Rice and Nori</td><td>751</td><td>128.19</td></tr><tr><td>4</td><td>Spitz - Little Tokyo</td><td>1800</td><td>119.93</td></tr><tr><td>4.7</td><td>Pi LA</td><td>124</td><td>106.48</td></tr><tr><td>4.8</td><td>Suehiro DTLA</td><td>60</td><td>94.33</td></tr><tr><td>4.4</td><td>Tokyo Haus</td><td>13</td><td>49.66</td></tr><tr><td>4.2</td><td>Wurstkuche</td><td>9000</td><td>160.61</td></tr><tr><td>4.4</td><td>Pasta e Pasta by Allegro</td><td>1400</td><td>140.25</td></tr></tbody>
+    </table>
+  
+
+
+<!-- Model Search table -->
+
+
+
+
+  
+  
+  
+  
+    <table>
+      <thead>
+        <tr><th>Name</th><th>Rating</th><th>Reviews</th><th>Score</th></tr>
+      </thead>
+      <tbody><tr><td>Maccheroni Republic</td><td>4.5</td><td>4027</td><td>168.09</td></tr><tr><td>KazuNori DTLA</td><td>4.5</td><td>3427</td><td>164.82</td></tr><tr><td>Bavel</td><td>4.5</td><td>2451</td><td>158.04</td></tr><tr><td>Guisados DTLA</td><td>4.5</td><td>2115</td><td>155.05</td></tr><tr><td>Girl and The Goat - Los Angeles</td><td>4.5</td><td>1685</td><td>150.45</td></tr><tr><td>Perch</td><td>4</td><td>10234</td><td>147.73</td></tr><tr><td>Wurstkuche</td><td>4</td><td>9025</td><td>145.72</td></tr><tr><td>Eggslut</td><td>4</td><td>6429</td><td>140.3</td></tr><tr><td>Prince Street Pizza</td><td>4.5</td><td>804</td><td>135.46</td></tr><tr><td>Yunomi Handroll</td><td>4.5</td><td>536</td><td>127.25</td></tr></tbody>
+    </table>
+  
+
+
+<p>Unfortunately, this is not a one-off occurrence. This was the case for all of the zip codes researched. Below is the same search functionality used to create the model’s top ten list. Go ahead and select any zip code from the dropdown and compare it to the Yelp Results. Obviously, not every zip code was checked. There are over 2000 of them in the data set, and if the researched ones are the outliers, then that is great! But if you don’t believe me, try for yourself at the bottom of the page. Pick any zip code, then run a Yelp search using the recommended search setting and compare it to the results that appear on this page!</p>
+<p>So where did the model go wrong? It is only getting two pieces of information versus the tens if not hundreds the Yelp algorithm uses. Of the two pieces of information, it is getting one of them (the one more heavily weighted in the model) has significant information loss because it is rounded (no idea why it is still transmitting the same amount of information one place past the decimal).</p>
+<p>The biggest place of improvement for the model is the number of reviews itself. After a certain number of reviews, there is going to be no real change in the restaurant’s rating. There is some critical number of reviews where, for the sake of the math, they become irrelevant. What new information is being communicated from review 1000 to 2000 or 3000 to 5000? Where is that critical mass point? It is probably different for every restaurant. Some generalization should be made, maybe at 1000, but more research would be required to know. However, it is possible that the excess reviews are communicating something outside of the rating. For example, maybe the restaurant has a unique concept which makes the experience one of a kind? Or perhaps this is the first/only restaurant of a certain cuisine in a city and while the rating is stable, it is something worth trying.</p>
+<p>On Yelp’s end, how is it that in the top ten for one of many zip codes in Downtown Los Angeles, there are three restaurants with 60 or fewer reviews and two with fewer than 15? Are some reviews worth more than others? Does the location of the search or location of the zip code influence the type of restaurant that will show up in searches? For example, part of this zip code is an area known as Little Tokyo, so are Japanese restaurants more likely to populate? Are the searches considering data from the user&rsquo;s computer? For example, when these searches were run across multiple accounts and web browsers, different results were seen. There is no guarantee that the person running the Yelp search is the same person who uses the device most of the time. Accounts/computers are often shared between families, kids, couples, roommates, companies, etc. Is there a point where a review is no longer used in the algorithm? For example, if a review was left longer than x years ago, is it disregarded by the algorithm? If so, then why does it still show on the site if it is not being used? Is there marketing being considered by the search? Are these three restaurants prolific advertisers on social media or elsewhere, which is being considered by the algorithm? A most recommended list should surely be agnostic of advertising and marketing.</p>
+<p>Both algorithms have their strengths and weaknesses. Clearly, neither is perfect and both are in need of improvement, which makes sense, as it is difficult to quantify human preferences when each of us has a slightly different opinion. The best algorithm probably lies somewhere in between the simple model created here and the more complex version Yelp has been using.</p>
+<h1 id="find-top-restaurants-by-zip-code">Find Top Restaurants by ZIP Code</h1>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Restaurant Search by ZIP Code</title>
+    <link rel="stylesheet" href="/css/table_style.css">
+    <script src="https://cdn.jsdelivr.net/npm/@plotly/plotly.js-dist@2.14.0"></script>
+    <script defer src="/js/search.js"></script> 
+</head>
+<body>
+
+    
+    <form id="searchForm">
+        <label for="zipCodeDropdown">Select ZIP Code:</label>
+        <select id="zipCodeDropdown" name="zipCode"></select>
+        <button type="submit">Search</button>
+    </form>
+
+    
+    <div id="tableContainer"></div>
+</body>
+</html>
+
+
+        </div>
+
+        
+        <div class="row ps-3 pe-3">
+        
+          <div class="col-md-6 share-buttons">
+          
+          </div>
+
+        
+        
+        </div>
+
+
+
+      
+      <hr />
+        
+
+
+
+
+
+
+
+  
+
+
+
+
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+    
+    
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+
+<div class="row next-prev-navigator">
+  
+    <div class="col-md-6 previous-article">
+      <a href="/posts/yelp/yelpintroduction/" title="Yelp Introduction" class="btn filled-button">
+        <div><i class="fas fa-chevron-circle-left"></i> Prev</div>
+        <div class="next-prev-text">Yelp Introduction</div>
+      </a>
+    </div>
+  
+  
+      
+      
+        
+      
+      <div class="col-md-6 next-article">
+        <a href="/posts/yelp/yelpandzillow/" title="Yelp and Zillow Housing Price Index" class="btn filled-button">
+          <div>Next <i class="fas fa-chevron-circle-right"></i></div>
+          <div class="next-prev-text">Yelp and Zillow Housing Price Index</div>
+        </a>
+      </div>
+    
+</div>
+
+      <hr />
+
+      
+      
+
+      
+      
+
+      </div>
+    </div>
+  </div>
+  
+  <a id="scroll-to-top" class="btn" type="button" data-bs-toggle="tooltip" data-bs-placement="left" title="Scroll to top">
+    <i class="fas fa-chevron-circle-up"></i>
+  </a>
+</section>
+
+
+      
+      
+  <section class="toc-section" id="toc-section">
+    
+  </section>
+
+    </div>
+
+    
+    
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+    
+  
+
+  
+  
+    
+  
+
+  
+  
+
+  
+  
+
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+    
+  
+  
+
+  
+  
+  
+
+  <footer id="footer" class="container-fluid text-center align-content-center footer pb-2">
+    <div class="container pt-5">
+      <div class="row text-start">
+        
+        <div class="col-md-4 col-sm-12">
+          <h5>Navigation</h5>
+          
+          <ul>
+              
+                
+                
+                  
+                
+                <li class="nav-item">
+                  <a class="smooth-scroll" href="https://txcwalker.github.io/#about">About</a>
+                </li>
+              
+              
+                
+                
+                  
+                
+                <li class="nav-item">
+                  <a class="smooth-scroll" href="https://txcwalker.github.io/#projects">Projects</a>
+                </li>
+              
+              
+                
+                
+                  
+                
+                <li class="nav-item">
+                  <a class="smooth-scroll" href="https://txcwalker.github.io/#experiences">Experiences</a>
+                </li>
+              
+              
+                
+                
+                  
+                
+                <li class="nav-item">
+                  <a class="smooth-scroll" href="https://txcwalker.github.io/#education">Education</a>
+                </li>
+              
+              
+                
+                
+                  
+                
+                <li class="nav-item">
+                  <a class="smooth-scroll" href="https://txcwalker.github.io/#skills">Skills</a>
+                </li>
+              
+              
+                
+                
+                  
+                
+                <li class="nav-item">
+                  <a class="smooth-scroll" href="https://txcwalker.github.io/#featured-posts">Featured Posts</a>
+                </li>
+              
+              
+                
+                
+                  
+                
+                <li class="nav-item">
+                  <a class="smooth-scroll" href="https://txcwalker.github.io/#recent-posts">Recent Posts</a>
+                </li>
+              
+            
+              
+            
+          </ul>
+          
+        </div>
+        
+        
+        <div class="col-md-4 col-sm-12">
+          <h5>Contact me:</h5>
+          <ul>
+            
+              
+                <li><a href=mailto:txcwalker@gmail.com target="_blank" rel="noopener">
+                  <span><i class="fas fa-envelope"></i></span> <span>txcwalker@gmail.com</span>
+                </a></li>
+              
+            
+              
+                <li><a href=https://github.com/txcwalker target="_blank" rel="noopener">
+                  <span><i class="fab fa-github"></i></span> <span>txcwalker</span>
+                </a></li>
+              
+            
+              
+                <li><a href=https://www.linkedin.com/in/cameronjwalker9 target="_blank" rel="noopener">
+                  <span><i class="fab fa-linkedin"></i></span> <span>Cam</span>
+                </a></li>
+              
+            
+          </ul>
+        </div>
+        
+        
+        
+          
+          <div class="col-md-4 col-sm-12">
+            <p>Stay up to date with email notification</p>
+            
+              <form method='post' action='https://blogtrottr.com'>
+              <div class="form-group">
+              <input type='email' class="form-control" name='btr_email' placeholder="Enter email"/><br />
+              <input type='hidden' name='btr_url' value='https://txcwalker.github.io//index.xml' />
+              <input type='hidden' name='schedule_type' value='1' />
+              <small id="emailHelp" class="form-text text-muted">By entering your email address, you agree to receive the newsletter of this website.</small>
+              <button type="submit" class="btn btn-info"> Submit </button>
+              </div>
+              </form>
+            
+          </div>
+        
+      </div>
+    </div>
+    
+    
+    <hr />
+    <div class="container">
+      <div class="row text-start">
+        <div class="col-md-4">
+          <a id="theme" href="https://github.com/hugo-toha/toha" target="_blank" rel="noopener">
+            <img src="/images/theme-logo_hu_b3360284c55cf72d.png" alt="Toha Theme Logo">
+            Toha
+          </a>
+        </div>
+        <div class="col-md-4 text-center">© 2025 Copyright.</div>
+        <div class="col-md-4 text-end">
+          <a id="hugo" href="https://gohugo.io/" target="_blank" rel="noopener">Powered by
+          <img
+            src="/images/hugo-logo.svg"
+            alt="Hugo Logo"
+            height="18"
+          />
+          </a>
+        </div>
+      </div>
+    </div>
+    
+  </footer>
+
+
+    <script src="/application.8d77dd17513f7792672644463d895c6fc759e0283f12e16a8a93e9e4f7701df0.js" integrity="sha256-jXfdF1E/d5JnJkRGPYlcb8dZ4Cg/EuFqipPp5PdwHfA=" defer></script>
+
+
+    
+     
+
+    
+</body>
+</html>

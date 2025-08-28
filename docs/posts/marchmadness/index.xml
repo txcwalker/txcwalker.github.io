@@ -1,0 +1,362 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>March Madness on Cam&#39;s Portfolio</title>
+    <link>https://txcwalker.github.io/posts/marchmadness/</link>
+    <description>Recent content in March Madness on Cam&#39;s Portfolio</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
+    <lastBuildDate>Wed, 19 Mar 2025 01:52:23 -0500</lastBuildDate><atom:link href="https://txcwalker.github.io/posts/marchmadness/index.xml" rel="self" type="application/rss+xml" /><item>
+      <title>March Madness Overview</title>
+      <link>https://txcwalker.github.io/posts/marchmadness/marchmadnessoverview/</link>
+      <pubDate>Wed, 19 Mar 2025 01:52:23 -0500</pubDate>
+      
+      <guid>https://txcwalker.github.io/posts/marchmadness/marchmadnessoverview/</guid>
+      <description>&lt;style&gt;
+ 
+:root{
+  --toc-lift: 40rem;         
+  --toc-sticky: 4rem;       
+  --h1-bottom-gap: .75rem;  
+  --h2-first-top: .5rem;    
+}
+
+ 
+.toc-card{
+  float:right;
+  width:280px;
+  margin-top: calc(-1 * var(--toc-lift));   
+  margin-left:1.25rem;
+  margin-bottom:1rem;
+
+  position:sticky; top: var(--toc-sticky);
+  max-height:75vh; overflow:auto;
+  border-radius:12px; padding:1rem;
+  background:rgba(255,255,255,.04); box-shadow:0 2px 10px rgba(0,0,0,.12);
+  z-index:2;
+}
+.toc-title{font-weight:600; margin-bottom:.5rem}
+.toc-card ul{list-style:none; padding-left:.75rem}
+.toc-card a{text-decoration:none}
+
+ 
+@media (min-width:1280px){
+  .toc-card{ width:300px; margin-right:-320px; }
+}
+@media (min-width:1536px){
+  .toc-card{ width:320px; margin-right:-360px; }
+}
+
+ 
+@media (max-width:1100px){
+  .toc-card{ float:none; width:auto; position:relative; top:auto; margin:1rem 0 0 0; }
+}
+
+ 
+:root:has(.toc-card) h1{ margin-bottom: var(--h1-bottom-gap) !important; }
+:root:has(.toc-card) h2:first-of-type{ margin-top: var(--h2-first-top) !important; }
+
+ 
+.toc-clear{ clear: both; }
+&lt;/style&gt;
+
+&lt;aside class=&#34;toc-card&#34; aria-label=&#34;Table of Contents&#34;&gt;
+  &lt;div class=&#34;toc-title&#34;&gt;Table of Contents&lt;/div&gt;
+  &lt;nav id=&#34;TableOfContents&#34;&gt;
+  &lt;ul&gt;
+    &lt;li&gt;&lt;a href=&#34;#march-madness-introduction&#34;&gt;March Madness Introduction&lt;/a&gt;
+      &lt;ul&gt;
+        &lt;li&gt;&lt;a href=&#34;#historical-review&#34;&gt;Historical Review&lt;/a&gt;&lt;/li&gt;
+        &lt;li&gt;&lt;a href=&#34;#overview&#34;&gt;Overview&lt;/a&gt;
+          &lt;ul&gt;
+            &lt;li&gt;&lt;a href=&#34;#winners&#34;&gt;Winners&lt;/a&gt;&lt;/li&gt;
+            &lt;li&gt;&lt;a href=&#34;#busts&#34;&gt;Busts&lt;/a&gt;&lt;/li&gt;
+            &lt;li&gt;&lt;a href=&#34;#dark-horses&#34;&gt;Dark Horses&lt;/a&gt;&lt;/li&gt;
+          &lt;/ul&gt;
+        &lt;/li&gt;
+      &lt;/ul&gt;
+    &lt;/li&gt;
+  &lt;/ul&gt;
+&lt;/nav&gt;
+&lt;/aside&gt;
+&lt;div class=&#34;toc-clear&#34;&gt;&lt;/div&gt;
+&lt;h1 id=&#34;march-madness-introduction&#34;&gt;March Madness Introduction&lt;/h1&gt;
+&lt;p&gt;Every March college basketball captures the Country’s countries imagination. The tournament begins with 68 teams each of whom believe they can win the tournament and be crowned the best college basketball team in the country. The single elimination, win or go home, style of tournament creates excitement because anything can happen in one game. And it is true, anything can happen in one game. But what is the likelihood? Part of the reason this tournament has gained its fame is in pursuit of the perfect bracket. Correctly picking all 63 games, Warren Buffet has famously offered a substantial cash prize to the first person who can fill out a perfect bracket. Despite millions of attempts each year no one has really come close. So how can we try to be perfect? How can we get as close as possible? Realistically the perfect bracket is never going to happen but chasing it will also keep us entertained.&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>March Madness Final Four</title>
+      <link>https://txcwalker.github.io/posts/marchmadness/marchmadnessfinalfour/</link>
+      <pubDate>Wed, 19 Mar 2025 01:52:23 -0500</pubDate>
+      
+      <guid>https://txcwalker.github.io/posts/marchmadness/marchmadnessfinalfour/</guid>
+      <description>&lt;style&gt;
+ 
+:root{
+  --toc-lift: 40rem;         
+  --toc-sticky: 4rem;       
+  --h1-bottom-gap: .75rem;  
+  --h2-first-top: .5rem;    
+}
+
+ 
+.toc-card{
+  float:right;
+  width:280px;
+  margin-top: calc(-1 * var(--toc-lift));   
+  margin-left:1.25rem;
+  margin-bottom:1rem;
+
+  position:sticky; top: var(--toc-sticky);
+  max-height:75vh; overflow:auto;
+  border-radius:12px; padding:1rem;
+  background:rgba(255,255,255,.04); box-shadow:0 2px 10px rgba(0,0,0,.12);
+  z-index:2;
+}
+.toc-title{font-weight:600; margin-bottom:.5rem}
+.toc-card ul{list-style:none; padding-left:.75rem}
+.toc-card a{text-decoration:none}
+
+ 
+@media (min-width:1280px){
+  .toc-card{ width:300px; margin-right:-320px; }
+}
+@media (min-width:1536px){
+  .toc-card{ width:320px; margin-right:-360px; }
+}
+
+ 
+@media (max-width:1100px){
+  .toc-card{ float:none; width:auto; position:relative; top:auto; margin:1rem 0 0 0; }
+}
+
+ 
+:root:has(.toc-card) h1{ margin-bottom: var(--h1-bottom-gap) !important; }
+:root:has(.toc-card) h2:first-of-type{ margin-top: var(--h2-first-top) !important; }
+
+ 
+.toc-clear{ clear: both; }
+&lt;/style&gt;
+
+&lt;aside class=&#34;toc-card&#34; aria-label=&#34;Table of Contents&#34;&gt;
+  &lt;div class=&#34;toc-title&#34;&gt;Table of Contents&lt;/div&gt;
+  &lt;nav id=&#34;TableOfContents&#34;&gt;
+  &lt;ul&gt;
+    &lt;li&gt;&lt;a href=&#34;#march-madness-final-four&#34;&gt;March Madness Final Four&lt;/a&gt;
+      &lt;ul&gt;
+        &lt;li&gt;&lt;a href=&#34;#final-four-finder&#34;&gt;Final Four Finder&lt;/a&gt;&lt;/li&gt;
+      &lt;/ul&gt;
+    &lt;/li&gt;
+  &lt;/ul&gt;
+&lt;/nav&gt;
+&lt;/aside&gt;
+&lt;div class=&#34;toc-clear&#34;&gt;&lt;/div&gt;
+&lt;h1 id=&#34;march-madness-final-four&#34;&gt;March Madness Final Four&lt;/h1&gt;
+&lt;p&gt;After the bracket comes out on selection Sunday, the first and second question most people will ask you when comparing brackets is “Who is your national champion?” and “Who is in your final four?” Below is the sims 20 most common final fours. All of them have at least seeds one number one seed most of them at least 2. Notably the most common final four is all four one seeds happening a little over 8% of the time which is about 4 times more than it was projected last year. The one seeds are extremely powerful this year and if the sims are suggesting anything it is that we could have only all one seeds in the final four for the first time since 2008 and only second time ever.&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>March Madness Odds Search</title>
+      <link>https://txcwalker.github.io/posts/marchmadness/marchmadnessodds/</link>
+      <pubDate>Wed, 19 Mar 2025 01:52:23 -0500</pubDate>
+      
+      <guid>https://txcwalker.github.io/posts/marchmadness/marchmadnessodds/</guid>
+      <description>&lt;style&gt;
+ 
+:root{
+  --toc-lift: 40rem;         
+  --toc-sticky: 4rem;       
+  --h1-bottom-gap: .75rem;  
+  --h2-first-top: .5rem;    
+}
+
+ 
+.toc-card{
+  float:right;
+  width:280px;
+  margin-top: calc(-1 * var(--toc-lift));   
+  margin-left:1.25rem;
+  margin-bottom:1rem;
+
+  position:sticky; top: var(--toc-sticky);
+  max-height:75vh; overflow:auto;
+  border-radius:12px; padding:1rem;
+  background:rgba(255,255,255,.04); box-shadow:0 2px 10px rgba(0,0,0,.12);
+  z-index:2;
+}
+.toc-title{font-weight:600; margin-bottom:.5rem}
+.toc-card ul{list-style:none; padding-left:.75rem}
+.toc-card a{text-decoration:none}
+
+ 
+@media (min-width:1280px){
+  .toc-card{ width:300px; margin-right:-320px; }
+}
+@media (min-width:1536px){
+  .toc-card{ width:320px; margin-right:-360px; }
+}
+
+ 
+@media (max-width:1100px){
+  .toc-card{ float:none; width:auto; position:relative; top:auto; margin:1rem 0 0 0; }
+}
+
+ 
+:root:has(.toc-card) h1{ margin-bottom: var(--h1-bottom-gap) !important; }
+:root:has(.toc-card) h2:first-of-type{ margin-top: var(--h2-first-top) !important; }
+
+ 
+.toc-clear{ clear: both; }
+&lt;/style&gt;
+
+&lt;aside class=&#34;toc-card&#34; aria-label=&#34;Table of Contents&#34;&gt;
+  &lt;div class=&#34;toc-title&#34;&gt;Table of Contents&lt;/div&gt;
+  &lt;nav id=&#34;TableOfContents&#34;&gt;&lt;/nav&gt;
+&lt;/aside&gt;
+&lt;div class=&#34;toc-clear&#34;&gt;&lt;/div&gt;
+&lt;p&gt;Below is a table with the odds for every Team to make it to the following rounds Sweet Sixteen, Elite Eight, Final Four and Championship Winner. Simpley Select which team(s) you would like to view and hit &amp;ldquo;Show Selected Teams&amp;rdquo;&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>March Madness Misseedings and Over/Underperformers</title>
+      <link>https://txcwalker.github.io/posts/marchmadness/marchmadnessmisseedings/</link>
+      <pubDate>Wed, 19 Mar 2025 01:52:23 -0500</pubDate>
+      
+      <guid>https://txcwalker.github.io/posts/marchmadness/marchmadnessmisseedings/</guid>
+      <description>&lt;style&gt;
+ 
+:root{
+  --toc-lift: 40rem;         
+  --toc-sticky: 4rem;       
+  --h1-bottom-gap: .75rem;  
+  --h2-first-top: .5rem;    
+}
+
+ 
+.toc-card{
+  float:right;
+  width:280px;
+  margin-top: calc(-1 * var(--toc-lift));   
+  margin-left:1.25rem;
+  margin-bottom:1rem;
+
+  position:sticky; top: var(--toc-sticky);
+  max-height:75vh; overflow:auto;
+  border-radius:12px; padding:1rem;
+  background:rgba(255,255,255,.04); box-shadow:0 2px 10px rgba(0,0,0,.12);
+  z-index:2;
+}
+.toc-title{font-weight:600; margin-bottom:.5rem}
+.toc-card ul{list-style:none; padding-left:.75rem}
+.toc-card a{text-decoration:none}
+
+ 
+@media (min-width:1280px){
+  .toc-card{ width:300px; margin-right:-320px; }
+}
+@media (min-width:1536px){
+  .toc-card{ width:320px; margin-right:-360px; }
+}
+
+ 
+@media (max-width:1100px){
+  .toc-card{ float:none; width:auto; position:relative; top:auto; margin:1rem 0 0 0; }
+}
+
+ 
+:root:has(.toc-card) h1{ margin-bottom: var(--h1-bottom-gap) !important; }
+:root:has(.toc-card) h2:first-of-type{ margin-top: var(--h2-first-top) !important; }
+
+ 
+.toc-clear{ clear: both; }
+&lt;/style&gt;
+
+&lt;aside class=&#34;toc-card&#34; aria-label=&#34;Table of Contents&#34;&gt;
+  &lt;div class=&#34;toc-title&#34;&gt;Table of Contents&lt;/div&gt;
+  &lt;nav id=&#34;TableOfContents&#34;&gt;
+  &lt;ul&gt;
+    &lt;li&gt;&lt;a href=&#34;#seed-prediction&#34;&gt;Seed Prediction&lt;/a&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;a href=&#34;#fairytales&#34;&gt;Fairytales&lt;/a&gt;
+      &lt;ul&gt;
+        &lt;li&gt;&lt;a href=&#34;#underperformers&#34;&gt;Underperformers&lt;/a&gt;&lt;/li&gt;
+        &lt;li&gt;&lt;a href=&#34;#overperformers&#34;&gt;Overperformers&lt;/a&gt;&lt;/li&gt;
+      &lt;/ul&gt;
+    &lt;/li&gt;
+  &lt;/ul&gt;
+&lt;/nav&gt;
+&lt;/aside&gt;
+&lt;div class=&#34;toc-clear&#34;&gt;&lt;/div&gt;
+&lt;h1 id=&#34;seed-prediction&#34;&gt;Seed Prediction&lt;/h1&gt;
+&lt;p&gt;It feels like every year the committee intentionally misseeds a couple of teams just to farm engagement and get people talking about the tournament. This year is unfortunately no different and perhaps even worse than most. Of course the primary body of work are the games you played in the regular season but that does not mean the conference tournaments should count for nothing. Below are the most egregious examples of teams that were over or underseeded.&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>March Madness Region Strength</title>
+      <link>https://txcwalker.github.io/posts/marchmadness/marchmadnessregionstrength/</link>
+      <pubDate>Wed, 19 Mar 2025 01:52:23 -0500</pubDate>
+      
+      <guid>https://txcwalker.github.io/posts/marchmadness/marchmadnessregionstrength/</guid>
+      <description>&lt;style&gt;
+ 
+:root{
+  --toc-lift: 40rem;         
+  --toc-sticky: 4rem;       
+  --h1-bottom-gap: .75rem;  
+  --h2-first-top: .5rem;    
+}
+
+ 
+.toc-card{
+  float:right;
+  width:280px;
+  margin-top: calc(-1 * var(--toc-lift));   
+  margin-left:1.25rem;
+  margin-bottom:1rem;
+
+  position:sticky; top: var(--toc-sticky);
+  max-height:75vh; overflow:auto;
+  border-radius:12px; padding:1rem;
+  background:rgba(255,255,255,.04); box-shadow:0 2px 10px rgba(0,0,0,.12);
+  z-index:2;
+}
+.toc-title{font-weight:600; margin-bottom:.5rem}
+.toc-card ul{list-style:none; padding-left:.75rem}
+.toc-card a{text-decoration:none}
+
+ 
+@media (min-width:1280px){
+  .toc-card{ width:300px; margin-right:-320px; }
+}
+@media (min-width:1536px){
+  .toc-card{ width:320px; margin-right:-360px; }
+}
+
+ 
+@media (max-width:1100px){
+  .toc-card{ float:none; width:auto; position:relative; top:auto; margin:1rem 0 0 0; }
+}
+
+ 
+:root:has(.toc-card) h1{ margin-bottom: var(--h1-bottom-gap) !important; }
+:root:has(.toc-card) h2:first-of-type{ margin-top: var(--h2-first-top) !important; }
+
+ 
+.toc-clear{ clear: both; }
+&lt;/style&gt;
+
+&lt;aside class=&#34;toc-card&#34; aria-label=&#34;Table of Contents&#34;&gt;
+  &lt;div class=&#34;toc-title&#34;&gt;Table of Contents&lt;/div&gt;
+  &lt;nav id=&#34;TableOfContents&#34;&gt;
+  &lt;ul&gt;
+    &lt;li&gt;&lt;a href=&#34;#region-strength&#34;&gt;Region Strength&lt;/a&gt;&lt;/li&gt;
+  &lt;/ul&gt;
+&lt;/nav&gt;
+&lt;/aside&gt;
+&lt;div class=&#34;toc-clear&#34;&gt;&lt;/div&gt;
+&lt;h1 id=&#34;region-strength&#34;&gt;Region Strength&lt;/h1&gt;
+&lt;p&gt;Ideally we want our potential champion to come from the path of least resistance. That is to say the less competitive games our champion can play the more likely they are to win the championship. In an effort to quantify this path of least resistance (at least to the final four) the metric Region strength was created. It is comprised of three components, Total Region Championships, Seed Prediction and Fragility.&lt;/p&gt;</description>
+    </item>
+    
+    
+  </channel>
+</rss>

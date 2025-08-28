@@ -1,0 +1,899 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Yelp Heat Maps</title>
+    <meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<meta http-equiv="X-UA-Compatible" content="ie=edge" />
+
+<link rel="stylesheet" href="/application.d9b7c023d62f07d7917d76909fc1c2c50f6948d7eccf9ef84a7e9732aea40e6a.css" integrity="sha256-2bfAI9YvB9eRfXaQn8HCxQ9pSNfsz574Sn6XMq6kDmo=" />
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<meta property="og:title" content="Cam&#39;s Portfolio"/>
+<meta property="og:type" content="website"/>
+<meta property="og:description" content=""/>
+<meta property="og:image" content="/images/avatar.svg">
+<meta property="og:url" content="https://txcwalker.github.io/">
+
+    
+<meta name="description" content="Yelp Heat Maps" />
+
+
+
+    
+
+
+
+
+
+    <script integrity="sha256-6N/HdTRW44DtfcdqA1u42Z4XgmL1dEmNmLPaA2sgp1o=">
+     let theme = localStorage.getItem('theme-scheme') || localStorage.getItem('darkmode:color-scheme') || 'light'
+if (theme === 'system') {
+  if (window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches) {
+    theme = 'dark'
+  } else {
+    theme = 'light'
+  }
+}
+document.documentElement.setAttribute('data-theme', theme)
+
+    </script>
+    
+  </head>
+
+  <body class="type-posts kind-page" data-bs-spy="scroll" data-bs-target="#TableOfContents" data-bs-offset="80">
+    <div class="container-fluid bg-secondary wrapper">
+      
+      
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+
+
+
+  
+
+
+<nav class="navbar navbar-expand-xl top-navbar shadow " id="top-navbar">
+  <div class="container">
+    
+    <button class="navbar-toggler navbar-light" id="sidebar-toggler" type="button">
+      <i data-feather="sidebar"></i>
+    </button>
+    
+    <a class="navbar-brand" href="/">
+      Cam&#39;s Portfolio</a>
+    <button
+      class="navbar-toggler navbar-light"
+      id="navbar-toggler"
+      type="button"
+      data-bs-toggle="collapse"
+      data-bs-target="#top-nav-items"
+      aria-label="menu"
+    >
+      <i data-feather="menu"></i>
+    </button>
+
+    <div class="collapse navbar-collapse dynamic-navbar" id="top-nav-items">
+      <ul class="nav navbar-nav ms-auto">
+        <li class="nav-item">
+          <a class="nav-link" href="/#home">Home</a>
+        </li>
+        
+          
+          
+            
+              
+              
+                <li class="nav-item">
+                  <a class="nav-link" href="/#about">About</a>
+                </li>
+              
+            
+            
+              
+              
+                <li class="nav-item">
+                  <a class="nav-link" href="/#projects">Projects</a>
+                </li>
+              
+            
+            
+              
+              
+                <li class="nav-item">
+                  <a class="nav-link" href="/#experiences">Experiences</a>
+                </li>
+              
+            
+            
+              
+              
+                <li class="nav-item">
+                  <a class="nav-link" href="/#education">Education</a>
+                </li>
+              
+            
+            
+              
+              
+            
+            
+              
+              
+            
+            
+              
+              
+            
+          
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">More</a>
+            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                
+                
+                  
+                    
+                    
+                  
+                  
+                    
+                    
+                  
+                  
+                    
+                    
+                  
+                  
+                    
+                    
+                  
+                  
+                    
+                    
+                      <a class="dropdown-item" href="/#skills">Skills</a>
+                    
+                  
+                  
+                    
+                    
+                      <a class="dropdown-item" href="/#featured-posts">Featured Posts</a>
+                    
+                  
+                  
+                    
+                    
+                      <a class="dropdown-item" href="/#recent-posts">Recent Posts</a>
+                    
+                  
+              </div>
+            </li>
+          
+        
+        
+          <div id="top-navbar-divider"></div>
+        
+        
+          <li class="nav-item">
+            <a class="nav-link" id="blog-link" href="/posts">Posts</a>
+          </li>
+        
+        
+        
+        
+        
+      </ul>
+    </div>
+  </div>
+  
+  
+  
+  
+</nav>
+
+
+
+      
+      
+  <section class="sidebar-section" id="sidebar-section">
+    <div class="sidebar-holder">
+      <div class="sidebar" id="sidebar">
+        <form class="mx-auto" method="get" action="/search">
+          <input type="text" name="keyword" value="" placeholder="Search" data-search="" id="search-box" />
+        </form>
+        <div class="sidebar-tree">
+          <ul class="tree" id="tree">
+            <li id="list-heading"><a href="/posts/" data-filter="all">Posts</a></li>
+            <div class="subtree">
+                
+  
+  
+  
+  
+  
+    
+    <li>
+      <i data-feather="plus-circle"></i><a class=" list-link" href="/posts/databaseball/"> Databaseball</a>
+      
+      <ul class="">
+        
+  
+  
+  
+  
+  
+    
+    <li><a class=" list-link" href="/posts/databaseball/databaseball/" title="Databaseball Overview">Databaseball Overview</a></li>
+  
+
+
+      </ul>
+    </li>
+  
+
+  
+  
+  
+  
+  
+    
+    <li>
+      <i data-feather="plus-circle"></i><a class=" list-link" href="/posts/marchmadness/"> March Madness</a>
+      
+      <ul class="">
+        
+  
+  
+  
+  
+  
+    
+    <li><a class=" list-link" href="/posts/marchmadness/marchmadnessoverview/" title="March Madness Overview">March Madness Overview</a></li>
+  
+
+  
+  
+  
+  
+  
+    
+    <li><a class=" list-link" href="/posts/marchmadness/marchmadnessfinalfour/" title="March Madness Final Four">March Madness Final Four</a></li>
+  
+
+  
+  
+  
+  
+  
+    
+    <li><a class=" list-link" href="/posts/marchmadness/marchmadnessodds/" title="March Madness Odds Search">March Madness Odds Search</a></li>
+  
+
+  
+  
+  
+  
+  
+    
+    <li><a class=" list-link" href="/posts/marchmadness/marchmadnessmisseedings/" title="March Madness Misseedings and Over/Underperformers">March Madness Misseedings and Over/Underperformers</a></li>
+  
+
+  
+  
+  
+  
+  
+    
+    <li><a class=" list-link" href="/posts/marchmadness/marchmadnessregionstrength/" title="March Madness Region Strength">March Madness Region Strength</a></li>
+  
+
+
+      </ul>
+    </li>
+  
+
+  
+  
+  
+  
+    
+    
+  
+  
+    
+    <li>
+      <i data-feather="minus-circle"></i><a class="active list-link" href="/posts/yelp/"> Yelp/Zillow</a>
+      
+      <ul class="active">
+        
+  
+  
+  
+  
+  
+    
+    <li><a class=" list-link" href="/posts/yelp/yelpintroduction/" title="Yelp Introduction">Yelp Introduction</a></li>
+  
+
+  
+  
+  
+  
+  
+    
+    <li><a class=" list-link" href="/posts/yelp/yelpsearchscore/" title="Yelp Search Score">Yelp Search Score</a></li>
+  
+
+  
+  
+  
+  
+  
+    
+    <li><a class=" list-link" href="/posts/yelp/yelpandzillow/" title="Yelp and Zillow Housing Price Index">Yelp and Zillow Housing Price Index</a></li>
+  
+
+  
+  
+  
+  
+  
+    
+    <li><a class=" list-link" href="/posts/yelp/yelptaggraphs/" title="Yelp Tag Graphs">Yelp Tag Graphs</a></li>
+  
+
+  
+  
+  
+  
+    
+    
+  
+  
+    
+    <li><a class="active list-link" href="/posts/yelp/yelpheatmaps/" title="Yelp Heat Maps">Yelp Heat Maps</a></li>
+  
+
+
+      </ul>
+    </li>
+  
+
+  
+  
+  
+  
+  
+    
+    <li>
+      <i data-feather="plus-circle"></i><a class=" list-link" href="/posts/phishing/"> Phishing</a>
+      
+      <ul class="">
+        
+  
+  
+  
+  
+  
+    
+    <li><a class=" list-link" href="/posts/phishing/linkedinbotprediction/" title="Phishing Prediction">Phishing Prediction</a></li>
+  
+
+
+      </ul>
+    </li>
+  
+
+
+            </div>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+      
+      
+<section class="content-section" id="content-section">
+  <div class="content">
+    <div class="container p-0 read-area">
+      
+      <div class="hero-area col-sm-12" id="hero-area" style='background-image: url(/images/posts/paella.jpg);'>
+      </div>
+
+      
+      <div class="page-content">
+        
+        <div class="author-profile ms-auto align-self-lg-center">
+          <img class="rounded-circle" src='/images/avatar.svg' alt="Author Image">
+          <h5 class="author-name">Cam</h5>
+          <p class="text-muted">Monday, July 29, 2024 | 1 minute</p>
+        </div>
+        
+
+        <div class="title">
+          <h1>Yelp Heat Maps</h1>
+        </div>
+
+        
+
+        
+        <div class="post-content" id="post-content">
+          <style>
+ 
+:root{
+  --toc-lift: 40rem;         
+  --toc-sticky: 4rem;       
+  --h1-bottom-gap: .75rem;  
+  --h2-first-top: .5rem;    
+}
+
+ 
+.toc-card{
+  float:right;
+  width:280px;
+  margin-top: calc(-1 * var(--toc-lift));   
+  margin-left:1.25rem;
+  margin-bottom:1rem;
+
+  position:sticky; top: var(--toc-sticky);
+  max-height:75vh; overflow:auto;
+  border-radius:12px; padding:1rem;
+  background:rgba(255,255,255,.04); box-shadow:0 2px 10px rgba(0,0,0,.12);
+  z-index:2;
+}
+.toc-title{font-weight:600; margin-bottom:.5rem}
+.toc-card ul{list-style:none; padding-left:.75rem}
+.toc-card a{text-decoration:none}
+
+ 
+@media (min-width:1280px){
+  .toc-card{ width:300px; margin-right:-320px; }
+}
+@media (min-width:1536px){
+  .toc-card{ width:320px; margin-right:-360px; }
+}
+
+ 
+@media (max-width:1100px){
+  .toc-card{ float:none; width:auto; position:relative; top:auto; margin:1rem 0 0 0; }
+}
+
+ 
+:root:has(.toc-card) h1{ margin-bottom: var(--h1-bottom-gap) !important; }
+:root:has(.toc-card) h2:first-of-type{ margin-top: var(--h2-first-top) !important; }
+
+ 
+.toc-clear{ clear: both; }
+</style>
+
+<aside class="toc-card" aria-label="Table of Contents">
+  <div class="toc-title">Table of Contents</div>
+  <nav id="TableOfContents">
+  <ul>
+    <li><a href="#welcome-to-the-heat-map-tool">Welcome to the Heat Map Tool!</a></li>
+  </ul>
+</nav>
+</aside>
+<div class="toc-clear"></div>
+<h1 id="welcome-to-the-heat-map-tool">Welcome to the Heat Map Tool!</h1>
+<p>Curious how restaurants are distributed across the city? Select any city from the below dropdown and choose from any variable in the adjacent list to view how restaurants are found throughout the selected city based on selected variable!</p>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Heatmap</title>
+    <link rel="stylesheet" href="/css/style.css">
+    
+    <script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
+    
+    <link href="https://api.mapbox.com/mapbox-gl-js/v3.5.1/mapbox-gl.css" rel="stylesheet">
+    <script src="https://api.mapbox.com/mapbox-gl-js/v3.5.1/mapbox-gl.js"></script>
+</head>
+<body>
+    <div class="graph-container">
+        <div class="form-section">
+            <div class="form-elements">
+                <form id="heatmap-form">
+                    <label for="target_city">Select City:</label>
+                    <select id="target_city" name="target_city">
+                        
+                    </select>
+
+                    <label for="target_variable">Select Variable:</label>
+                    <select id="target_variable" name="target_variable">
+                        <option value="review_count">Review Count</option>
+                        <option value="price">Price</option>
+                        <option value="rating">Rating</option>
+                    </select>
+
+                    <button type="submit">Update Map</button>
+                </form>
+
+                <div id="plotly-map"></div>
+            </div>
+        </div>
+    </div>
+    <script src="/js/heatmaps.js"></script>
+</body>
+</html>
+
+
+        </div>
+
+        
+        <div class="row ps-3 pe-3">
+        
+          <div class="col-md-6 share-buttons">
+          
+          </div>
+
+        
+        
+        </div>
+
+
+
+      
+      <hr />
+        
+
+
+
+
+
+
+
+  
+
+
+
+
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+    
+    
+  
+  
+
+  
+  
+
+
+<div class="row next-prev-navigator">
+  
+    <div class="col-md-6 previous-article">
+      <a href="/posts/yelp/yelptaggraphs/" title="Yelp Tag Graphs" class="btn filled-button">
+        <div><i class="fas fa-chevron-circle-left"></i> Prev</div>
+        <div class="next-prev-text">Yelp Tag Graphs</div>
+      </a>
+    </div>
+  
+  
+      
+      
+        
+      
+      <div class="col-md-6 next-article">
+        <a href="/posts/phishing/linkedinbotprediction/" title="Phishing Prediction" class="btn filled-button">
+          <div>Next <i class="fas fa-chevron-circle-right"></i></div>
+          <div class="next-prev-text">Phishing Prediction</div>
+        </a>
+      </div>
+    
+</div>
+
+      <hr />
+
+      
+      
+
+      
+      
+
+      </div>
+    </div>
+  </div>
+  
+  <a id="scroll-to-top" class="btn" type="button" data-bs-toggle="tooltip" data-bs-placement="left" title="Scroll to top">
+    <i class="fas fa-chevron-circle-up"></i>
+  </a>
+</section>
+
+
+      
+      
+  <section class="toc-section" id="toc-section">
+    
+  </section>
+
+    </div>
+
+    
+    
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+    
+  
+
+  
+  
+    
+  
+
+  
+  
+
+  
+  
+
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+    
+  
+  
+
+  
+  
+  
+
+  <footer id="footer" class="container-fluid text-center align-content-center footer pb-2">
+    <div class="container pt-5">
+      <div class="row text-start">
+        
+        <div class="col-md-4 col-sm-12">
+          <h5>Navigation</h5>
+          
+          <ul>
+              
+                
+                
+                  
+                
+                <li class="nav-item">
+                  <a class="smooth-scroll" href="https://txcwalker.github.io/#about">About</a>
+                </li>
+              
+              
+                
+                
+                  
+                
+                <li class="nav-item">
+                  <a class="smooth-scroll" href="https://txcwalker.github.io/#projects">Projects</a>
+                </li>
+              
+              
+                
+                
+                  
+                
+                <li class="nav-item">
+                  <a class="smooth-scroll" href="https://txcwalker.github.io/#experiences">Experiences</a>
+                </li>
+              
+              
+                
+                
+                  
+                
+                <li class="nav-item">
+                  <a class="smooth-scroll" href="https://txcwalker.github.io/#education">Education</a>
+                </li>
+              
+              
+                
+                
+                  
+                
+                <li class="nav-item">
+                  <a class="smooth-scroll" href="https://txcwalker.github.io/#skills">Skills</a>
+                </li>
+              
+              
+                
+                
+                  
+                
+                <li class="nav-item">
+                  <a class="smooth-scroll" href="https://txcwalker.github.io/#featured-posts">Featured Posts</a>
+                </li>
+              
+              
+                
+                
+                  
+                
+                <li class="nav-item">
+                  <a class="smooth-scroll" href="https://txcwalker.github.io/#recent-posts">Recent Posts</a>
+                </li>
+              
+            
+              
+            
+          </ul>
+          
+        </div>
+        
+        
+        <div class="col-md-4 col-sm-12">
+          <h5>Contact me:</h5>
+          <ul>
+            
+              
+                <li><a href=mailto:txcwalker@gmail.com target="_blank" rel="noopener">
+                  <span><i class="fas fa-envelope"></i></span> <span>txcwalker@gmail.com</span>
+                </a></li>
+              
+            
+              
+                <li><a href=https://github.com/txcwalker target="_blank" rel="noopener">
+                  <span><i class="fab fa-github"></i></span> <span>txcwalker</span>
+                </a></li>
+              
+            
+              
+                <li><a href=https://www.linkedin.com/in/cameronjwalker9 target="_blank" rel="noopener">
+                  <span><i class="fab fa-linkedin"></i></span> <span>Cam</span>
+                </a></li>
+              
+            
+          </ul>
+        </div>
+        
+        
+        
+          
+          <div class="col-md-4 col-sm-12">
+            <p>Stay up to date with email notification</p>
+            
+              <form method='post' action='https://blogtrottr.com'>
+              <div class="form-group">
+              <input type='email' class="form-control" name='btr_email' placeholder="Enter email"/><br />
+              <input type='hidden' name='btr_url' value='https://txcwalker.github.io//index.xml' />
+              <input type='hidden' name='schedule_type' value='1' />
+              <small id="emailHelp" class="form-text text-muted">By entering your email address, you agree to receive the newsletter of this website.</small>
+              <button type="submit" class="btn btn-info"> Submit </button>
+              </div>
+              </form>
+            
+          </div>
+        
+      </div>
+    </div>
+    
+    
+    <hr />
+    <div class="container">
+      <div class="row text-start">
+        <div class="col-md-4">
+          <a id="theme" href="https://github.com/hugo-toha/toha" target="_blank" rel="noopener">
+            <img src="/images/theme-logo_hu_b3360284c55cf72d.png" alt="Toha Theme Logo">
+            Toha
+          </a>
+        </div>
+        <div class="col-md-4 text-center">© 2025 Copyright.</div>
+        <div class="col-md-4 text-end">
+          <a id="hugo" href="https://gohugo.io/" target="_blank" rel="noopener">Powered by
+          <img
+            src="/images/hugo-logo.svg"
+            alt="Hugo Logo"
+            height="18"
+          />
+          </a>
+        </div>
+      </div>
+    </div>
+    
+  </footer>
+
+
+    <script src="/application.8d77dd17513f7792672644463d895c6fc759e0283f12e16a8a93e9e4f7701df0.js" integrity="sha256-jXfdF1E/d5JnJkRGPYlcb8dZ4Cg/EuFqipPp5PdwHfA=" defer></script>
+
+
+    
+     
+
+    
+</body>
+</html>

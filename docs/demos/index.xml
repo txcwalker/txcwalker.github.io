@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Demos on Cam&#39;s Portfolio</title>
+    <link>https://txcwalker.github.io/demos/</link>
+    <description>Recent content in Demos on Cam&#39;s Portfolio</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
+    <lastBuildDate>Fri, 22 Aug 2025 00:00:00 +0000</lastBuildDate><atom:link href="https://txcwalker.github.io/demos/index.xml" rel="self" type="application/rss+xml" /><item>
+      <title>Final Four Combination Explorer</title>
+      <link>https://txcwalker.github.io/demos/final-four/</link>
+      <pubDate>Fri, 22 Aug 2025 00:00:00 +0000</pubDate>
+      
+      <guid>https://txcwalker.github.io/demos/final-four/</guid>
+      <description>&lt;h1 id=&#34;march-madness-final-four&#34;&gt;March Madness Final Four&lt;/h1&gt;
+&lt;p&gt;After the bracket comes out on selection Sunday, the first and second question most people will ask you when comparing brackets is “Who is your national champion?” and “Who is in your final four?” Below is the sims 20 most common final fours. All of them have at least seeds one number one seed most of them at least 2. Notably the most common final four is all four one seeds happening a little over 8% of the time which is about 4 times more than it was projected last year. The one seeds are extremely powerful this year and if the sims are suggesting anything it is that we could have only all one seeds in the final four for the first time since 2008 and only second time ever.&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Top Tags by State / City / ZIP</title>
+      <link>https://txcwalker.github.io/demos/tag-graphs/</link>
+      <pubDate>Fri, 22 Aug 2025 00:00:00 +0000</pubDate>
+      
+      <guid>https://txcwalker.github.io/demos/tag-graphs/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Yelp &#43; Zillow: Model Accuracy Panels</title>
+      <link>https://txcwalker.github.io/demos/yelp-zillow/</link>
+      <pubDate>Fri, 22 Aug 2025 00:00:00 +0000</pubDate>
+      
+      <guid>https://txcwalker.github.io/demos/yelp-zillow/</guid>
+      <description>&lt;p&gt;The three panels below are injected by Plotly from JSON exports.&lt;/p&gt;
+&lt;p&gt;&lt;link rel=&#34;stylesheet&#34; href=&#34;https://txcwalker.github.io/css/table_style.css&#34;&gt;
+&lt;script src=&#34;https://cdn.plot.ly/plotly-latest.min.js&#34;&gt;&lt;/script&gt;
+
+&lt;div id=&#34;residuals-plot&#34; class=&#34;plotly-map-container&#34;&gt;&lt;/div&gt;
+&lt;div id=&#34;least-accurate-plot&#34; class=&#34;plotly-map-container&#34; style=&#34;margin-top:1rem;&#34;&gt;&lt;/div&gt;
+&lt;div id=&#34;most-accurate-plot&#34; class=&#34;plotly-map-container&#34; style=&#34;margin-top:1rem;&#34;&gt;&lt;/div&gt;
+
+&lt;script src=&#34;https://txcwalker.github.io/js/yelpzillow.js&#34;&gt;&lt;/script&gt;
+
+&lt;link rel=&#34;stylesheet&#34; href=&#34;https://txcwalker.github.io/css/table_style.css&#34;&gt;
+&lt;script src=&#34;https://cdn.plot.ly/plotly-latest.min.js&#34;&gt;&lt;/script&gt;
+
+&lt;div id=&#34;residuals-plot&#34; class=&#34;plotly-map-container&#34;&gt;&lt;/div&gt;
+&lt;div id=&#34;least-accurate-plot&#34; class=&#34;plotly-map-container&#34; style=&#34;margin-top:1rem;&#34;&gt;&lt;/div&gt;
+&lt;div id=&#34;most-accurate-plot&#34; class=&#34;plotly-map-container&#34; style=&#34;margin-top:1rem;&#34;&gt;&lt;/div&gt;
+
+&lt;script src=&#34;https://txcwalker.github.io/js/yelpzillow.js&#34;&gt;&lt;/script&gt;
+
+&lt;link rel=&#34;stylesheet&#34; href=&#34;https://txcwalker.github.io/css/table_style.css&#34;&gt;
+&lt;script src=&#34;https://cdn.plot.ly/plotly-latest.min.js&#34;&gt;&lt;/script&gt;
+
+&lt;div id=&#34;residuals-plot&#34; class=&#34;plotly-map-container&#34;&gt;&lt;/div&gt;
+&lt;div id=&#34;least-accurate-plot&#34; class=&#34;plotly-map-container&#34; style=&#34;margin-top:1rem;&#34;&gt;&lt;/div&gt;
+&lt;div id=&#34;most-accurate-plot&#34; class=&#34;plotly-map-container&#34; style=&#34;margin-top:1rem;&#34;&gt;&lt;/div&gt;
+
+&lt;script src=&#34;https://txcwalker.github.io/js/yelpzillow.js&#34;&gt;&lt;/script&gt;
+&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Yelp Heatmap</title>
+      <link>https://txcwalker.github.io/demos/heatmap/</link>
+      <pubDate>Fri, 22 Aug 2025 00:00:00 +0000</pubDate>
+      
+      <guid>https://txcwalker.github.io/demos/heatmap/</guid>
+      <description></description>
+    </item>
+    
+    
+  </channel>
+</rss>

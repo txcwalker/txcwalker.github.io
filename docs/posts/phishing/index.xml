@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Phishing on Cam&#39;s Portfolio</title>
+    <link>https://txcwalker.github.io/posts/phishing/</link>
+    <description>Recent content in Phishing on Cam&#39;s Portfolio</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
+    <lastBuildDate>Sat, 05 Jul 2025 01:52:23 -0500</lastBuildDate><atom:link href="https://txcwalker.github.io/posts/phishing/index.xml" rel="self" type="application/rss+xml" /><item>
+      <title>Phishing Prediction</title>
+      <link>https://txcwalker.github.io/posts/phishing/linkedinbotprediction/</link>
+      <pubDate>Sat, 05 Jul 2025 01:52:23 -0500</pubDate>
+      
+      <guid>https://txcwalker.github.io/posts/phishing/linkedinbotprediction/</guid>
+      <description>&lt;style&gt;
+ 
+:root{
+  --toc-lift: 40rem;         
+  --toc-sticky: 4rem;       
+  --h1-bottom-gap: .75rem;  
+  --h2-first-top: .5rem;    
+}
+
+ 
+.toc-card{
+  float:right;
+  width:280px;
+  margin-top: calc(-1 * var(--toc-lift));   
+  margin-left:1.25rem;
+  margin-bottom:1rem;
+
+  position:sticky; top: var(--toc-sticky);
+  max-height:75vh; overflow:auto;
+  border-radius:12px; padding:1rem;
+  background:rgba(255,255,255,.04); box-shadow:0 2px 10px rgba(0,0,0,.12);
+  z-index:2;
+}
+.toc-title{font-weight:600; margin-bottom:.5rem}
+.toc-card ul{list-style:none; padding-left:.75rem}
+.toc-card a{text-decoration:none}
+
+ 
+@media (min-width:1280px){
+  .toc-card{ width:300px; margin-right:-320px; }
+}
+@media (min-width:1536px){
+  .toc-card{ width:320px; margin-right:-360px; }
+}
+
+ 
+@media (max-width:1100px){
+  .toc-card{ float:none; width:auto; position:relative; top:auto; margin:1rem 0 0 0; }
+}
+
+ 
+:root:has(.toc-card) h1{ margin-bottom: var(--h1-bottom-gap) !important; }
+:root:has(.toc-card) h2:first-of-type{ margin-top: var(--h2-first-top) !important; }
+
+ 
+.toc-clear{ clear: both; }
+&lt;/style&gt;
+
+&lt;aside class=&#34;toc-card&#34; aria-label=&#34;Table of Contents&#34;&gt;
+  &lt;div class=&#34;toc-title&#34;&gt;Table of Contents&lt;/div&gt;
+  &lt;nav id=&#34;TableOfContents&#34;&gt;
+  &lt;ul&gt;
+    &lt;li&gt;
+      &lt;ul&gt;
+        &lt;li&gt;&lt;a href=&#34;#introduction&#34;&gt;Introduction:&lt;/a&gt;&lt;/li&gt;
+        &lt;li&gt;&lt;a href=&#34;#data&#34;&gt;Data:&lt;/a&gt;
+          &lt;ul&gt;
+            &lt;li&gt;&lt;a href=&#34;#sms-spam&#34;&gt;&lt;a href=&#34;https://huggingface.co/datasets/ucirvine/sms_spam&#34;&gt;SMS Spam&lt;/a&gt;&lt;/a&gt;&lt;/li&gt;
+            &lt;li&gt;&lt;a href=&#34;#persona&#34;&gt;&lt;a href=&#34;https://huggingface.co/datasets/bavard/personachat_truecased&#34;&gt;Persona&lt;/a&gt;&lt;/a&gt;&lt;/li&gt;
+            &lt;li&gt;&lt;a href=&#34;#phish1&#34;&gt;&lt;a href=&#34;https://huggingface.co/datasets/zefang-liu/phishing-email-dataset&#34;&gt;Phish1&lt;/a&gt;&lt;/a&gt;&lt;/li&gt;
+            &lt;li&gt;&lt;a href=&#34;#phish2&#34;&gt;&lt;a href=&#34;https://huggingface.co/datasets/yashpapa6969/phising_attacks&#34;&gt;Phish2&lt;/a&gt;&lt;/a&gt;&lt;/li&gt;
+            &lt;li&gt;&lt;a href=&#34;#daily-dialogue&#34;&gt;&lt;a href=&#34;https://huggingface.co/datasets/pixelsandpointers/better_daily_dialog&#34;&gt;Daily Dialogue&lt;/a&gt;&lt;/a&gt;&lt;/li&gt;
+            &lt;li&gt;&lt;a href=&#34;#cnndailymail&#34;&gt;&lt;a href=&#34;https://huggingface.co/datasets/abisee/cnn_dailymail&#34;&gt;CNN/DailyMail&lt;/a&gt;&lt;/a&gt;&lt;/li&gt;
+            &lt;li&gt;&lt;a href=&#34;#spam_&#34;&gt;&lt;a href=&#34;https://huggingface.co/datasets/distrib134/ultimate_spam_detection_2&#34;&gt;Spam_DS&lt;/a&gt;&lt;/a&gt;&lt;/li&gt;
+          &lt;/ul&gt;
+        &lt;/li&gt;
+        &lt;li&gt;&lt;a href=&#34;#model&#34;&gt;Model:&lt;/a&gt;&lt;/li&gt;
+        &lt;li&gt;&lt;a href=&#34;#exploratory-data-analyst&#34;&gt;Exploratory Data Analyst:&lt;/a&gt;&lt;/li&gt;
+        &lt;li&gt;&lt;a href=&#34;#results&#34;&gt;Results:&lt;/a&gt;&lt;/li&gt;
+        &lt;li&gt;&lt;a href=&#34;#evaluation&#34;&gt;Evaluation:&lt;/a&gt;&lt;/li&gt;
+        &lt;li&gt;&lt;a href=&#34;#business-ideas&#34;&gt;Business Ideas:&lt;/a&gt;&lt;/li&gt;
+        &lt;li&gt;&lt;a href=&#34;#improvements-and-next-steps&#34;&gt;Improvements and Next Steps&lt;/a&gt;&lt;/li&gt;
+        &lt;li&gt;&lt;a href=&#34;#final-thoughts&#34;&gt;Final Thoughts&lt;/a&gt;&lt;/li&gt;
+      &lt;/ul&gt;
+    &lt;/li&gt;
+  &lt;/ul&gt;
+&lt;/nav&gt;
+&lt;/aside&gt;
+&lt;div class=&#34;toc-clear&#34;&gt;&lt;/div&gt;
+&lt;h2 id=&#34;introduction&#34;&gt;Introduction:&lt;/h2&gt;
+&lt;p&gt;This project first started out as me getting a phishing message on LinkedIn. I was annoyed that I got my hopes up, however brief, and realized that I could probably make some sort of model to evaluate if messages were sent with benevolent or malign intent. After doing a bit of research, testing and finally some coding I was able to get a model and app (check that out here “ (&lt;a href=&#34;https://gonephishing.streamlit.app&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;https://gonephishing.streamlit.app&lt;/a&gt;) ”).&lt;/p&gt;</description>
+    </item>
+    
+    
+  </channel>
+</rss>
