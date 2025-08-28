@@ -1,4 +1,12 @@
 {
+  "name": "txcwalker",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "build": "hugo",
+    "dev": "hugo server -D --ignoreCache",
+    "ci": "npm ci && hugo --minify"
+  },
   "comments": {
     "dependencies": {},
     "devDependencies": {
@@ -30,6 +38,9 @@
       "postcss-cli": "toha"
     }
   },
+  "dependencies": {
+    "@popperjs/core": "^2.11.8"
+  },
   "devDependencies": {
     "@fontsource/mulish": "4.5.13",
     "@fortawesome/fontawesome-free": "^6.7.2",
@@ -52,15 +63,10 @@
     "ityped": "^1.0.3",
     "katex": "^0.16.22",
     "mark.js": "^8.11.1",
-    "mermaid": "^11.10.1",
+    "mermaid": "^10.9.1",
     "plyr": "^3.8.3",
     "popper.js": "^1.16.1",
     "postcss": "^8.4.41",
     "postcss-cli": "^11.0.0"
-  },
-  "name": "txcwalker",
-  "version": "0.1.0",
-  "dependencies": {
-    "@popperjs/core": "^2.11.8"
   }
 }
