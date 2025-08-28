@@ -1,0 +1,14 @@
+# Hugo build artifacts
+public/
+resources/_gen/
+
+# Node
+node_modules/
+package-lock.json
+
+# OS/editor junk
+.DS_Store
+Thumbs.db
+
+# Hugo logs / caches (if you ever run hugo with caching flags)
+hugo_stats.json
