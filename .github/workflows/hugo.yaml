@@ -14,10 +14,6 @@ concurrency:
   group: "pages"
   cancel-in-progress: false
 
-defaults:
-  run:
-    shell: bash
-
 jobs:
   build:
     runs-on: ubuntu-latest
@@ -27,97 +23,49 @@ jobs:
       TZ: America/Chicago
 
     steps:
-      - name: Install Hugo CLI (extended)
-        run: |
-          wget -O ${{ runner.temp }}/hugo.deb https://github.com/gohugoio/hugo/releases/download/v${HUGO_VERSION}/hugo_extended_${HUGO_VERSION}_linux-amd64.deb
-          sudo dpkg -i ${{ runner.temp }}/hugo.deb
-
-      - name: Install Dart Sass
-        run: sudo snap install dart-sass
-
       - name: Checkout
         uses: actions/checkout@v4
         with:
           submodules: recursive
           fetch-depth: 0
 
-      - name: Setup Pages
-        id: pages
-        uses: actions/configure-pages@v5
-
       - name: Setup Node
         uses: actions/setup-node@v4
         with:
           node-version: '20'
+          cache: 'npm'
 
-      # Cache theme node_modules to speed builds
-      - name: Cache theme node_modules
-        id: cache-theme-npm
-        uses: actions/cache@v4
-        with:
-          path: themes/toha/node_modules
-          key: ${{ runner.os }}-toha-npm-${{ hashFiles('themes/toha/package-lock.json', 'themes/toha/package.json') }}
-          restore-keys: |
-            ${{ runner.os }}-toha-npm-
-
-      - name: Install NPM deps (themes/toha)
-        working-directory: themes/toha
+      - name: Install Node dependencies (root)
         run: |
           if [ -f package-lock.json ] || [ -f npm-shrinkwrap.json ]; then
             npm ci
           elif [ -f package.json ]; then
             npm install
           else
-            echo "No package.json in themes/toha; skipping theme-local NPM install."
+            echo "ERROR: No package.json at repo root." && exit 1
           fi
 
-      # Fallback: install Toha's required libs at repo root if the theme has no package.json
-      - name: Cache root node_modules
-        if: ${{ !(hashFiles('themes/toha/package.json') != '') }}
-        uses: actions/cache@v4
-        with:
-          path: node_modules
-          key: ${{ runner.os }}-root-npm-${{ hashFiles('package-lock.json', 'package.json') }}
-          restore-keys: |
-            ${{ runner.os }}-root-npm-
-
-      - name: Ensure Toha deps at repo root (fallback)
-        if: ${{ !(hashFiles('themes/toha/package.json') != '') }}
+      - name: Verify bootstrap SCSS exists
         run: |
-          if [ ! -f package.json ]; then
-            npm init -y >/dev/null 2>&1
-          fi
-          # Install the libs Toha imports in its JS/SCSS pipeline
-          npm install \
-            bootstrap @fortawesome/fontawesome-free feather-icons mermaid \
-            katex highlight.js plyr ityped imagesloaded fuse.js mark.js \
-            filterizr popper.js
+          test -f node_modules/bootstrap/scss/bootstrap.scss || (echo "Missing bootstrap SCSS" && ls -la node_modules/bootstrap || true && exit 1)
+
+      - name: Setup Pages
+        id: pages
+        uses: actions/configure-pages@v5
+
+      - name: Install Hugo (extended)
+        run: |
+          wget -O "$RUNNER_TEMP/hugo.deb" "https://github.com/gohugoio/hugo/releases/download/v${HUGO_VERSION}/hugo_extended_${HUGO_VERSION}_linux-amd64.deb"
+          sudo dpkg -i "$RUNNER_TEMP/hugo.deb"
 
       - name: Cache Restore (Hugo)
         id: cache-restore
         uses: actions/cache/restore@v4
         with:
           path: ${{ runner.temp }}/hugo_cache
-          key: hugo-${{ github.run_id }}
+          key: hugo-${{ hashFiles('**/*.scss', '**/*.js', '**/*.html', '**/*.md', 'config.*', 'hugo.*', 'package-lock.json', 'package.json') }}
           restore-keys: |
             hugo-
-        - name: Cache root node_modules
-          uses: actions/cache@v4
-          with:
-            path: node_modules
-            key: ${{ runner.os }}-root-npm-${{ hashFiles('package-lock.json', 'package.json') }}
-            restore-keys: |
-              ${{ runner.os }}-root-npm-
-
-        - name: Install NPM deps (root)
-          run: |
-            if [ -f package-lock.json ] || [ -f npm-shrinkwrap.json ]; then
-              npm ci
-            elif [ -f package.json ]; then
-              npm install
-            else
-              echo "No package.json at root; skipping NPM install." && exit 1
-            fi
 
       - name: Build with Hugo
         run: |
