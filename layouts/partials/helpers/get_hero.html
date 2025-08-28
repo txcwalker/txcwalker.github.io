@@ -1,0 +1,11 @@
+{{/* Project override: return the hero URL the theme should use */}}
+{{- $hero := "" -}}
+
+{{- with .Params.hero }}           {{ $hero = . }} {{ end -}}
+{{- if not $hero }}{{ with .Params.image }}        {{ $hero = . }} {{ end }}{{ end -}}
+
+{{- if not $hero }}{{ with .Resources.GetMatch "hero*" }}   {{ $hero = .RelPermalink }} {{ end }}{{ end -}}
+{{- if not $hero }}{{ with .Resources.GetMatch "cover*" }}  {{ $hero = .RelPermalink }} {{ end }}{{ end -}}
+{{- if not $hero }}{{ with .Resources.GetMatch "banner*" }} {{ $hero = .RelPermalink }} {{ end }}{{ end -}}
+
+{{- return $hero -}}

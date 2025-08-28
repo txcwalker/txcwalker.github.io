@@ -1,32 +1,52 @@
-{{ $jsonResource := getJSON "data/region_strength.json" }}
+{{/* Load from /data/region_strength.json */}}
+{{- $root := site.Data.region_strength -}}
 
-{{ if $jsonResource }}
-    {{ $data := index $jsonResource "Region_Strength" }}
+{{/* Normalize rows into a slice of maps */}}
+{{- $rows := slice -}}
+{{- if $root -}}
+  {{- if reflect.IsSlice $root -}}
+    {{- $rows = $root -}}
+  {{- else if and (isset $root "region_strength") (reflect.IsSlice $root.region_strength) -}}
+    {{- $rows = $root.region_strength -}}
+  {{- else if and (isset $root "Region_Strength") (reflect.IsSlice $root.Region_Strength) -}}
+    {{- $rows = $root.Region_Strength -}}
+  {{- else if reflect.IsMap $root -}}
+    {{/* Map-of-maps keyed by region name */}}
+    {{- range $k, $v := $root -}}
+      {{- if reflect.IsMap $v -}}
+        {{- $rows = $rows | append (merge (dict "Region" $k) $v) -}}
+      {{- end -}}
+    {{- end -}}
+  {{- end -}}
+{{- end -}}
 
-    <link rel="stylesheet" href="/css/table_style.css">
-
-    <table class="styled-table">
-        <thead>
-            <tr>
-                <th>Team_Region</th>
-                <th>Total_Region_Championships</th>
-                <th>Fragility_Score</th>
-                <th>Seed_Prediction</th>
-                <th>Region_Difficulty</th>  <!-- Manually ordered -->
-            </tr>
-        </thead>
-        <tbody>
-            {{ range $data }}
-                <tr>
-                    <td>{{ .Team_Region }}</td>
-                    <td>{{ printf "%.4f" .Total_Region_Championships }}</td>
-                    <td>{{ printf "%.4f" .Fragility_Score }}</td>
-                    <td>{{ printf "%.4f" .Seed_Prediction }}</td>
-                    <td>{{ printf "%.4f" .Region_Difficulty }}</td>
-                </tr>
-            {{ end }}
-        </tbody>
-    </table>
-{{ else }}
-    <p>Error: JSON file not found.</p>
-{{ end }}
+{{- if not (len $rows) -}}
+  <p><em>Error: data/region_strength.json missing or empty.</em></p>
+{{- else -}}
+<link rel="stylesheet" href="/css/table_style.css">
+<table class="styled-table">
+  <thead>
+    <tr>
+      <th>Region</th>
+      <th>Championship %</th>
+      <th>Fragility</th>
+      <th>Seed Prediction</th>
+    </tr>
+  </thead>
+  <tbody>
+    {{- range $rows -}}
+      {{/* Handle differing key names across files */}}
+      {{- $region := or (index . "Region") (index . "Team_Region") (index . "region") -}}
+      {{- $champ := or (index . "Championship") (index . "Total_Region_Championships") -}}
+      {{- $frag  := or (index . "Fragility") (index . "Fragility_Score") -}}
+      {{- $seed  := or (index . "SeedPrediction") (index . "Seed_Prediction") -}}
+      <tr>
+        <td>{{ $region }}</td>
+        <td>{{ $champ }}</td>
+        <td>{{ $frag }}</td>
+        <td>{{ $seed }}</td>
+      </tr>
+    {{- end -}}
+  </tbody>
+</table>
+{{- end -}}

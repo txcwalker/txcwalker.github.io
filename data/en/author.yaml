@@ -1,0 +1,21 @@
+name: Cam
+image: "images/avatar.svg"
+greeting: "Hi, I am "
+summary:
+  - Data Analyst & ML Practitioner
+  - Creative Problem Solver
+  - Avid Learner
+
+contactInfo:
+  email: "txcwalker@gmail.com"
+  github: txcwalker
+  linkedin: cameronjwalker9
+
+# Optional socials shown as icons
+socialLinks:
+  - name: GitHub
+    icon: "fab fa-github"
+    url: "https://github.com/txcwalker"
+  - name: LinkedIn
+    icon: "fab fa-linkedin"
+    url: "https://www.linkedin.com/in/cameronjwalker9/"

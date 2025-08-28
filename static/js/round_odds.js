@@ -1,47 +1,44 @@
-document.addEventListener("DOMContentLoaded", function () {
-    const teamSelect = document.getElementById("teamSelect");
-    const searchButton = document.getElementById("searchButton");
-    const table = document.getElementById("oddsTable");
-    const tableRows = document.querySelectorAll(".team-row");
-    let sortOrder = {}; // Track sorting order per column
+(function () {
+  function byId(id){ return document.getElementById(id); }
 
-    function filterTable() {
-        const selectedTeams = Array.from(teamSelect.selectedOptions).map(option => option.value);
+  const select = byId('teamSelect');
+  const btn    = byId('searchButton');
+  const table  = byId('oddsTable');
 
-        // Show table only if at least one team is selected
-        table.style.display = selectedTeams.length > 0 ? "" : "none";
+  if (!select || !btn || !table) return;
 
-        tableRows.forEach(row => {
-            if (selectedTeams.includes(row.dataset.team)) {
-                row.style.display = "";  // Show matching row
-            } else {
-                row.style.display = "none";  // Hide non-matching row
-            }
-        });
+  btn.addEventListener('click', () => {
+    const chosen = Array.from(select.selectedOptions).map(o => o.value);
+    const rows = document.querySelectorAll('#oddsTable .team-row');
+
+    if (chosen.length === 0) {
+      rows.forEach(r => r.style.display = 'none');
+      table.style.display = 'none';
+      return;
     }
 
-    function sortTable(columnIndex) {
-        let rowsArray = Array.from(table.querySelectorAll("tbody tr")).filter(row => row.style.display !== "none");
+    rows.forEach(r => {
+      const t = r.getAttribute('data-team');
+      r.style.display = chosen.includes(t) ? '' : 'none';
+    });
+    table.style.display = '';
+  });
 
-        let isAscending = sortOrder[columnIndex] !== "asc";
-        sortOrder[columnIndex] = isAscending ? "asc" : "desc";
-
-        rowsArray.sort((rowA, rowB) => {
-            let cellA = rowA.cells[columnIndex].innerText.trim();
-            let cellB = rowB.cells[columnIndex].innerText.trim();
-
-            let valueA = isNaN(cellA) ? cellA.toLowerCase() : Number(cellA);
-            let valueB = isNaN(cellB) ? cellB.toLowerCase() : Number(cellB);
-
-            return isAscending ? (valueA > valueB ? 1 : -1) : (valueA < valueB ? 1 : -1);
-        });
-
-        rowsArray.forEach(row => table.querySelector("tbody").appendChild(row));
-    }
-
-    // Event listener for button click
-    searchButton.addEventListener("click", filterTable);
-
-    // Make sortTable function globally accessible
-    window.sortTable = sortTable;
-});
+  // Simple sorter
+  window.sortTable = function(colIdx){
+    const tbody = table.tBodies[0];
+    const rows = Array.from(tbody.querySelectorAll('tr')).filter(r => r.style.display !== 'none');
+    const asc = !table.dataset.sortAsc || table.dataset.sortAsc === 'false';
+    rows.sort((a,b) => {
+      const ta = a.cells[colIdx].innerText.trim().replace(/[^\d.\-]/g,'');
+      const tb = b.cells[colIdx].innerText.trim().replace(/[^\d.\-]/g,'');
+      const na = ta === '' ? a.cells[colIdx].innerText : parseFloat(ta);
+      const nb = tb === '' ? b.cells[colIdx].innerText : parseFloat(tb);
+      if (na < nb) return asc ? -1 : 1;
+      if (na > nb) return asc ? 1 : -1;
+      return 0;
+    });
+    rows.forEach(r => tbody.appendChild(r));
+    table.dataset.sortAsc = asc ? 'true' : 'false';
+  };
+})();

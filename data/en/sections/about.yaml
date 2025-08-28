@@ -1,0 +1,37 @@
+section:
+  id: about
+  name: About
+  enable: true
+  weight: 10
+  showOnNavbar: true
+
+# Left side: text
+summary: |
+  My name is Cam and I am a data scientist. I like to find creative solutions to solve problems in my daily personal or professional life by analyzing data. My goal is to make tools to help people more effectively and efficiently utilize thier time.
+# Middle/right side: soft-skill circles (this replaces badges)
+softSkills:
+  - name: Leadership
+    percentage: 25        # 0–100
+    color: "#1abc9c"      # teal
+  - name: Teamwork
+    percentage: 50
+    color: "#f1c40f"      # amber
+  - name: Communication
+    percentage: 75
+    color: "#e74c3c"      # red
+
+# Social buttons shown under the summary (icons come from Font Awesome)
+socialLinks:
+  - name: Email
+    icon: "fas fa-envelope"
+    url: "txcwalker@gmail.com"
+  - name: GitHub
+    icon: "fab fa-github"
+    url: "https://github.com/txcwalker"
+  - name: LinkedIn
+    icon: "fab fa-linkedin"
+    url: "https://www.linkedin.com/in/cameronjwalker9"
+
+# A “My Resume” button
+resume: "/Cameron_Resume.pdf"
+

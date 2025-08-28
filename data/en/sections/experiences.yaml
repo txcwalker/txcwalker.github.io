@@ -1,0 +1,41 @@
+section:
+  id: experiences
+  name: Experiences
+  enable: true
+  weight: 30
+  showOnNavbar: true
+
+experiences:
+  - company:
+      name: Eckard Enterprises
+      url: "https://www.eckardenterprises.com"
+      logo: "images/company/eckard.jpg"   
+      location: Dallas, TX
+    positions:
+      - designation: Data Scientist
+        start: Jan 2025
+        end: Feb 2025
+        summary: >
+          Supported executive team with analytics backed research for real time decision making
+        responsibilities:
+          - Designed interactive dashboards to visualize investor profiles using SQL and Metabase
+          - Developed dynamic travel optimization maps using Python-Plotly to maximize investor engagement
+          - Created KPI metrics using Python to evaluate investor potential and priorities outreach 
+
+  - company:
+      name: Black Knight/Optimal Blue
+      url: "https://www2.optimalblue.com/"
+      logo: "images/company/optimalblue.jpg"   
+      location: Dallas, TX
+    positions:
+      - designation: Data Analyst
+        start: Sep 2019
+        end: June 2023
+        summary: >
+          Managed mortgage product database to ensure accurate and efficient product presentation 
+        responsibilities:
+          - • Digitized and structured hundreds of mortgage products, transforming written guidelines into a searchable database that improved accessibility and efficiency
+          - • Ensured accuracy and compliance by analyzing mortgage provider data daily, maintaining an industry-leading database
+          - • Coordinated cross team projects to ensure on time deployment of client deliverables
+          - • Designed and maintained Excel sheet which increased implementation efficiency by 46%
+          - • Maintained personal dashboard decreasing error rate by 80% and increasing time management efficiency by 22%

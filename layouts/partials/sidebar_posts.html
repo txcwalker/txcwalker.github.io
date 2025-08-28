@@ -1,0 +1,8 @@
+<aside class="sidebar-widget">
+  <h4>Posts</h4>
+  <ul>
+    {{ range first 20 ( where .Site.RegularPages "Section" "posts" | sort "Date" "desc" ) }}
+      <li><a href="{{ .RelPermalink }}">{{ .Title }}</a></li>
+    {{ end }}
+  </ul>
+</aside>

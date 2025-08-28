@@ -1,0 +1,60 @@
+section:
+  id: projects
+  name: Projects
+  enable: true
+  weight: 20
+  showOnNavbar: true
+
+# Filter chips under the "Projects" heading
+buttons:
+  - name: All
+    filter: all
+  - name: Sports
+    filter: Sports
+  - name: Machine Learning
+    filter: Machine Learning
+  - name: Python
+    filter: Python
+  - name: NLP
+    filter: NLP
+
+projects:
+  - name: March Madness Visualizations
+    role: Author
+    timeline: 2024–Present
+    url: /projects/marchmadness/
+    summary: Region strength table, seed display, and round-odds explorer with Plotly + Hugo shortcodes.
+    # filtering uses these:
+    categories: ["Sports", "Machine Learning", "Python"]
+    # visual badges on the card:
+    tags: ["Machine Learning", "Python", "Sports"]
+
+  - name: Yelp + Zillow Interactive Panels
+    role: Author
+    timeline: 2024–Present
+    url: /projects/YelpZillow/
+    summary: Analysis on Yelp, Zillow and their possible interactions.
+    categories: ["machine-learning", "python"]
+    tags: ["Python", "API", "Machine Learning", "Economics"]
+
+  - name: Phishing Detection
+    role: Author
+    timeline: 2024–Present
+    url: /projects/phishing_detection/
+    summary: |
+      A model to determine if random messages are sent with malicious intent.
+
+      <a href="https://gonephishing.streamlit.app/" target="_blank" rel="noopener" class="btn btn-primary">Launch App ↗</a>
+    categories: ["Python"]   # add "nlp" etc if you later add a matching button
+    tags: ["Hugging Face", "NLP", "Classification"]
+
+  - name: Databaseball
+    role: Author
+    timeline: 2024–Present
+    url: /projects/databaseball/
+    summary: |
+      A NLP-searchable database for standard to advanced baseball statistics.
+
+      <a href="https://databaseball.streamlit.app/" target="_blank" rel="noopener" class="btn btn-primary">Launch App ↗</a>
+    categories: ["Sports", "Python", "NLP"]
+    tags: ["SQL", "NLP", "Sports", "Python"]

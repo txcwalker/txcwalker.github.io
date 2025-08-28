@@ -1,49 +1,44 @@
-{{ $jsonResource := getJSON "data/round_odds.json" }}
+{{/* layouts/shortcodes/round_odds_table.html */}}
+{{ $root := site.Data.round_odds }}
+{{ $rows := cond (isset $root "round_odds") $root.round_odds $root }}
 
-{{ if $jsonResource }}
-    {{ $data := index $jsonResource "round_odds" }}
+{{- if not $rows -}}
+  <p><em>Error: data/round_odds.json missing or empty.</em></p>
+{{- else -}}
+<link rel="stylesheet" href="/css/table_style.css">
 
-    <link rel="stylesheet" href="/css/table_style.css">
+<label for="teamSelect">Select Teams:</label>
+<select id="teamSelect" multiple>
+  {{- range $rows -}}
+    <option value="{{ index . "Team" }}">{{ index . "Team" }}</option>
+  {{- end -}}
+</select>
+<button id="searchButton">Show Selected Teams</button>
 
-    <!-- Team Selection Dropdown -->
-    <label for="teamSelect">Select Teams:</label>
-    <select id="teamSelect" multiple>
-        {{ range $data }}
-            <option value="{{ .Team }}">{{ .Team }}</option>
-        {{ end }}
-    </select>
+<div class="table-container">
+  <table class="styled-table" id="oddsTable" style="display:none;">
+    <thead>
+      <tr>
+        <th onclick="sortTable(0)">Team</th>
+        <th onclick="sortTable(1)">Sweet Sixteen Odds</th>
+        <th onclick="sortTable(2)">Elite Eight Odds</th>
+        <th onclick="sortTable(3)">Final Four Odds</th>
+        <th onclick="sortTable(4)">Championship Odds</th>
+      </tr>
+    </thead>
+    <tbody>
+      {{- range $rows -}}
+        <tr class="team-row" data-team="{{ index . "Team" }}" style="display:none;">
+          <td>{{ index . "Team" }}</td>
+          <td>{{ index . "Sweet_Sixteen_Odds" }}</td>
+          <td>{{ index . "Elite_Eight_Odds" }}</td>
+          <td>{{ index . "Final_Four_Odds" }}</td>
+          <td>{{ index . "Championship_Odds" }}</td>
+        </tr>
+      {{- end -}}
+    </tbody>
+  </table>
+</div>
 
-    <!-- Button to trigger search -->
-    <button id="searchButton">Show Selected Teams</button>
-
-    <!-- Scrollable Table Container -->
-    <div class="table-container">
-        <table class="styled-table" id="oddsTable" style="display: none;">
-            <thead>
-                <tr>
-                    <th onclick="sortTable(0)">Team</th>
-                    <th onclick="sortTable(1)">Sweet Sixteen Odds</th>
-                    <th onclick="sortTable(2)">Elite Eight Odds</th>
-                    <th onclick="sortTable(3)">Final Four Odds</th>
-                    <th onclick="sortTable(4)">Championship Odds</th>
-                </tr>
-            </thead>
-            <tbody>
-                {{ range $data }}
-                    <tr class="team-row" data-team="{{ .Team }}" style="display: none;">
-                        <td>{{ .Team }}</td>
-                        <td>{{ .Sweet_Sixteen_Odds }}</td>
-                        <td>{{ .Elite_Eight_Odds }}</td>
-                        <td>{{ .Final_Four_Odds }}</td>
-                        <td>{{ .Championship_Odds }}</td>
-                    </tr>
-                {{ end }}
-            </tbody>
-        </table>
-    </div>
-
-    <!-- Include JavaScript -->
-    <script src="/js/round_odds.js"></script>
-{{ else }}
-    <p>Error: JSON file not found.</p>
-{{ end }}
+<script src="/js/round_odds.js"></script>
+{{- end -}}
