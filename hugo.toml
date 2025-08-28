@@ -1,5 +1,48 @@
 baseURL = "https://txcwalker.github.io"
-languageCode = "en-us"
 title = "Cam's Portfolio"
-theme = "ananke"
+theme = "toha"
 
+languageCode = "en"
+defaultContentLanguage = "en"
+defaultContentLanguageInSubdir = false
+
+disableKinds = ["taxonomy", "term"]
+
+[params]
+  customCSS = ["css/custom.css"]
+
+  [params.projects]
+    hideDetails = true
+
+  [params.sidebar]
+    sectionMenu = true
+
+  [params.features.readingTime]
+    enable = true
+
+  # ✅ This is what makes the "Posts" button appear in the navbar
+  [params.features]
+    [params.features.blog]
+      enable = true
+      title  = "Posts"   # label shown in the navbar
+
+[frontmatter]
+  date    = ["date", "publishDate", ":default"]
+  # lastmod = ["lastmod"]  # only use explicit lastmod in front matter
+
+[languages]
+  [languages.en]
+    languageName = "English"
+    weight = 1
+
+# (No [languages.en.menu] block needed)
+
+[markup]
+  [markup.goldmark]
+    [markup.goldmark.renderer]
+      unsafe = true
+
+    [markup.tableOfContents]
+    startLevel = 1   # use 1 if you want the H1 included too
+    endLevel   = 4
+    ordered    = false
