@@ -1,132 +1,294 @@
 <!DOCTYPE html>
-<html lang="en-us">
+<html lang="en">
   <head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-    
-    <title>Yelp and Zillow Housing Price Index | Cam&#39;s Portfolio</title>
-    <meta name="viewport" content="width=device-width,minimum-scale=1">
-    <meta name="description" content="Zillow Analysis Housing Price Prediction This analysis was motivated by the following question: Can the collected data from Yelp be used to approximate the average housing price of a zip code?
-Data was collected from Yelp using its API and a model was created to try and predict the average cost of a house by zip code. If the model shows promise, it can be used to help predict future changes in housing price as the average price/rating/review count of a zip code&rsquo;s restaurants increase or decrease.">
-    <meta name="generator" content="Hugo 0.125.6">
-    
-    
-    
-    
-      <meta name="robots" content="noindex, nofollow">
-    
-    
+    <title>Yelp and Zillow Housing Price Index</title>
+    <meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<meta http-equiv="X-UA-Compatible" content="ie=edge" />
 
-    
-<link rel="stylesheet" href="/ananke/css/main.min.css" >
+<link rel="stylesheet" href="/application.f6b26f00359f69d139362842b17c7dfc9ca8494f7098b1bd91f77cba6bc8b679.css" integrity="sha256-9rJvADWfadE5NihCsXx9/JyoSU9wmLG9kfd8umvItnk=" />
 
 
 
-    
+
+
+
+
+
+
+
+
+
+
+
+<meta property="og:title" content="Cam&#39;s Portfolio"/>
+<meta property="og:type" content="website"/>
+<meta property="og:description" content=""/>
+<meta property="og:image" content="/images/avatar.svg">
+<meta property="og:url" content="http://localhost:1313/">
 
     
-      
+<meta name="description" content="Yelp and Zillow Housing Price Index" />
+
+
 
     
 
+
+
+
+
+    <script integrity="sha256-6N/HdTRW44DtfcdqA1u42Z4XgmL1dEmNmLPaA2sgp1o=">
+     let theme = localStorage.getItem('theme-scheme') || localStorage.getItem('darkmode:color-scheme') || 'light'
+if (theme === 'system') {
+  if (window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches) {
+    theme = 'dark'
+  } else {
+    theme = 'light'
+  }
+}
+document.documentElement.setAttribute('data-theme', theme)
+
+    </script>
     
-
-    
-      <link rel="canonical" href="http://localhost:1313/posts/yelpandzillow/">
-    
-
-    <meta property="og:url" content="http://localhost:1313/posts/yelpandzillow/">
-  <meta property="og:site_name" content="Cam&#39;s Portfolio">
-  <meta property="og:title" content="Yelp and Zillow Housing Price Index">
-  <meta property="og:description" content="Zillow Analysis Housing Price Prediction This analysis was motivated by the following question: Can the collected data from Yelp be used to approximate the average housing price of a zip code?
-Data was collected from Yelp using its API and a model was created to try and predict the average cost of a house by zip code. If the model shows promise, it can be used to help predict future changes in housing price as the average price/rating/review count of a zip code’s restaurants increase or decrease.">
-  <meta property="og:locale" content="en-us">
-  <meta property="og:type" content="article">
-    <meta property="article:section" content="posts">
-    <meta property="article:published_time" content="2024-07-29T01:52:23-05:00">
-    <meta property="article:modified_time" content="2024-07-29T01:52:23-05:00">
-
-  <meta itemprop="name" content="Yelp and Zillow Housing Price Index">
-  <meta itemprop="description" content="Zillow Analysis Housing Price Prediction This analysis was motivated by the following question: Can the collected data from Yelp be used to approximate the average housing price of a zip code?
-Data was collected from Yelp using its API and a model was created to try and predict the average cost of a house by zip code. If the model shows promise, it can be used to help predict future changes in housing price as the average price/rating/review count of a zip code&rsquo;s restaurants increase or decrease.">
-  <meta itemprop="datePublished" content="2024-07-29T01:52:23-05:00">
-  <meta itemprop="dateModified" content="2024-07-29T01:52:23-05:00">
-  <meta itemprop="wordCount" content="2337"><meta name="twitter:card" content="summary"><meta name="twitter:title" content="Yelp and Zillow Housing Price Index">
-<meta name="twitter:description" content="Zillow Analysis Housing Price Prediction This analysis was motivated by the following question: Can the collected data from Yelp be used to approximate the average housing price of a zip code?
-Data was collected from Yelp using its API and a model was created to try and predict the average cost of a house by zip code. If the model shows promise, it can be used to help predict future changes in housing price as the average price/rating/review count of a zip code&rsquo;s restaurants increase or decrease.">
-
-	
   </head>
 
-  <body class="ma0 avenir bg-near-white">
-
+  <body class="type-posts kind-page" data-bs-spy="scroll" data-bs-target="#TableOfContents" data-bs-offset="80">
+    <div class="container-fluid bg-secondary wrapper">
+      
+      
     
-   
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
   
 
-  <header>
-    <div class="bg-black">
-      <nav class="pv3 ph3 ph4-ns" role="navigation">
-  <div class="flex-l justify-between items-center center">
-    <a href="/" class="f3 fw2 hover-white no-underline white-90 dib">
-      
-        Cam&#39;s Portfolio
-      
-    </a>
-    <div class="flex-l items-center">
-      
 
-      
-      
-<div class="ananke-socials">
+
+
   
-</div>
 
+
+<nav class="navbar navbar-expand-xl top-navbar shadow " id="top-navbar">
+  <div class="container">
+    
+    <button class="navbar-toggler navbar-light" id="sidebar-toggler" type="button">
+      <i data-feather="sidebar"></i>
+    </button>
+    
+    <a class="navbar-brand" href="/">
+      Cam&#39;s Portfolio</a>
+    <button
+      class="navbar-toggler navbar-light"
+      id="navbar-toggler"
+      type="button"
+      data-bs-toggle="collapse"
+      data-bs-target="#top-nav-items"
+      aria-label="menu"
+    >
+      <i data-feather="menu"></i>
+    </button>
+
+    <div class="collapse navbar-collapse dynamic-navbar" id="top-nav-items">
+      <ul class="nav navbar-nav ms-auto">
+        <li class="nav-item">
+          <a class="nav-link" href="/#home">Home</a>
+        </li>
+        
+          
+          
+            
+              
+              
+                <li class="nav-item">
+                  <a class="nav-link" href="/#about">About</a>
+                </li>
+              
+            
+            
+              
+              
+                <li class="nav-item">
+                  <a class="nav-link" href="/#projects">Projects</a>
+                </li>
+              
+            
+            
+              
+              
+                <li class="nav-item">
+                  <a class="nav-link" href="/#experiences">Experiences</a>
+                </li>
+              
+            
+            
+              
+              
+                <li class="nav-item">
+                  <a class="nav-link" href="/#education">Education</a>
+                </li>
+              
+            
+            
+              
+              
+            
+            
+              
+              
+            
+            
+              
+              
+            
+          
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">More</a>
+            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                
+                
+                  
+                    
+                    
+                  
+                  
+                    
+                    
+                  
+                  
+                    
+                    
+                  
+                  
+                    
+                    
+                  
+                  
+                    
+                    
+                      <a class="dropdown-item" href="/#skills">Skills</a>
+                    
+                  
+                  
+                    
+                    
+                      <a class="dropdown-item" href="/#featured-posts">Featured Posts</a>
+                    
+                  
+                  
+                    
+                    
+                      <a class="dropdown-item" href="/#recent-posts">Recent Posts</a>
+                    
+                  
+              </div>
+            </li>
+          
+        
+        
+          <div id="top-navbar-divider"></div>
+        
+        
+          <li class="nav-item">
+            <a class="nav-link" id="blog-link" href="/posts">Posts</a>
+          </li>
+        
+        
+        
+        
+        
+      </ul>
     </div>
   </div>
+  
+  
+  
+  
 </nav>
 
+
+
+      
+      
+  <section class="sidebar-section" id="sidebar-section">
+    <div class="sidebar-holder">
+      <div class="sidebar" id="sidebar">
+        <form class="mx-auto" method="get" action="/search">
+          <input type="text" name="keyword" value="" placeholder="Search" data-search="" id="search-box" />
+        </form>
+        <div class="sidebar-tree">
+          <ul class="tree" id="tree">
+            <li id="list-heading"><a href="/posts/" data-filter="all">Posts</a></li>
+            <div class="subtree">
+                
+
+            </div>
+          </ul>
+        </div>
+      </div>
     </div>
-  </header>
+  </section>
 
-
-
-    <main class="pb7" role="main">
-      
-  
-  <article class="flex-l flex-wrap justify-between mw8 center ph3">
-    <header class="mt4 w-100">
-      <aside class="instapaper_ignoref b helvetica tracked ttu">
-          
-        Posts
-      </aside>
-      
-
-
-
-
-
-
-
-
-
-
-  <div id="sharing" class="mt3 ananke-socials">
-    
-  </div>
-
-
-      <h1 class="f1 athelas mt3 mb1">Yelp and Zillow Housing Price Index</h1>
-      
-      
-      
-      <time class="f6 mv4 dib tracked" datetime="2024-07-29T01:52:23-05:00">July 29, 2024</time>
-      
 
       
       
-    </header>
-    <div class="nested-copy-line-height lh-copy serif f4 nested-links mid-gray pr4-l w-two-thirds-l"><h1 id="zillow-analysis">Zillow Analysis</h1>
+<section class="content-section" id="content-section">
+  <div class="content">
+    <div class="container p-0 read-area">
+      
+      <div class="hero-area col-sm-12" id="hero-area" style='background-image: url(/images/posts/downtownchicago.jpg);'>
+      </div>
+
+      
+      <div class="page-content">
+        
+        <div class="author-profile ms-auto align-self-lg-center">
+          <img class="rounded-circle" src='/images/avatar.svg' alt="Author Image">
+          <h5 class="author-name">Cam</h5>
+          <p class="text-muted">Monday, July 29, 2024</p>
+        </div>
+        
+
+        <div class="title">
+          <h1>Yelp and Zillow Housing Price Index</h1>
+        </div>
+
+        
+
+        
+        <div class="post-content" id="post-content">
+          <h1 id="zillow-analysis">Zillow Analysis</h1>
 <h2 id="housing-price-prediction">Housing Price Prediction</h2>
 <p>This analysis was motivated by the following question: Can the collected data from Yelp be used to approximate the average housing price of a zip code?</p>
 <p>Data was collected from Yelp using its API and a model was created to try and predict the average cost of a house by zip code. If the model shows promise, it can be used to help predict future changes in housing price as the average price/rating/review count of a zip code&rsquo;s restaurants increase or decrease. This could help with improving city logistics, ease gentrification, provide investing opportunities, and much more. The core idea is popular restaurants could be a proxy variable representing an increase in interest in a particular area and thus an increase in the average price of housing.</p>
@@ -178,80 +340,11 @@ Data was collected from Yelp using its API and a model was created to try and pr
 <p>Since the model loses accuracy as the price of houses increases, it significantly hinders its ability to predict increasing housing prices based on Yelp activity (recall that is the end goal). This is reinforced by the seemingly hard cap at around $1.75MM. By placing lines at y and x = 750K, the graph looks like the following:</p>
 <p><img src="/images/Housing_Price/True_vs_Prediction_YelpZillow_HousingPrice_GreenLines.png" alt="True vs Prediction with Green Lines"></p>
 <p>The table below details the number of points in each of the quadrants in the above graph.</p>
-<head>
-  <link rel="stylesheet" href="/css/table_style.css">
-</head>
 
 
 
 
-
-  
-    <h2>Quadrants</h2>
-    <div class="table-container">
-      <table class="styled-table">
-        <thead>
-          <tr>
-            
-              
-               
-                 
-                  <th class="capitalize">Number of Points</th> 
-                 
-                  <th class="capitalize">Percentage</th> 
-                 
-                  <th class="capitalize">Quadrant</th> 
-                
-              
-            
-          </tr>
-        </thead>
-        <tbody>
-          
-            <tr   >
-              
-                <td>380</td>
-              
-                <td>76%</td>
-              
-                <td>Bottom Left</td>
-              
-            </tr>
-          
-            <tr   >
-              
-                <td>23</td>
-              
-                <td>4.6%</td>
-              
-                <td>Bottom Right</td>
-              
-            </tr>
-          
-            <tr   >
-              
-                <td>36</td>
-              
-                <td>7.2%</td>
-              
-                <td>Top Left</td>
-              
-            </tr>
-          
-            <tr   >
-              
-                <td>61</td>
-              
-                <td>12.2%</td>
-              
-                <td>Top Right</td>
-              
-            </tr>
-          
-        </tbody>
-      </table>
-    </div>
-  
+  <p><em>Data file not found: data/search_score_tables.json</em></p>
 
 
 <p>This is another encouraging sign. If the model can be better trained for more expensive houses, then potentially it can have applications.</p>
@@ -264,60 +357,310 @@ Data was collected from Yelp using its API and a model was created to try and pr
 <p>A bit surprising, challenging the initial thought process behind the idea that spurred this analysis, is that restaurant rating looks to be essentially useless in the model evaluation of relative importance. This could be due to the serious loss of information from the rounding when the data was received via the Yelp API. Even though these are averages and medians on a 1-5 scale, the small differences can make a big difference. In the downloaded data, 4.3 is viewed the same as 4.7, and there is a massive difference between 4.7 and 4.8 (4.5 vs 5.0). Orit might be too random to help with the prediction.</p>
 <p>Here are three graphs to show the biggest misses, closest predictions, and the final one shows all of the data plotted on a map of the United States. The top map is all of the residuals plotted at the average coordinates of its zip code. The size and color scale with the size of the difference. The color scale is pictured on the right, and as the circles get bigger, so does the size of the miss. Size scale is based on the absolute value, so negative values are not the smallest.</p>
 <h2 id="residuals-plot">Residuals Plot</h2>
-<div id="residuals-plot" class="plotly-map-container"></div>
 <link rel="stylesheet" href="/css/table_style.css">
 <script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
+
+<div id="residuals-plot" class="plotly-map-container"></div>
+<div id="least-accurate-plot" class="plotly-map-container" style="margin-top:1rem;"></div>
+<div id="most-accurate-plot" class="plotly-map-container" style="margin-top:1rem;"></div>
+
 <script src="/js/yelpzillow.js"></script>
 
 <p>The second map shows the least accurate predictions from the model. These are the biggest circles from the map just above. The size scaling is less important on these since they are the worst predictions. This is just an easy way to visualize the worst of the worst.</p>
 <h2 id="least-accurate-residuals">Least Accurate Residuals</h2>
-<div id="least-accurate-plot" class="plotly-map-container"></div>
 <link rel="stylesheet" href="/css/table_style.css">
 <script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
+
+<div id="residuals-plot" class="plotly-map-container"></div>
+<div id="least-accurate-plot" class="plotly-map-container" style="margin-top:1rem;"></div>
+<div id="most-accurate-plot" class="plotly-map-container" style="margin-top:1rem;"></div>
+
 <script src="/js/yelpzillow.js"></script>
 
 <p>The final map shows the most accurate predictions from the model. These are the smallest circles from the first map. Again, as with the least accurate map, the size and scaling are all relative and not as important. This is just an easy way to visualize the best of the best.</p>
 <h2 id="most-accurate-predictions">Most Accurate Predictions</h2>
-<div id="most-accurate-plot" class="plotly-map-container"></div>
 <link rel="stylesheet" href="/css/table_style.css">
 <script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
+
+<div id="residuals-plot" class="plotly-map-container"></div>
+<div id="least-accurate-plot" class="plotly-map-container" style="margin-top:1rem;"></div>
+<div id="most-accurate-plot" class="plotly-map-container" style="margin-top:1rem;"></div>
+
 <script src="/js/yelpzillow.js"></script>
 
 <h2 id="conclusions">Conclusions</h2>
 <p>There is some promise to this model. It definitely is not perfect due to the combination of skewed data and the overall lack of data. It is unclear how much of the total Yelp data is included in the data set, but it is surely less than 10% and probably significantly less than that. Only 2000 of the 41,000 US zip codes are included. So, there is room for significant improvement in this department. Unfortunately, it is easy to identify this problem but not so easy to rectify.</p>
 <p>A 52% R<sup>2</sup> is not bad on its own, and with all of the learnings from this process, it is encouraging for the next steps that can be taken with a more complete version of the data set. Of course, it can be improved, and the change in these variables can be monitored month to month to help predict a change in housing price. This data has plenty of use cases, many of which have not been conceived.</p>
 <p>The biggest roadblock to the model is its performance for the more expensive housing prices. Obviously, more data would help, but based on its sporadic performance when the price was greater than 750K, there need to be more adjustments to help this part of the model. The data might respond better to a different type of analysis, or maybe just the housing prices greater than 750K (or some other value) should be evaluated by a different model (sort of like a piecewise function). The analysis has shown that this is an idea worth pursuing, even if the initial thought behind using the Yelp data seems to be irrelevant.</p>
-<ul class="pa0">
+
+        </div>
+
+        
+        <div class="row ps-3 pe-3">
+        
+          <div class="col-md-6 share-buttons">
+          
+          </div>
+
+        
+        
+        </div>
+
+
+
+      
+      <hr />
+        
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="row next-prev-navigator">
   
-</ul>
-<div class="mt6 instapaper_ignoref">
+  
+</div>
+
+      <hr />
+
       
       
+
+      
+      
+
       </div>
     </div>
-
-    <aside class="w-30-l mt6-l">
-
-
-
-
-</aside>
-
-  </article>
-
-    </main>
-    <footer class="bg-black bottom-0 w-100 pa3" role="contentinfo">
-  <div class="flex justify-between">
-  <a class="f4 fw4 hover-white no-underline white-70 dn dib-ns pv2 ph3" href="http://localhost:1313/" >
-    &copy;  Cam's Portfolio 2025 
-  </a>
-    <div>
-<div class="ananke-socials">
-  
-</div>
-</div>
   </div>
-</footer>
+  
+  <a id="scroll-to-top" class="btn" type="button" data-bs-toggle="tooltip" data-bs-placement="left" title="Scroll to top">
+    <i class="fas fa-chevron-circle-up"></i>
+  </a>
+</section>
 
-  </body>
+
+      
+      
+  <section class="toc-section" id="toc-section">
+    
+  </section>
+
+    </div>
+
+    
+    
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+    
+  
+
+  
+  
+    
+  
+
+  
+  
+
+  
+  
+
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+    
+  
+  
+
+  
+  
+  
+
+  <footer id="footer" class="container-fluid text-center align-content-center footer pb-2">
+    <div class="container pt-5">
+      <div class="row text-start">
+        
+        <div class="col-md-4 col-sm-12">
+          <h5>Navigation</h5>
+          
+          <ul>
+              
+                
+                
+                  
+                
+                <li class="nav-item">
+                  <a class="smooth-scroll" href="http://localhost:1313/#about">About</a>
+                </li>
+              
+              
+                
+                
+                  
+                
+                <li class="nav-item">
+                  <a class="smooth-scroll" href="http://localhost:1313/#projects">Projects</a>
+                </li>
+              
+              
+                
+                
+                  
+                
+                <li class="nav-item">
+                  <a class="smooth-scroll" href="http://localhost:1313/#experiences">Experiences</a>
+                </li>
+              
+              
+                
+                
+                  
+                
+                <li class="nav-item">
+                  <a class="smooth-scroll" href="http://localhost:1313/#education">Education</a>
+                </li>
+              
+              
+                
+                
+                  
+                
+                <li class="nav-item">
+                  <a class="smooth-scroll" href="http://localhost:1313/#skills">Skills</a>
+                </li>
+              
+              
+                
+                
+                  
+                
+                <li class="nav-item">
+                  <a class="smooth-scroll" href="http://localhost:1313/#featured-posts">Featured Posts</a>
+                </li>
+              
+              
+                
+                
+                  
+                
+                <li class="nav-item">
+                  <a class="smooth-scroll" href="http://localhost:1313/#recent-posts">Recent Posts</a>
+                </li>
+              
+            
+              
+            
+          </ul>
+          
+        </div>
+        
+        
+        <div class="col-md-4 col-sm-12">
+          <h5>Contact me:</h5>
+          <ul>
+            
+              
+                <li><a href=mailto:txcwalker@gmail.com target="_blank" rel="noopener">
+                  <span><i class="fas fa-envelope"></i></span> <span>txcwalker@gmail.com</span>
+                </a></li>
+              
+            
+              
+                <li><a href=https://github.com/txcwalker target="_blank" rel="noopener">
+                  <span><i class="fab fa-github"></i></span> <span>txcwalker</span>
+                </a></li>
+              
+            
+              
+                <li><a href=https://www.linkedin.com/in/cameronjwalker9 target="_blank" rel="noopener">
+                  <span><i class="fab fa-linkedin"></i></span> <span>Cam</span>
+                </a></li>
+              
+            
+          </ul>
+        </div>
+        
+        
+        
+          
+          <div class="col-md-4 col-sm-12">
+            <p>Stay up to date with email notification</p>
+            
+              <form method='post' action='https://blogtrottr.com'>
+              <div class="form-group">
+              <input type='email' class="form-control" name='btr_email' placeholder="Enter email"/><br />
+              <input type='hidden' name='btr_url' value='http://localhost:1313//index.xml' />
+              <input type='hidden' name='schedule_type' value='1' />
+              <small id="emailHelp" class="form-text text-muted">By entering your email address, you agree to receive the newsletter of this website.</small>
+              <button type="submit" class="btn btn-info"> Submit </button>
+              </div>
+              </form>
+            
+          </div>
+        
+      </div>
+    </div>
+    
+    
+    <hr />
+    <div class="container">
+      <div class="row text-start">
+        <div class="col-md-4">
+          <a id="theme" href="https://github.com/hugo-toha/toha" target="_blank" rel="noopener">
+            <img src="/images/theme-logo_hu_b3360284c55cf72d.png" alt="Toha Theme Logo">
+            Toha
+          </a>
+        </div>
+        <div class="col-md-4 text-center">© 2025 Copyright.</div>
+        <div class="col-md-4 text-end">
+          <a id="hugo" href="https://gohugo.io/" target="_blank" rel="noopener">Powered by
+          <img
+            src="/images/hugo-logo.svg"
+            alt="Hugo Logo"
+            height="18"
+          />
+          </a>
+        </div>
+      </div>
+    </div>
+    
+  </footer>
+
+
+    <script src="/application.be6b58a68d356942b1c8671725f33caec062d249fb3d71e2f2b59287d135ebac.js" integrity="sha256-vmtYpo01aUKxyGcXJfM8rsBi0kn7PXHi8rWSh9E166w=" defer></script>
+
+
+    
+     
+
+    
+</body>
 </html>

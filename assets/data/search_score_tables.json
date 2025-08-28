@@ -1,0 +1,58 @@
+{
+  "Natural Log Scaling": [
+    {"x": 1, "ln(x)": 0},
+    {"x": 10, "ln(x)": 2.302585},
+    {"x": 100, "ln(x)": 4.605170},
+    {"x": 1000, "ln(x)": 6.907755}
+  ],
+  
+  "Exponential Scaling": [
+    {"x": 1, "x2": 1},
+    {"x": 1.5, "x2": 2.25},
+    {"x": 2, "x2": 4},
+    {"x": 2.5, "x2": 6.25},
+    {"x": 3, "x2": 9},
+    {"x": 3.5, "x2": 12.25},
+    {"x": 4, "x2": 16},
+    {"x": 4.5, "x2": 20.25},
+    {"x": 5, "x2": 25}
+  ],
+  
+ "Quadrants" : [
+  {"Quadrant": "Bottom Left", "Number of Points": 380, "Percentage": "76%"},
+  {"Quadrant": "Bottom Right", "Number of Points": 23, "Percentage": "4.6%"},
+  {"Quadrant": "Top Left", "Number of Points": 36, "Percentage": "7.2%"},
+  {"Quadrant": "Top Right", "Number of Points": 61, "Percentage": "12.2%"}
+],
+
+  "Example": [
+    {"Zip Code": "90013", "City": "Downtown LA", "Top Ten Percentage": "10%"}
+  ],
+
+  "Yelp Search": [
+    {"Restaurant": "Kaminari Gyoza Bar", "Rating": 4.8, "Reviews": 123, "Score": 110.87},
+    {"Restaurant": "Marugame Monzo", "Rating": 4.4, "Reviews": 4700, "Score": 163.69},
+    {"Restaurant": "Tsuujita Artisan Noodle - Arts District", "Rating": 4.5, "Reviews": 12, "Score": 50.32},
+    {"Restaurant": "Rice and Nori", "Rating": 4.4, "Reviews": 751, "Score": 128.19},
+    {"Restaurant": "Spitz - Little Tokyo", "Rating": 4.0, "Reviews": 1800, "Score": 119.93},
+    {"Restaurant": "Pi LA", "Rating": 4.7, "Reviews": 124, "Score": 106.48},
+    {"Restaurant": "Suehiro DTLA", "Rating": 4.8, "Reviews": 60, "Score": 94.33},
+    {"Restaurant": "Tokyo Haus", "Rating": 4.4, "Reviews": 13, "Score": 49.66},
+    {"Restaurant": "Wurstkuche", "Rating": 4.2, "Reviews": 9000, "Score": 160.61},
+    {"Restaurant": "Pasta e Pasta by Allegro", "Rating": 4.4, "Reviews": 1400, "Score": 140.25}
+  ],
+
+  "Model Search": [
+    {"Name": "Maccheroni Republic", "Rating": 4.5, "Reviews": 4027, "Score": 168.09},
+    {"Name": "KazuNori DTLA", "Rating": 4.5, "Reviews": 3427, "Score": 164.82},
+    {"Name": "Bavel", "Rating": 4.5, "Reviews": 2451, "Score": 158.04},
+    {"Name": "Guisados DTLA", "Rating": 4.5, "Reviews": 2115, "Score": 155.05},
+    {"Name": "Girl and The Goat - Los Angeles", "Rating": 4.5, "Reviews": 1685, "Score": 150.45},
+    {"Name": "Perch", "Rating": 4.0, "Reviews": 10234, "Score": 147.73},
+    {"Name": "Wurstkuche", "Rating": 4.0, "Reviews": 9025, "Score": 145.72},
+    {"Name": "Eggslut", "Rating": 4.0, "Reviews": 6429, "Score": 140.30},
+    {"Name": "Prince Street Pizza", "Rating": 4.5, "Reviews": 804, "Score": 135.46},
+    {"Name": "Yunomi Handroll", "Rating": 4.5, "Reviews": 536, "Score": 127.25}
+  ]
+}
+

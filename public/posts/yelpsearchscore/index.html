@@ -1,128 +1,294 @@
 <!DOCTYPE html>
-<html lang="en-us">
+<html lang="en">
   <head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-    
-    <title>Yelp Search Score | Cam&#39;s Portfolio</title>
-    <meta name="viewport" content="width=device-width,minimum-scale=1">
-    <meta name="description" content="Search Score After using Yelp to find the best restaurants ‘near me’ for more than a decade, I have seen a decline in the accuracy and validity of their search algorithm. Too often the search results seemed random and incomplete. So after years of confusion, I finally decided to try and take a look under the hood. See if I could understand their search algorithm and results. Then finally take a stab at my own search algorithm and see how closely my results compare to Yelp&rsquo;s.">
-    <meta name="generator" content="Hugo 0.125.6">
-    
-    
-    
-    
-      <meta name="robots" content="noindex, nofollow">
-    
-    
+    <title>Yelp Search Score</title>
+    <meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<meta http-equiv="X-UA-Compatible" content="ie=edge" />
 
-    
-<link rel="stylesheet" href="/ananke/css/main.min.css" >
+<link rel="stylesheet" href="/application.f6b26f00359f69d139362842b17c7dfc9ca8494f7098b1bd91f77cba6bc8b679.css" integrity="sha256-9rJvADWfadE5NihCsXx9/JyoSU9wmLG9kfd8umvItnk=" />
 
 
 
-    
+
+
+
+
+
+
+
+
+
+
+
+<meta property="og:title" content="Cam&#39;s Portfolio"/>
+<meta property="og:type" content="website"/>
+<meta property="og:description" content=""/>
+<meta property="og:image" content="/images/avatar.svg">
+<meta property="og:url" content="http://localhost:1313/">
 
     
-      
+<meta name="description" content="Yelp Search Score" />
+
+
 
     
 
+
+
+
+
+    <script integrity="sha256-6N/HdTRW44DtfcdqA1u42Z4XgmL1dEmNmLPaA2sgp1o=">
+     let theme = localStorage.getItem('theme-scheme') || localStorage.getItem('darkmode:color-scheme') || 'light'
+if (theme === 'system') {
+  if (window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches) {
+    theme = 'dark'
+  } else {
+    theme = 'light'
+  }
+}
+document.documentElement.setAttribute('data-theme', theme)
+
+    </script>
     
-
-    
-      <link rel="canonical" href="http://localhost:1313/posts/yelpsearchscore/">
-    
-
-    <meta property="og:url" content="http://localhost:1313/posts/yelpsearchscore/">
-  <meta property="og:site_name" content="Cam&#39;s Portfolio">
-  <meta property="og:title" content="Yelp Search Score">
-  <meta property="og:description" content="Search Score After using Yelp to find the best restaurants ‘near me’ for more than a decade, I have seen a decline in the accuracy and validity of their search algorithm. Too often the search results seemed random and incomplete. So after years of confusion, I finally decided to try and take a look under the hood. See if I could understand their search algorithm and results. Then finally take a stab at my own search algorithm and see how closely my results compare to Yelp’s.">
-  <meta property="og:locale" content="en-us">
-  <meta property="og:type" content="article">
-    <meta property="article:section" content="posts">
-    <meta property="article:published_time" content="2024-07-29T01:52:23-05:00">
-    <meta property="article:modified_time" content="2024-07-29T01:52:23-05:00">
-
-  <meta itemprop="name" content="Yelp Search Score">
-  <meta itemprop="description" content="Search Score After using Yelp to find the best restaurants ‘near me’ for more than a decade, I have seen a decline in the accuracy and validity of their search algorithm. Too often the search results seemed random and incomplete. So after years of confusion, I finally decided to try and take a look under the hood. See if I could understand their search algorithm and results. Then finally take a stab at my own search algorithm and see how closely my results compare to Yelp&rsquo;s.">
-  <meta itemprop="datePublished" content="2024-07-29T01:52:23-05:00">
-  <meta itemprop="dateModified" content="2024-07-29T01:52:23-05:00">
-  <meta itemprop="wordCount" content="1501"><meta name="twitter:card" content="summary"><meta name="twitter:title" content="Yelp Search Score">
-<meta name="twitter:description" content="Search Score After using Yelp to find the best restaurants ‘near me’ for more than a decade, I have seen a decline in the accuracy and validity of their search algorithm. Too often the search results seemed random and incomplete. So after years of confusion, I finally decided to try and take a look under the hood. See if I could understand their search algorithm and results. Then finally take a stab at my own search algorithm and see how closely my results compare to Yelp&rsquo;s.">
-
-	
   </head>
 
-  <body class="ma0 avenir bg-near-white">
-
+  <body class="type-posts kind-page" data-bs-spy="scroll" data-bs-target="#TableOfContents" data-bs-offset="80">
+    <div class="container-fluid bg-secondary wrapper">
+      
+      
     
-   
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
   
 
-  <header>
-    <div class="bg-black">
-      <nav class="pv3 ph3 ph4-ns" role="navigation">
-  <div class="flex-l justify-between items-center center">
-    <a href="/" class="f3 fw2 hover-white no-underline white-90 dib">
-      
-        Cam&#39;s Portfolio
-      
-    </a>
-    <div class="flex-l items-center">
-      
 
-      
-      
-<div class="ananke-socials">
+
+
   
-</div>
 
+
+<nav class="navbar navbar-expand-xl top-navbar shadow " id="top-navbar">
+  <div class="container">
+    
+    <button class="navbar-toggler navbar-light" id="sidebar-toggler" type="button">
+      <i data-feather="sidebar"></i>
+    </button>
+    
+    <a class="navbar-brand" href="/">
+      Cam&#39;s Portfolio</a>
+    <button
+      class="navbar-toggler navbar-light"
+      id="navbar-toggler"
+      type="button"
+      data-bs-toggle="collapse"
+      data-bs-target="#top-nav-items"
+      aria-label="menu"
+    >
+      <i data-feather="menu"></i>
+    </button>
+
+    <div class="collapse navbar-collapse dynamic-navbar" id="top-nav-items">
+      <ul class="nav navbar-nav ms-auto">
+        <li class="nav-item">
+          <a class="nav-link" href="/#home">Home</a>
+        </li>
+        
+          
+          
+            
+              
+              
+                <li class="nav-item">
+                  <a class="nav-link" href="/#about">About</a>
+                </li>
+              
+            
+            
+              
+              
+                <li class="nav-item">
+                  <a class="nav-link" href="/#projects">Projects</a>
+                </li>
+              
+            
+            
+              
+              
+                <li class="nav-item">
+                  <a class="nav-link" href="/#experiences">Experiences</a>
+                </li>
+              
+            
+            
+              
+              
+                <li class="nav-item">
+                  <a class="nav-link" href="/#education">Education</a>
+                </li>
+              
+            
+            
+              
+              
+            
+            
+              
+              
+            
+            
+              
+              
+            
+          
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">More</a>
+            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                
+                
+                  
+                    
+                    
+                  
+                  
+                    
+                    
+                  
+                  
+                    
+                    
+                  
+                  
+                    
+                    
+                  
+                  
+                    
+                    
+                      <a class="dropdown-item" href="/#skills">Skills</a>
+                    
+                  
+                  
+                    
+                    
+                      <a class="dropdown-item" href="/#featured-posts">Featured Posts</a>
+                    
+                  
+                  
+                    
+                    
+                      <a class="dropdown-item" href="/#recent-posts">Recent Posts</a>
+                    
+                  
+              </div>
+            </li>
+          
+        
+        
+          <div id="top-navbar-divider"></div>
+        
+        
+          <li class="nav-item">
+            <a class="nav-link" id="blog-link" href="/posts">Posts</a>
+          </li>
+        
+        
+        
+        
+        
+      </ul>
     </div>
   </div>
+  
+  
+  
+  
 </nav>
 
+
+
+      
+      
+  <section class="sidebar-section" id="sidebar-section">
+    <div class="sidebar-holder">
+      <div class="sidebar" id="sidebar">
+        <form class="mx-auto" method="get" action="/search">
+          <input type="text" name="keyword" value="" placeholder="Search" data-search="" id="search-box" />
+        </form>
+        <div class="sidebar-tree">
+          <ul class="tree" id="tree">
+            <li id="list-heading"><a href="/posts/" data-filter="all">Posts</a></li>
+            <div class="subtree">
+                
+
+            </div>
+          </ul>
+        </div>
+      </div>
     </div>
-  </header>
+  </section>
 
-
-
-    <main class="pb7" role="main">
-      
-  
-  <article class="flex-l flex-wrap justify-between mw8 center ph3">
-    <header class="mt4 w-100">
-      <aside class="instapaper_ignoref b helvetica tracked ttu">
-          
-        Posts
-      </aside>
-      
-
-
-
-
-
-
-
-
-
-
-  <div id="sharing" class="mt3 ananke-socials">
-    
-  </div>
-
-
-      <h1 class="f1 athelas mt3 mb1">Yelp Search Score</h1>
-      
-      
-      
-      <time class="f6 mv4 dib tracked" datetime="2024-07-29T01:52:23-05:00">July 29, 2024</time>
-      
 
       
       
-    </header>
-    <div class="nested-copy-line-height lh-copy serif f4 nested-links mid-gray pr4-l w-two-thirds-l"><h1 id="search-score">Search Score</h1>
+<section class="content-section" id="content-section">
+  <div class="content">
+    <div class="container p-0 read-area">
+      
+      <div class="hero-area col-sm-12" id="hero-area" style='background-image: url(/images/posts/pasteldenata.jpg);'>
+      </div>
+
+      
+      <div class="page-content">
+        
+        <div class="author-profile ms-auto align-self-lg-center">
+          <img class="rounded-circle" src='/images/avatar.svg' alt="Author Image">
+          <h5 class="author-name">Cam</h5>
+          <p class="text-muted">Monday, July 29, 2024</p>
+        </div>
+        
+
+        <div class="title">
+          <h1>Yelp Search Score</h1>
+        </div>
+
+        
+
+        
+        <div class="post-content" id="post-content">
+          <h1 id="search-score">Search Score</h1>
 <p>After using Yelp to find the best restaurants ‘near me’ for more than a decade, I have seen a decline in the accuracy and validity of their search algorithm. Too often the search results seemed random and incomplete. So after years of confusion, I finally decided to try and take a look under the hood. See if I could understand their search algorithm and results. Then finally take a stab at my own search algorithm and see how closely my results compare to Yelp&rsquo;s.</p>
 <p>This started by using the Yelp API and accessing as much data as possible. The API has daily call limit (about 10 max calls) and a call limit of about 2000 observations per call. So after gathering data over several weeks, the dataset was defined. After cleaning close to 100,000 total observations from over 50 major metropolitan areas around the United States. This is a small percentage of the total observations that Yelp has but it is big enough to run an analysis on, develop a model, and evaluate the results to form a few conclusions on the overall validity of both search algorithms.</p>
 <p>When accessing data from the Yelp API, there are plenty of variables that can be selected to accompany each observation. For the purposes of this discussion, there are two: Number of Reviews and Rating. With just these two variables, we should be able to understand the current Yelp algorithm and create a close replica of it as long as the current search algorithm is relatively unbiased.</p>
@@ -133,539 +299,46 @@
 <p>Restaurant Score 2 = 4 * 100 = 400</p>
 <p>Obviously, Restaurant 1 should have a way higher ranking, but it is nearly half of Restaurant 2. To accommodate for this, each number will be scaled in the following way. The Rating is the most important part of evaluating the restaurant. Lower values should be punished and higher values should be rewarded, so this number will be squared. As for the Number of Reviews, this is important but after a certain amount of reviews, the rating is going to become stable. So this number is important but should have diminishing returns. A perfect way to scale this down is a log function, in this case, the natural log. The scaling can be seen below, and now the algorithm is as follows:</p>
 <p><strong>Recommendation Score = Rating <sup>2</sup> * ln(Number of Reviews)</strong></p>
-<!-- raw HTML omitted -->
-<head>
-  <link rel="stylesheet" href="/css/table_style.css">
-</head>
+<!-- x vs ln(x) -->
 
 
 
 
-
-  
-    <h2>Natural Log Scaling</h2>
-    <div class="table-container">
-      <table class="styled-table">
-        <thead>
-          <tr>
-            
-              
-               
-                 
-                  <th class="capitalize">ln(x)</th> 
-                 
-                  <th class="capitalize">x</th> 
-                
-              
-            
-          </tr>
-        </thead>
-        <tbody>
-          
-            <tr   >
-              
-                <td>0</td>
-              
-                <td>1</td>
-              
-            </tr>
-          
-            <tr   >
-              
-                <td>2.302585</td>
-              
-                <td>10</td>
-              
-            </tr>
-          
-            <tr   >
-              
-                <td>4.60517</td>
-              
-                <td>100</td>
-              
-            </tr>
-          
-            <tr   >
-              
-                <td>6.907755</td>
-              
-                <td>1000</td>
-              
-            </tr>
-          
-        </tbody>
-      </table>
-    </div>
-  
+  <p><em>Data file not found: data/search_score_tables.json</em></p>
 
 
-<!-- raw HTML omitted -->
-<head>
-  <link rel="stylesheet" href="/css/table_style.css">
-</head>
+<!-- x vs x2 -->
 
 
 
 
-
-  
-    <h2>Exponential Scaling</h2>
-    <div class="table-container">
-      <table class="styled-table">
-        <thead>
-          <tr>
-            
-              <th class="capitalize">X</th>
-              <th class="capitalize">x<sup>2</sup></th>
-            
-          </tr>
-        </thead>
-        <tbody>
-          
-            <tr   >
-              
-                <td>1</td>
-              
-                <td>1</td>
-              
-            </tr>
-          
-            <tr   >
-              
-                <td>1.5</td>
-              
-                <td>2.25</td>
-              
-            </tr>
-          
-            <tr   >
-              
-                <td>2</td>
-              
-                <td>4</td>
-              
-            </tr>
-          
-            <tr   >
-              
-                <td>2.5</td>
-              
-                <td>6.25</td>
-              
-            </tr>
-          
-            <tr   >
-              
-                <td>3</td>
-              
-                <td>9</td>
-              
-            </tr>
-          
-            <tr   >
-              
-                <td>3.5</td>
-              
-                <td>12.25</td>
-              
-            </tr>
-          
-            <tr   >
-              
-                <td>4</td>
-              
-                <td>16</td>
-              
-            </tr>
-          
-            <tr   >
-              
-                <td>4.5</td>
-              
-                <td>20.25</td>
-              
-            </tr>
-          
-            <tr   >
-              
-                <td>5</td>
-              
-                <td>25</td>
-              
-            </tr>
-          
-        </tbody>
-      </table>
-    </div>
-  
+  <p><em>Data file not found: data/search_score_tables.json</em></p>
 
 
 <p>Now that we have a simple version of how a search score and recommendation algorithm looks, let&rsquo;s test it out and evaluate both it and the version that Yelp uses!</p>
-<!-- raw HTML omitted -->
-<head>
-  <link rel="stylesheet" href="/css/table_style.css">
-</head>
+<!-- Example -->
 
 
 
 
-
-  
-    <h2>Example</h2>
-    <div class="table-container">
-      <table class="styled-table">
-        <thead>
-          <tr>
-            
-              
-               
-                 
-                  <th class="capitalize">City</th> 
-                 
-                  <th class="capitalize">Top Ten Percentage</th> 
-                 
-                  <th class="capitalize">Zip Code</th> 
-                
-              
-            
-          </tr>
-        </thead>
-        <tbody>
-          
-            <tr   >
-              
-                <td>Downtown LA</td>
-              
-                <td>10%</td>
-              
-                <td>90013</td>
-              
-            </tr>
-          
-        </tbody>
-      </table>
-    </div>
-  
+  <p><em>Data file not found: data/search_score_tables.json</em></p>
 
 
 <p>A couple of quick notes before the conclusions. First, a reminder, as the API only gave the rating in half-number intervals. So the Wurstkuche is rounded down from 4.2 to 4.0. Additionally, there is a small difference in the number of reviews for Wurstkuche because these results were not taken at the same time (few days difference). The Green Highlighted observation is what both models agree on, the purple highlighted observations are ones that would be in the model&rsquo;s top ten if they were in the data set and red highlighted observations are red flags.</p>
-<!-- raw HTML omitted -->
-<head>
-  <link rel="stylesheet" href="/css/table_style.css">
-</head>
+<!-- Yelp Search table -->
 
 
 
 
-
-  
-    <h2>Yelp Search</h2>
-    <div class="table-container">
-      <table class="styled-table">
-        <thead>
-          <tr>
-            
-              
-               
-                 
-                  <th class="capitalize">Rating</th> 
-                 
-                  <th class="capitalize">Restaurant</th> 
-                 
-                  <th class="capitalize">Reviews</th> 
-                 
-                  <th class="capitalize">Score</th> 
-                
-              
-            
-          </tr>
-        </thead>
-        <tbody>
-          
-            <tr   >
-              
-                <td>4.8</td>
-              
-                <td>Kaminari Gyoza Bar</td>
-              
-                <td>123</td>
-              
-                <td>110.87</td>
-              
-            </tr>
-          
-            <tr   class="highlight-purple">
-              
-                <td>4.4</td>
-              
-                <td>Marugame Monzo</td>
-              
-                <td>4700</td>
-              
-                <td>163.69</td>
-              
-            </tr>
-          
-            <tr class="highlight-red"  >
-              
-                <td>4.5</td>
-              
-                <td>Tsuujita Artisan Noodle - Arts District</td>
-              
-                <td>12</td>
-              
-                <td>50.32</td>
-              
-            </tr>
-          
-            <tr   class="highlight-purple">
-              
-                <td>4.4</td>
-              
-                <td>Rice and Nori</td>
-              
-                <td>751</td>
-              
-                <td>128.19</td>
-              
-            </tr>
-          
-            <tr   >
-              
-                <td>4</td>
-              
-                <td>Spitz - Little Tokyo</td>
-              
-                <td>1800</td>
-              
-                <td>119.93</td>
-              
-            </tr>
-          
-            <tr   >
-              
-                <td>4.7</td>
-              
-                <td>Pi LA</td>
-              
-                <td>124</td>
-              
-                <td>106.48</td>
-              
-            </tr>
-          
-            <tr class="highlight-red"  >
-              
-                <td>4.8</td>
-              
-                <td>Suehiro DTLA</td>
-              
-                <td>60</td>
-              
-                <td>94.33</td>
-              
-            </tr>
-          
-            <tr class="highlight-red"  >
-              
-                <td>4.4</td>
-              
-                <td>Tokyo Haus</td>
-              
-                <td>13</td>
-              
-                <td>49.66</td>
-              
-            </tr>
-          
-            <tr  class="highlight-green" class="highlight-purple">
-              
-                <td>4.2</td>
-              
-                <td>Wurstkuche</td>
-              
-                <td>9000</td>
-              
-                <td>160.61</td>
-              
-            </tr>
-          
-            <tr   class="highlight-purple">
-              
-                <td>4.4</td>
-              
-                <td>Pasta e Pasta by Allegro</td>
-              
-                <td>1400</td>
-              
-                <td>140.25</td>
-              
-            </tr>
-          
-        </tbody>
-      </table>
-    </div>
-  
+  <p><em>Data file not found: data/search_score_tables.json</em></p>
 
 
-<!-- raw HTML omitted -->
-<head>
-  <link rel="stylesheet" href="/css/table_style.css">
-</head>
+<!-- Model Search table -->
 
 
 
 
-
-  
-    <h2>Model Search</h2>
-    <div class="table-container">
-      <table class="styled-table">
-        <thead>
-          <tr>
-            
-              
-               
-                 
-                  <th class="capitalize">Name</th> 
-                 
-                  <th class="capitalize">Rating</th> 
-                 
-                  <th class="capitalize">Reviews</th> 
-                 
-                  <th class="capitalize">Score</th> 
-                
-              
-            
-          </tr>
-        </thead>
-        <tbody>
-          
-            <tr   >
-              
-                <td>Maccheroni Republic</td>
-              
-                <td>4.5</td>
-              
-                <td>4027</td>
-              
-                <td>168.09</td>
-              
-            </tr>
-          
-            <tr   >
-              
-                <td>KazuNori DTLA</td>
-              
-                <td>4.5</td>
-              
-                <td>3427</td>
-              
-                <td>164.82</td>
-              
-            </tr>
-          
-            <tr   >
-              
-                <td>Bavel</td>
-              
-                <td>4.5</td>
-              
-                <td>2451</td>
-              
-                <td>158.04</td>
-              
-            </tr>
-          
-            <tr   >
-              
-                <td>Guisados DTLA</td>
-              
-                <td>4.5</td>
-              
-                <td>2115</td>
-              
-                <td>155.05</td>
-              
-            </tr>
-          
-            <tr   >
-              
-                <td>Girl and The Goat - Los Angeles</td>
-              
-                <td>4.5</td>
-              
-                <td>1685</td>
-              
-                <td>150.45</td>
-              
-            </tr>
-          
-            <tr   >
-              
-                <td>Perch</td>
-              
-                <td>4</td>
-              
-                <td>10234</td>
-              
-                <td>147.73</td>
-              
-            </tr>
-          
-            <tr   >
-              
-                <td>Wurstkuche</td>
-              
-                <td>4</td>
-              
-                <td>9025</td>
-              
-                <td>145.72</td>
-              
-            </tr>
-          
-            <tr   >
-              
-                <td>Eggslut</td>
-              
-                <td>4</td>
-              
-                <td>6429</td>
-              
-                <td>140.3</td>
-              
-            </tr>
-          
-            <tr   >
-              
-                <td>Prince Street Pizza</td>
-              
-                <td>4.5</td>
-              
-                <td>804</td>
-              
-                <td>135.46</td>
-              
-            </tr>
-          
-            <tr   >
-              
-                <td>Yunomi Handroll</td>
-              
-                <td>4.5</td>
-              
-                <td>536</td>
-              
-                <td>127.25</td>
-              
-            </tr>
-          
-        </tbody>
-      </table>
-    </div>
-  
+  <p><em>Data file not found: data/search_score_tables.json</em></p>
 
 
 <p>Unfortunately, this is not a one-off occurrence. This was the case for all of the zip codes researched. Below is the same search functionality used to create the model’s top ten list. Go ahead and select any zip code from the dropdown and compare it to the Yelp Results. Obviously, not every zip code was checked. There are over 2000 of them in the data set, and if the researched ones are the outliers, then that is great! But if you don’t believe me, try for yourself at the bottom of the page. Pick any zip code, then run a Yelp search using the recommended search setting and compare it to the results that appear on this page!</p>
@@ -695,37 +368,278 @@
 
     
     <div id="tableContainer"></div>
-<ul class="pa0">
+</body>
+</html>
+
+
+        </div>
+
+        
+        <div class="row ps-3 pe-3">
+        
+          <div class="col-md-6 share-buttons">
+          
+          </div>
+
+        
+        
+        </div>
+
+
+
+      
+      <hr />
+        
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="row next-prev-navigator">
   
-</ul>
-<div class="mt6 instapaper_ignoref">
+  
+</div>
+
+      <hr />
+
       
       
+
+      
+      
+
       </div>
     </div>
-
-    <aside class="w-30-l mt6-l">
-
-
-
-
-</aside>
-
-  </article>
-
-    </main>
-    <footer class="bg-black bottom-0 w-100 pa3" role="contentinfo">
-  <div class="flex justify-between">
-  <a class="f4 fw4 hover-white no-underline white-70 dn dib-ns pv2 ph3" href="http://localhost:1313/" >
-    &copy;  Cam's Portfolio 2025 
-  </a>
-    <div>
-<div class="ananke-socials">
-  
-</div>
-</div>
   </div>
-</footer>
+  
+  <a id="scroll-to-top" class="btn" type="button" data-bs-toggle="tooltip" data-bs-placement="left" title="Scroll to top">
+    <i class="fas fa-chevron-circle-up"></i>
+  </a>
+</section>
 
-  </body>
+
+      
+      
+  <section class="toc-section" id="toc-section">
+    
+  </section>
+
+    </div>
+
+    
+    
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+    
+  
+
+  
+  
+    
+  
+
+  
+  
+
+  
+  
+
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+    
+  
+  
+
+  
+  
+  
+
+  <footer id="footer" class="container-fluid text-center align-content-center footer pb-2">
+    <div class="container pt-5">
+      <div class="row text-start">
+        
+        <div class="col-md-4 col-sm-12">
+          <h5>Navigation</h5>
+          
+          <ul>
+              
+                
+                
+                  
+                
+                <li class="nav-item">
+                  <a class="smooth-scroll" href="http://localhost:1313/#about">About</a>
+                </li>
+              
+              
+                
+                
+                  
+                
+                <li class="nav-item">
+                  <a class="smooth-scroll" href="http://localhost:1313/#projects">Projects</a>
+                </li>
+              
+              
+                
+                
+                  
+                
+                <li class="nav-item">
+                  <a class="smooth-scroll" href="http://localhost:1313/#experiences">Experiences</a>
+                </li>
+              
+              
+                
+                
+                  
+                
+                <li class="nav-item">
+                  <a class="smooth-scroll" href="http://localhost:1313/#education">Education</a>
+                </li>
+              
+              
+                
+                
+                  
+                
+                <li class="nav-item">
+                  <a class="smooth-scroll" href="http://localhost:1313/#skills">Skills</a>
+                </li>
+              
+              
+                
+                
+                  
+                
+                <li class="nav-item">
+                  <a class="smooth-scroll" href="http://localhost:1313/#featured-posts">Featured Posts</a>
+                </li>
+              
+              
+                
+                
+                  
+                
+                <li class="nav-item">
+                  <a class="smooth-scroll" href="http://localhost:1313/#recent-posts">Recent Posts</a>
+                </li>
+              
+            
+              
+            
+          </ul>
+          
+        </div>
+        
+        
+        <div class="col-md-4 col-sm-12">
+          <h5>Contact me:</h5>
+          <ul>
+            
+              
+                <li><a href=mailto:txcwalker@gmail.com target="_blank" rel="noopener">
+                  <span><i class="fas fa-envelope"></i></span> <span>txcwalker@gmail.com</span>
+                </a></li>
+              
+            
+              
+                <li><a href=https://github.com/txcwalker target="_blank" rel="noopener">
+                  <span><i class="fab fa-github"></i></span> <span>txcwalker</span>
+                </a></li>
+              
+            
+              
+                <li><a href=https://www.linkedin.com/in/cameronjwalker9 target="_blank" rel="noopener">
+                  <span><i class="fab fa-linkedin"></i></span> <span>Cam</span>
+                </a></li>
+              
+            
+          </ul>
+        </div>
+        
+        
+        
+          
+          <div class="col-md-4 col-sm-12">
+            <p>Stay up to date with email notification</p>
+            
+              <form method='post' action='https://blogtrottr.com'>
+              <div class="form-group">
+              <input type='email' class="form-control" name='btr_email' placeholder="Enter email"/><br />
+              <input type='hidden' name='btr_url' value='http://localhost:1313//index.xml' />
+              <input type='hidden' name='schedule_type' value='1' />
+              <small id="emailHelp" class="form-text text-muted">By entering your email address, you agree to receive the newsletter of this website.</small>
+              <button type="submit" class="btn btn-info"> Submit </button>
+              </div>
+              </form>
+            
+          </div>
+        
+      </div>
+    </div>
+    
+    
+    <hr />
+    <div class="container">
+      <div class="row text-start">
+        <div class="col-md-4">
+          <a id="theme" href="https://github.com/hugo-toha/toha" target="_blank" rel="noopener">
+            <img src="/images/theme-logo_hu_b3360284c55cf72d.png" alt="Toha Theme Logo">
+            Toha
+          </a>
+        </div>
+        <div class="col-md-4 text-center">© 2025 Copyright.</div>
+        <div class="col-md-4 text-end">
+          <a id="hugo" href="https://gohugo.io/" target="_blank" rel="noopener">Powered by
+          <img
+            src="/images/hugo-logo.svg"
+            alt="Hugo Logo"
+            height="18"
+          />
+          </a>
+        </div>
+      </div>
+    </div>
+    
+  </footer>
+
+
+    <script src="/application.be6b58a68d356942b1c8671725f33caec062d249fb3d71e2f2b59287d135ebac.js" integrity="sha256-vmtYpo01aUKxyGcXJfM8rsBi0kn7PXHi8rWSh9E166w=" defer></script>
+
+
+    
+     
+
+    
+</body>
 </html>

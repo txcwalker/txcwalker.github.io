@@ -4,86 +4,1033 @@
     <title>Cam&#39;s Portfolio</title>
     <link>http://localhost:1313/</link>
     <description>Recent content on Cam&#39;s Portfolio</description>
-    <generator>Hugo</generator>
-    <language>en-us</language>
-    <lastBuildDate>Sat, 05 Jul 2025 01:52:23 -0500</lastBuildDate>
-    <atom:link href="http://localhost:1313/index.xml" rel="self" type="application/rss+xml" />
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
+    <lastBuildDate>Fri, 22 Aug 2025 00:00:00 +0000</lastBuildDate><atom:link href="http://localhost:1313/index.xml" rel="self" type="application/rss+xml" /><item>
+      <title>Final Four Combination Explorer</title>
+      <link>http://localhost:1313/demos/final-four/</link>
+      <pubDate>Fri, 22 Aug 2025 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/demos/final-four/</guid>
+      <description>&lt;h1 id=&#34;march-madness-final-four&#34;&gt;March Madness Final Four&lt;/h1&gt;
+&lt;p&gt;After the bracket comes out on selection Sunday, the first and second question most people will ask you when comparing brackets is “Who is your national champion?” and “Who is in your final four?” Below is the sims 20 most common final fours. All of them have at least seeds one number one seed most of them at least 2. Notably the most common final four is all four one seeds happening a little over 8% of the time which is about 4 times more than it was projected last year. The one seeds are extremely powerful this year and if the sims are suggesting anything it is that we could have only all one seeds in the final four for the first time since 2008 and only second time ever.&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Top Tags by State / City / ZIP</title>
+      <link>http://localhost:1313/demos/tag-graphs/</link>
+      <pubDate>Fri, 22 Aug 2025 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/demos/tag-graphs/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Yelp &#43; Zillow: Model Accuracy Panels</title>
+      <link>http://localhost:1313/demos/yelp-zillow/</link>
+      <pubDate>Fri, 22 Aug 2025 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/demos/yelp-zillow/</guid>
+      <description>&lt;p&gt;The three panels below are injected by Plotly from JSON exports.&lt;/p&gt;
+&lt;p&gt;&lt;link rel=&#34;stylesheet&#34; href=&#34;http://localhost:1313/css/table_style.css&#34;&gt;
+&lt;script src=&#34;https://cdn.plot.ly/plotly-latest.min.js&#34;&gt;&lt;/script&gt;
+
+&lt;div id=&#34;residuals-plot&#34; class=&#34;plotly-map-container&#34;&gt;&lt;/div&gt;
+&lt;div id=&#34;least-accurate-plot&#34; class=&#34;plotly-map-container&#34; style=&#34;margin-top:1rem;&#34;&gt;&lt;/div&gt;
+&lt;div id=&#34;most-accurate-plot&#34; class=&#34;plotly-map-container&#34; style=&#34;margin-top:1rem;&#34;&gt;&lt;/div&gt;
+
+&lt;script src=&#34;http://localhost:1313/js/yelpzillow.js&#34;&gt;&lt;/script&gt;
+
+&lt;link rel=&#34;stylesheet&#34; href=&#34;http://localhost:1313/css/table_style.css&#34;&gt;
+&lt;script src=&#34;https://cdn.plot.ly/plotly-latest.min.js&#34;&gt;&lt;/script&gt;
+
+&lt;div id=&#34;residuals-plot&#34; class=&#34;plotly-map-container&#34;&gt;&lt;/div&gt;
+&lt;div id=&#34;least-accurate-plot&#34; class=&#34;plotly-map-container&#34; style=&#34;margin-top:1rem;&#34;&gt;&lt;/div&gt;
+&lt;div id=&#34;most-accurate-plot&#34; class=&#34;plotly-map-container&#34; style=&#34;margin-top:1rem;&#34;&gt;&lt;/div&gt;
+
+&lt;script src=&#34;http://localhost:1313/js/yelpzillow.js&#34;&gt;&lt;/script&gt;
+
+&lt;link rel=&#34;stylesheet&#34; href=&#34;http://localhost:1313/css/table_style.css&#34;&gt;
+&lt;script src=&#34;https://cdn.plot.ly/plotly-latest.min.js&#34;&gt;&lt;/script&gt;
+
+&lt;div id=&#34;residuals-plot&#34; class=&#34;plotly-map-container&#34;&gt;&lt;/div&gt;
+&lt;div id=&#34;least-accurate-plot&#34; class=&#34;plotly-map-container&#34; style=&#34;margin-top:1rem;&#34;&gt;&lt;/div&gt;
+&lt;div id=&#34;most-accurate-plot&#34; class=&#34;plotly-map-container&#34; style=&#34;margin-top:1rem;&#34;&gt;&lt;/div&gt;
+
+&lt;script src=&#34;http://localhost:1313/js/yelpzillow.js&#34;&gt;&lt;/script&gt;
+&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Yelp Heatmap</title>
+      <link>http://localhost:1313/demos/heatmap/</link>
+      <pubDate>Fri, 22 Aug 2025 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/demos/heatmap/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Databaseball Overview</title>
+      <link>http://localhost:1313/posts/databaseball/databaseball/</link>
+      <pubDate>Wed, 13 Aug 2025 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/posts/databaseball/databaseball/</guid>
+      <description>&lt;style&gt;
+ 
+:root{
+  --toc-lift: 40rem;         
+  --toc-sticky: 4rem;       
+  --h1-bottom-gap: .75rem;  
+  --h2-first-top: .5rem;    
+}
+
+ 
+.toc-card{
+  float:right;
+  width:280px;
+  margin-top: calc(-1 * var(--toc-lift));   
+  margin-left:1.25rem;
+  margin-bottom:1rem;
+
+  position:sticky; top: var(--toc-sticky);
+  max-height:75vh; overflow:auto;
+  border-radius:12px; padding:1rem;
+  background:rgba(255,255,255,.04); box-shadow:0 2px 10px rgba(0,0,0,.12);
+  z-index:2;
+}
+.toc-title{font-weight:600; margin-bottom:.5rem}
+.toc-card ul{list-style:none; padding-left:.75rem}
+.toc-card a{text-decoration:none}
+
+ 
+@media (min-width:1280px){
+  .toc-card{ width:300px; margin-right:-320px; }
+}
+@media (min-width:1536px){
+  .toc-card{ width:320px; margin-right:-360px; }
+}
+
+ 
+@media (max-width:1100px){
+  .toc-card{ float:none; width:auto; position:relative; top:auto; margin:1rem 0 0 0; }
+}
+
+ 
+:root:has(.toc-card) h1{ margin-bottom: var(--h1-bottom-gap) !important; }
+:root:has(.toc-card) h2:first-of-type{ margin-top: var(--h2-first-top) !important; }
+
+ 
+.toc-clear{ clear: both; }
+&lt;/style&gt;
+
+&lt;aside class=&#34;toc-card&#34; aria-label=&#34;Table of Contents&#34;&gt;
+  &lt;div class=&#34;toc-title&#34;&gt;Table of Contents&lt;/div&gt;
+  &lt;nav id=&#34;TableOfContents&#34;&gt;
+  &lt;ul&gt;
+    &lt;li&gt;
+      &lt;ul&gt;
+        &lt;li&gt;&lt;a href=&#34;#introduction&#34;&gt;Introduction&lt;/a&gt;&lt;/li&gt;
+        &lt;li&gt;&lt;a href=&#34;#database-creation-and-maintenance&#34;&gt;Database Creation and Maintenance&lt;/a&gt;&lt;/li&gt;
+        &lt;li&gt;&lt;a href=&#34;#setup&#34;&gt;Setup&lt;/a&gt;&lt;/li&gt;
+        &lt;li&gt;&lt;a href=&#34;#app&#34;&gt;App&lt;/a&gt;&lt;/li&gt;
+        &lt;li&gt;&lt;a href=&#34;#usage-tips&#34;&gt;Usage Tips&lt;/a&gt;&lt;/li&gt;
+        &lt;li&gt;&lt;a href=&#34;#restrictions&#34;&gt;Restrictions&lt;/a&gt;&lt;/li&gt;
+        &lt;li&gt;&lt;a href=&#34;#next-steps&#34;&gt;Next Steps&lt;/a&gt;&lt;/li&gt;
+        &lt;li&gt;&lt;a href=&#34;#conclusion&#34;&gt;Conclusion&lt;/a&gt;&lt;/li&gt;
+      &lt;/ul&gt;
+    &lt;/li&gt;
+  &lt;/ul&gt;
+&lt;/nav&gt;
+&lt;/aside&gt;
+&lt;div class=&#34;toc-clear&#34;&gt;&lt;/div&gt;
+&lt;h2 id=&#34;introduction&#34;&gt;Introduction&lt;/h2&gt;
+&lt;p&gt;I made an app that gives users the ability to query a real-time relational database of baseball statistics. This all started when a friend of mine expressed frustration that a tool like this did not exist. He asked me to make it my next project — and so I did.&lt;/p&gt;</description>
+    </item>
+    
     <item>
       <title>Phishing Prediction</title>
-      <link>http://localhost:1313/posts/linkedinbotprediction/</link>
+      <link>http://localhost:1313/posts/phishing/linkedinbotprediction/</link>
       <pubDate>Sat, 05 Jul 2025 01:52:23 -0500</pubDate>
-      <guid>http://localhost:1313/posts/linkedinbotprediction/</guid>
-      <description>Introduction: This project first started out as me getting a phishing message on LinkedIn. I was annoyed that I got my hopes up, however brief, and realized that I could probably make some sort of model to evaluate if messages were sent with benevolent or malign intent. After doing a bit of research, testing and finally some coding I was able to get a model and app (check that out here “”) which I am happy with for a first run.</description>
+      
+      <guid>http://localhost:1313/posts/phishing/linkedinbotprediction/</guid>
+      <description>&lt;style&gt;
+ 
+:root{
+  --toc-lift: 40rem;         
+  --toc-sticky: 4rem;       
+  --h1-bottom-gap: .75rem;  
+  --h2-first-top: .5rem;    
+}
+
+ 
+.toc-card{
+  float:right;
+  width:280px;
+  margin-top: calc(-1 * var(--toc-lift));   
+  margin-left:1.25rem;
+  margin-bottom:1rem;
+
+  position:sticky; top: var(--toc-sticky);
+  max-height:75vh; overflow:auto;
+  border-radius:12px; padding:1rem;
+  background:rgba(255,255,255,.04); box-shadow:0 2px 10px rgba(0,0,0,.12);
+  z-index:2;
+}
+.toc-title{font-weight:600; margin-bottom:.5rem}
+.toc-card ul{list-style:none; padding-left:.75rem}
+.toc-card a{text-decoration:none}
+
+ 
+@media (min-width:1280px){
+  .toc-card{ width:300px; margin-right:-320px; }
+}
+@media (min-width:1536px){
+  .toc-card{ width:320px; margin-right:-360px; }
+}
+
+ 
+@media (max-width:1100px){
+  .toc-card{ float:none; width:auto; position:relative; top:auto; margin:1rem 0 0 0; }
+}
+
+ 
+:root:has(.toc-card) h1{ margin-bottom: var(--h1-bottom-gap) !important; }
+:root:has(.toc-card) h2:first-of-type{ margin-top: var(--h2-first-top) !important; }
+
+ 
+.toc-clear{ clear: both; }
+&lt;/style&gt;
+
+&lt;aside class=&#34;toc-card&#34; aria-label=&#34;Table of Contents&#34;&gt;
+  &lt;div class=&#34;toc-title&#34;&gt;Table of Contents&lt;/div&gt;
+  &lt;nav id=&#34;TableOfContents&#34;&gt;
+  &lt;ul&gt;
+    &lt;li&gt;
+      &lt;ul&gt;
+        &lt;li&gt;&lt;a href=&#34;#introduction&#34;&gt;Introduction:&lt;/a&gt;&lt;/li&gt;
+        &lt;li&gt;&lt;a href=&#34;#data&#34;&gt;Data:&lt;/a&gt;
+          &lt;ul&gt;
+            &lt;li&gt;&lt;a href=&#34;#sms-spam&#34;&gt;&lt;a href=&#34;https://huggingface.co/datasets/ucirvine/sms_spam&#34;&gt;SMS Spam&lt;/a&gt;&lt;/a&gt;&lt;/li&gt;
+            &lt;li&gt;&lt;a href=&#34;#persona&#34;&gt;&lt;a href=&#34;https://huggingface.co/datasets/bavard/personachat_truecased&#34;&gt;Persona&lt;/a&gt;&lt;/a&gt;&lt;/li&gt;
+            &lt;li&gt;&lt;a href=&#34;#phish1&#34;&gt;&lt;a href=&#34;https://huggingface.co/datasets/zefang-liu/phishing-email-dataset&#34;&gt;Phish1&lt;/a&gt;&lt;/a&gt;&lt;/li&gt;
+            &lt;li&gt;&lt;a href=&#34;#phish2&#34;&gt;&lt;a href=&#34;https://huggingface.co/datasets/yashpapa6969/phising_attacks&#34;&gt;Phish2&lt;/a&gt;&lt;/a&gt;&lt;/li&gt;
+            &lt;li&gt;&lt;a href=&#34;#daily-dialogue&#34;&gt;&lt;a href=&#34;https://huggingface.co/datasets/pixelsandpointers/better_daily_dialog&#34;&gt;Daily Dialogue&lt;/a&gt;&lt;/a&gt;&lt;/li&gt;
+            &lt;li&gt;&lt;a href=&#34;#cnndailymail&#34;&gt;&lt;a href=&#34;https://huggingface.co/datasets/abisee/cnn_dailymail&#34;&gt;CNN/DailyMail&lt;/a&gt;&lt;/a&gt;&lt;/li&gt;
+            &lt;li&gt;&lt;a href=&#34;#spam_&#34;&gt;&lt;a href=&#34;https://huggingface.co/datasets/distrib134/ultimate_spam_detection_2&#34;&gt;Spam_DS&lt;/a&gt;&lt;/a&gt;&lt;/li&gt;
+          &lt;/ul&gt;
+        &lt;/li&gt;
+        &lt;li&gt;&lt;a href=&#34;#model&#34;&gt;Model:&lt;/a&gt;&lt;/li&gt;
+        &lt;li&gt;&lt;a href=&#34;#exploratory-data-analyst&#34;&gt;Exploratory Data Analyst:&lt;/a&gt;&lt;/li&gt;
+        &lt;li&gt;&lt;a href=&#34;#results&#34;&gt;Results:&lt;/a&gt;&lt;/li&gt;
+        &lt;li&gt;&lt;a href=&#34;#evaluation&#34;&gt;Evaluation:&lt;/a&gt;&lt;/li&gt;
+        &lt;li&gt;&lt;a href=&#34;#business-ideas&#34;&gt;Business Ideas:&lt;/a&gt;&lt;/li&gt;
+        &lt;li&gt;&lt;a href=&#34;#improvements-and-next-steps&#34;&gt;Improvements and Next Steps&lt;/a&gt;&lt;/li&gt;
+        &lt;li&gt;&lt;a href=&#34;#final-thoughts&#34;&gt;Final Thoughts&lt;/a&gt;&lt;/li&gt;
+      &lt;/ul&gt;
+    &lt;/li&gt;
+  &lt;/ul&gt;
+&lt;/nav&gt;
+&lt;/aside&gt;
+&lt;div class=&#34;toc-clear&#34;&gt;&lt;/div&gt;
+&lt;h2 id=&#34;introduction&#34;&gt;Introduction:&lt;/h2&gt;
+&lt;p&gt;This project first started out as me getting a phishing message on LinkedIn. I was annoyed that I got my hopes up, however brief, and realized that I could probably make some sort of model to evaluate if messages were sent with benevolent or malign intent. After doing a bit of research, testing and finally some coding I was able to get a model and app (check that out here “ (&lt;a href=&#34;https://gonephishing.streamlit.app&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;https://gonephishing.streamlit.app&lt;/a&gt;) ”).&lt;/p&gt;</description>
     </item>
+    
+    <item>
+      <title>Phishing Prediction</title>
+      <link>http://localhost:1313/projects/phishing_detection/</link>
+      <pubDate>Sat, 05 Jul 2025 01:52:23 -0500</pubDate>
+      
+      <guid>http://localhost:1313/projects/phishing_detection/</guid>
+      <description>&lt;h2 id=&#34;introduction&#34;&gt;Introduction:&lt;/h2&gt;
+&lt;p&gt;This project first started out as me getting a phishing message on LinkedIn. I was annoyed that I got my hopes up, however brief, and realized that I could probably make some sort of model to evaluate if messages were sent with benevolent or malign intent. After doing a bit of research, testing and finally some coding I was able to get a model and app (check that out here “ (&lt;a href=&#34;https://gonephishing.streamlit.app&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;https://gonephishing.streamlit.app&lt;/a&gt;) ”).&lt;/p&gt;</description>
+    </item>
+    
     <item>
       <title>March Madness Overview</title>
-      <link>http://localhost:1313/posts/marchmadnessoverview/</link>
+      <link>http://localhost:1313/posts/marchmadness/marchmadnessoverview/</link>
       <pubDate>Wed, 19 Mar 2025 01:52:23 -0500</pubDate>
-      <guid>http://localhost:1313/posts/marchmadnessoverview/</guid>
-      <description>March Madness Introduction Every March college basketball captures the Country’s countries imagination. The tournament begins with 68 teams each of whom believe they can win the tournament and be crowned the best college basketball team in the country. The single elimination, win or go home, style of tournament creates excitement because anything can happen in one game. And it is true, anything can happen in one game. But what is the likelihood?</description>
+      
+      <guid>http://localhost:1313/posts/marchmadness/marchmadnessoverview/</guid>
+      <description>&lt;style&gt;
+ 
+:root{
+  --toc-lift: 40rem;         
+  --toc-sticky: 4rem;       
+  --h1-bottom-gap: .75rem;  
+  --h2-first-top: .5rem;    
+}
+
+ 
+.toc-card{
+  float:right;
+  width:280px;
+  margin-top: calc(-1 * var(--toc-lift));   
+  margin-left:1.25rem;
+  margin-bottom:1rem;
+
+  position:sticky; top: var(--toc-sticky);
+  max-height:75vh; overflow:auto;
+  border-radius:12px; padding:1rem;
+  background:rgba(255,255,255,.04); box-shadow:0 2px 10px rgba(0,0,0,.12);
+  z-index:2;
+}
+.toc-title{font-weight:600; margin-bottom:.5rem}
+.toc-card ul{list-style:none; padding-left:.75rem}
+.toc-card a{text-decoration:none}
+
+ 
+@media (min-width:1280px){
+  .toc-card{ width:300px; margin-right:-320px; }
+}
+@media (min-width:1536px){
+  .toc-card{ width:320px; margin-right:-360px; }
+}
+
+ 
+@media (max-width:1100px){
+  .toc-card{ float:none; width:auto; position:relative; top:auto; margin:1rem 0 0 0; }
+}
+
+ 
+:root:has(.toc-card) h1{ margin-bottom: var(--h1-bottom-gap) !important; }
+:root:has(.toc-card) h2:first-of-type{ margin-top: var(--h2-first-top) !important; }
+
+ 
+.toc-clear{ clear: both; }
+&lt;/style&gt;
+
+&lt;aside class=&#34;toc-card&#34; aria-label=&#34;Table of Contents&#34;&gt;
+  &lt;div class=&#34;toc-title&#34;&gt;Table of Contents&lt;/div&gt;
+  &lt;nav id=&#34;TableOfContents&#34;&gt;
+  &lt;ul&gt;
+    &lt;li&gt;&lt;a href=&#34;#march-madness-introduction&#34;&gt;March Madness Introduction&lt;/a&gt;
+      &lt;ul&gt;
+        &lt;li&gt;&lt;a href=&#34;#historical-review&#34;&gt;Historical Review&lt;/a&gt;&lt;/li&gt;
+        &lt;li&gt;&lt;a href=&#34;#overview&#34;&gt;Overview&lt;/a&gt;
+          &lt;ul&gt;
+            &lt;li&gt;&lt;a href=&#34;#winners&#34;&gt;Winners&lt;/a&gt;&lt;/li&gt;
+            &lt;li&gt;&lt;a href=&#34;#busts&#34;&gt;Busts&lt;/a&gt;&lt;/li&gt;
+            &lt;li&gt;&lt;a href=&#34;#dark-horses&#34;&gt;Dark Horses&lt;/a&gt;&lt;/li&gt;
+          &lt;/ul&gt;
+        &lt;/li&gt;
+      &lt;/ul&gt;
+    &lt;/li&gt;
+  &lt;/ul&gt;
+&lt;/nav&gt;
+&lt;/aside&gt;
+&lt;div class=&#34;toc-clear&#34;&gt;&lt;/div&gt;
+&lt;h1 id=&#34;march-madness-introduction&#34;&gt;March Madness Introduction&lt;/h1&gt;
+&lt;p&gt;Every March college basketball captures the Country’s countries imagination. The tournament begins with 68 teams each of whom believe they can win the tournament and be crowned the best college basketball team in the country. The single elimination, win or go home, style of tournament creates excitement because anything can happen in one game. And it is true, anything can happen in one game. But what is the likelihood? Part of the reason this tournament has gained its fame is in pursuit of the perfect bracket. Correctly picking all 63 games, Warren Buffet has famously offered a substantial cash prize to the first person who can fill out a perfect bracket. Despite millions of attempts each year no one has really come close. So how can we try to be perfect? How can we get as close as possible? Realistically the perfect bracket is never going to happen but chasing it will also keep us entertained.&lt;/p&gt;</description>
     </item>
-    <item>
-      <title>Yelp Introduction</title>
-      <link>http://localhost:1313/posts/yelpintroduction/</link>
-      <pubDate>Mon, 29 Jul 2024 01:52:23 -0500</pubDate>
-      <guid>http://localhost:1313/posts/yelpintroduction/</guid>
-      <description>Summary This is an introduction to the analysis done on Yelp included on this site. It goes over some of the difficulties of the data as well as providing a brief overview of the process taken to construct the project.&#xA;The Yelp API has its positives and negatives. It is relatively easy to get access and get started using. There are plenty of pages of documentation on how to use the API and its limitations.</description>
-    </item>
-    <item>
-      <title>Yelp and Zillow Housing Price Index</title>
-      <link>http://localhost:1313/posts/yelpandzillow/</link>
-      <pubDate>Mon, 29 Jul 2024 01:52:23 -0500</pubDate>
-      <guid>http://localhost:1313/posts/yelpandzillow/</guid>
-      <description>Zillow Analysis Housing Price Prediction This analysis was motivated by the following question: Can the collected data from Yelp be used to approximate the average housing price of a zip code?&#xA;Data was collected from Yelp using its API and a model was created to try and predict the average cost of a house by zip code. If the model shows promise, it can be used to help predict future changes in housing price as the average price/rating/review count of a zip code&amp;rsquo;s restaurants increase or decrease.</description>
-    </item>
-    <item>
-      <title>Yelp Search Score</title>
-      <link>http://localhost:1313/posts/yelpsearchscore/</link>
-      <pubDate>Mon, 29 Jul 2024 01:52:23 -0500</pubDate>
-      <guid>http://localhost:1313/posts/yelpsearchscore/</guid>
-      <description>Search Score After using Yelp to find the best restaurants ‘near me’ for more than a decade, I have seen a decline in the accuracy and validity of their search algorithm. Too often the search results seemed random and incomplete. So after years of confusion, I finally decided to try and take a look under the hood. See if I could understand their search algorithm and results. Then finally take a stab at my own search algorithm and see how closely my results compare to Yelp&amp;rsquo;s.</description>
-    </item>
-    <item>
-      <title>Yelp Heat Maps</title>
-      <link>http://localhost:1313/posts/yelpheatmaps/</link>
-      <pubDate>Mon, 29 Jul 2024 01:52:23 -0500</pubDate>
-      <guid>http://localhost:1313/posts/yelpheatmaps/</guid>
-      <description>Welcome to the Heat Map Tool! Curious how restaurants are distributed across the city? Select any city from the below dropdown and choose from any variable in the adjacent list to view how restaurants are found throughout the selected city based on selected variable!&#xA;&lt;!DOCTYPE html&gt;&#xD;Heatmap&#xD;Select City:&#xD;Select Variable:&#xD;Review Count&#xD;Price&#xD;Rating&#xD;Update Map&#xD;</description>
-    </item>
-    <item>
-      <title>Yelp Tag Graphs</title>
-      <link>http://localhost:1313/posts/yelptaggraphs/</link>
-      <pubDate>Mon, 29 Jul 2024 01:52:23 -0500</pubDate>
-      <guid>http://localhost:1313/posts/yelptaggraphs/</guid>
-      <description>Welcome to the Tag Graphs Tool! Welcome to the Tag Graph Tool. The purpose of this tool is to provide visualization to the most popular types of restaurants in a given area. There are three different graphs one each for State, City and Zip Code. Each graph works the same just chose option(s) from the selection box and hit the &amp;ldquo;Generate Graph&amp;rdquo; button.&#xA;Tag Graphs &lt;!DOCTYPE html&gt;&#xD;Tag Graphs&#xD;Select State:&#xD;Generate State Graphs&#xD;Select City:&#xD;Generate City Graphs&#xD;Select ZIP Code:&#xD;Generate ZIP Code Graphs&#xD;</description>
-    </item>
+    
     <item>
       <title>March Madness Final Four</title>
-      <link>http://localhost:1313/posts/marchmadnessfinalfour/</link>
+      <link>http://localhost:1313/posts/marchmadness/marchmadnessfinalfour/</link>
       <pubDate>Wed, 19 Mar 2025 01:52:23 -0500</pubDate>
-      <guid>http://localhost:1313/posts/marchmadnessfinalfour/</guid>
-      <description>March Madness Final Four After the bracket comes out on selection Sunday, the first and second question most people will ask you when comparing brackets is “Who is your national champion?” and “Who is in your final four?” Below is the sims 20 most common final fours. All of them have at least seeds one number one seed most of them at least 2. Notably the most common final four is all four one seeds happening a little over 8% of the time which is about 4 times more than it was projected last year.</description>
+      
+      <guid>http://localhost:1313/posts/marchmadness/marchmadnessfinalfour/</guid>
+      <description>&lt;style&gt;
+ 
+:root{
+  --toc-lift: 40rem;         
+  --toc-sticky: 4rem;       
+  --h1-bottom-gap: .75rem;  
+  --h2-first-top: .5rem;    
+}
+
+ 
+.toc-card{
+  float:right;
+  width:280px;
+  margin-top: calc(-1 * var(--toc-lift));   
+  margin-left:1.25rem;
+  margin-bottom:1rem;
+
+  position:sticky; top: var(--toc-sticky);
+  max-height:75vh; overflow:auto;
+  border-radius:12px; padding:1rem;
+  background:rgba(255,255,255,.04); box-shadow:0 2px 10px rgba(0,0,0,.12);
+  z-index:2;
+}
+.toc-title{font-weight:600; margin-bottom:.5rem}
+.toc-card ul{list-style:none; padding-left:.75rem}
+.toc-card a{text-decoration:none}
+
+ 
+@media (min-width:1280px){
+  .toc-card{ width:300px; margin-right:-320px; }
+}
+@media (min-width:1536px){
+  .toc-card{ width:320px; margin-right:-360px; }
+}
+
+ 
+@media (max-width:1100px){
+  .toc-card{ float:none; width:auto; position:relative; top:auto; margin:1rem 0 0 0; }
+}
+
+ 
+:root:has(.toc-card) h1{ margin-bottom: var(--h1-bottom-gap) !important; }
+:root:has(.toc-card) h2:first-of-type{ margin-top: var(--h2-first-top) !important; }
+
+ 
+.toc-clear{ clear: both; }
+&lt;/style&gt;
+
+&lt;aside class=&#34;toc-card&#34; aria-label=&#34;Table of Contents&#34;&gt;
+  &lt;div class=&#34;toc-title&#34;&gt;Table of Contents&lt;/div&gt;
+  &lt;nav id=&#34;TableOfContents&#34;&gt;
+  &lt;ul&gt;
+    &lt;li&gt;&lt;a href=&#34;#march-madness-final-four&#34;&gt;March Madness Final Four&lt;/a&gt;
+      &lt;ul&gt;
+        &lt;li&gt;&lt;a href=&#34;#final-four-finder&#34;&gt;Final Four Finder&lt;/a&gt;&lt;/li&gt;
+      &lt;/ul&gt;
+    &lt;/li&gt;
+  &lt;/ul&gt;
+&lt;/nav&gt;
+&lt;/aside&gt;
+&lt;div class=&#34;toc-clear&#34;&gt;&lt;/div&gt;
+&lt;h1 id=&#34;march-madness-final-four&#34;&gt;March Madness Final Four&lt;/h1&gt;
+&lt;p&gt;After the bracket comes out on selection Sunday, the first and second question most people will ask you when comparing brackets is “Who is your national champion?” and “Who is in your final four?” Below is the sims 20 most common final fours. All of them have at least seeds one number one seed most of them at least 2. Notably the most common final four is all four one seeds happening a little over 8% of the time which is about 4 times more than it was projected last year. The one seeds are extremely powerful this year and if the sims are suggesting anything it is that we could have only all one seeds in the final four for the first time since 2008 and only second time ever.&lt;/p&gt;</description>
     </item>
-    <item>
-      <title>March Madness Misseedings and Over/Underperformers</title>
-      <link>http://localhost:1313/posts/marchmadnessmisseedings/</link>
-      <pubDate>Wed, 19 Mar 2025 01:52:23 -0500</pubDate>
-      <guid>http://localhost:1313/posts/marchmadnessmisseedings/</guid>
-      <description>Seed Prediction It feels like every year the committee intentionally misseeds a couple of teams just to farm engagement and get people talking about the tournament. This year is unfortunately no different and perhaps even worse than most. Of course the primary body of work are the games you played in the regular season but that does not mean the conference tournaments should count for nothing. Below are the most egregious examples of teams that were over or underseeded.</description>
-    </item>
-    <item>
-      <title>March Madness Region Strength</title>
-      <link>http://localhost:1313/posts/marchmadnessregionstrength/</link>
-      <pubDate>Wed, 19 Mar 2025 01:52:23 -0500</pubDate>
-      <guid>http://localhost:1313/posts/marchmadnessregionstrength/</guid>
-      <description>Region Strength Ideally we want our potential champion to come from the path of least resistance. That is to say the less competitive games our champion can play the more likely they are to win the championship. In an effort to quantify this path of least resistance (at least to the final four) the metric Region strength was created. It is comprised of three components, Total Region Championships, Seed Prediction and Fragility.</description>
-    </item>
+    
     <item>
       <title>March Madness Odds Search</title>
-      <link>http://localhost:1313/posts/marchmadnessodds/</link>
+      <link>http://localhost:1313/posts/marchmadness/marchmadnessodds/</link>
       <pubDate>Wed, 19 Mar 2025 01:52:23 -0500</pubDate>
-      <guid>http://localhost:1313/posts/marchmadnessodds/</guid>
-      <description>Below is a table with the odds for every Team to make it to the following rounds Sweet Sixteen, Elite Eight, Final Four and Championship Winner. Simpley Select which team(s) you would like to view and hit &amp;ldquo;Show Selected Teams&amp;rdquo;&#xA;Select Teams:&#xD;Akron&#xD;Alabama&#xD;American&#xD;Arizona&#xD;Arkansas&#xD;Auburn&#xD;BYU&#xD;Baylor&#xD;Bryant&#xD;Clemson&#xD;Colorado St.&#xD;Connecticut&#xD;Creighton&#xD;Drake&#xD;Duke&#xD;Florida&#xD;Georgia&#xD;Gonzaga&#xD;Grand Canyon&#xD;High Point&#xD;Houston&#xD;Illinois&#xD;Iowa St.&#xD;Kansas&#xD;Kentucky&#xD;Liberty&#xD;Lipscomb&#xD;Louisville&#xD;Marquette&#xD;Maryland&#xD;McNeese&#xD;Memphis&#xD;Michigan&#xD;Michigan St.</description>
+      
+      <guid>http://localhost:1313/posts/marchmadness/marchmadnessodds/</guid>
+      <description>&lt;style&gt;
+ 
+:root{
+  --toc-lift: 40rem;         
+  --toc-sticky: 4rem;       
+  --h1-bottom-gap: .75rem;  
+  --h2-first-top: .5rem;    
+}
+
+ 
+.toc-card{
+  float:right;
+  width:280px;
+  margin-top: calc(-1 * var(--toc-lift));   
+  margin-left:1.25rem;
+  margin-bottom:1rem;
+
+  position:sticky; top: var(--toc-sticky);
+  max-height:75vh; overflow:auto;
+  border-radius:12px; padding:1rem;
+  background:rgba(255,255,255,.04); box-shadow:0 2px 10px rgba(0,0,0,.12);
+  z-index:2;
+}
+.toc-title{font-weight:600; margin-bottom:.5rem}
+.toc-card ul{list-style:none; padding-left:.75rem}
+.toc-card a{text-decoration:none}
+
+ 
+@media (min-width:1280px){
+  .toc-card{ width:300px; margin-right:-320px; }
+}
+@media (min-width:1536px){
+  .toc-card{ width:320px; margin-right:-360px; }
+}
+
+ 
+@media (max-width:1100px){
+  .toc-card{ float:none; width:auto; position:relative; top:auto; margin:1rem 0 0 0; }
+}
+
+ 
+:root:has(.toc-card) h1{ margin-bottom: var(--h1-bottom-gap) !important; }
+:root:has(.toc-card) h2:first-of-type{ margin-top: var(--h2-first-top) !important; }
+
+ 
+.toc-clear{ clear: both; }
+&lt;/style&gt;
+
+&lt;aside class=&#34;toc-card&#34; aria-label=&#34;Table of Contents&#34;&gt;
+  &lt;div class=&#34;toc-title&#34;&gt;Table of Contents&lt;/div&gt;
+  &lt;nav id=&#34;TableOfContents&#34;&gt;&lt;/nav&gt;
+&lt;/aside&gt;
+&lt;div class=&#34;toc-clear&#34;&gt;&lt;/div&gt;
+&lt;p&gt;Below is a table with the odds for every Team to make it to the following rounds Sweet Sixteen, Elite Eight, Final Four and Championship Winner. Simpley Select which team(s) you would like to view and hit &amp;ldquo;Show Selected Teams&amp;rdquo;&lt;/p&gt;</description>
     </item>
+    
+    <item>
+      <title>March Madness Misseedings and Over/Underperformers</title>
+      <link>http://localhost:1313/posts/marchmadness/marchmadnessmisseedings/</link>
+      <pubDate>Wed, 19 Mar 2025 01:52:23 -0500</pubDate>
+      
+      <guid>http://localhost:1313/posts/marchmadness/marchmadnessmisseedings/</guid>
+      <description>&lt;style&gt;
+ 
+:root{
+  --toc-lift: 40rem;         
+  --toc-sticky: 4rem;       
+  --h1-bottom-gap: .75rem;  
+  --h2-first-top: .5rem;    
+}
+
+ 
+.toc-card{
+  float:right;
+  width:280px;
+  margin-top: calc(-1 * var(--toc-lift));   
+  margin-left:1.25rem;
+  margin-bottom:1rem;
+
+  position:sticky; top: var(--toc-sticky);
+  max-height:75vh; overflow:auto;
+  border-radius:12px; padding:1rem;
+  background:rgba(255,255,255,.04); box-shadow:0 2px 10px rgba(0,0,0,.12);
+  z-index:2;
+}
+.toc-title{font-weight:600; margin-bottom:.5rem}
+.toc-card ul{list-style:none; padding-left:.75rem}
+.toc-card a{text-decoration:none}
+
+ 
+@media (min-width:1280px){
+  .toc-card{ width:300px; margin-right:-320px; }
+}
+@media (min-width:1536px){
+  .toc-card{ width:320px; margin-right:-360px; }
+}
+
+ 
+@media (max-width:1100px){
+  .toc-card{ float:none; width:auto; position:relative; top:auto; margin:1rem 0 0 0; }
+}
+
+ 
+:root:has(.toc-card) h1{ margin-bottom: var(--h1-bottom-gap) !important; }
+:root:has(.toc-card) h2:first-of-type{ margin-top: var(--h2-first-top) !important; }
+
+ 
+.toc-clear{ clear: both; }
+&lt;/style&gt;
+
+&lt;aside class=&#34;toc-card&#34; aria-label=&#34;Table of Contents&#34;&gt;
+  &lt;div class=&#34;toc-title&#34;&gt;Table of Contents&lt;/div&gt;
+  &lt;nav id=&#34;TableOfContents&#34;&gt;
+  &lt;ul&gt;
+    &lt;li&gt;&lt;a href=&#34;#seed-prediction&#34;&gt;Seed Prediction&lt;/a&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;a href=&#34;#fairytales&#34;&gt;Fairytales&lt;/a&gt;
+      &lt;ul&gt;
+        &lt;li&gt;&lt;a href=&#34;#underperformers&#34;&gt;Underperformers&lt;/a&gt;&lt;/li&gt;
+        &lt;li&gt;&lt;a href=&#34;#overperformers&#34;&gt;Overperformers&lt;/a&gt;&lt;/li&gt;
+      &lt;/ul&gt;
+    &lt;/li&gt;
+  &lt;/ul&gt;
+&lt;/nav&gt;
+&lt;/aside&gt;
+&lt;div class=&#34;toc-clear&#34;&gt;&lt;/div&gt;
+&lt;h1 id=&#34;seed-prediction&#34;&gt;Seed Prediction&lt;/h1&gt;
+&lt;p&gt;It feels like every year the committee intentionally misseeds a couple of teams just to farm engagement and get people talking about the tournament. This year is unfortunately no different and perhaps even worse than most. Of course the primary body of work are the games you played in the regular season but that does not mean the conference tournaments should count for nothing. Below are the most egregious examples of teams that were over or underseeded.&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>March Madness Region Strength</title>
+      <link>http://localhost:1313/posts/marchmadness/marchmadnessregionstrength/</link>
+      <pubDate>Wed, 19 Mar 2025 01:52:23 -0500</pubDate>
+      
+      <guid>http://localhost:1313/posts/marchmadness/marchmadnessregionstrength/</guid>
+      <description>&lt;style&gt;
+ 
+:root{
+  --toc-lift: 40rem;         
+  --toc-sticky: 4rem;       
+  --h1-bottom-gap: .75rem;  
+  --h2-first-top: .5rem;    
+}
+
+ 
+.toc-card{
+  float:right;
+  width:280px;
+  margin-top: calc(-1 * var(--toc-lift));   
+  margin-left:1.25rem;
+  margin-bottom:1rem;
+
+  position:sticky; top: var(--toc-sticky);
+  max-height:75vh; overflow:auto;
+  border-radius:12px; padding:1rem;
+  background:rgba(255,255,255,.04); box-shadow:0 2px 10px rgba(0,0,0,.12);
+  z-index:2;
+}
+.toc-title{font-weight:600; margin-bottom:.5rem}
+.toc-card ul{list-style:none; padding-left:.75rem}
+.toc-card a{text-decoration:none}
+
+ 
+@media (min-width:1280px){
+  .toc-card{ width:300px; margin-right:-320px; }
+}
+@media (min-width:1536px){
+  .toc-card{ width:320px; margin-right:-360px; }
+}
+
+ 
+@media (max-width:1100px){
+  .toc-card{ float:none; width:auto; position:relative; top:auto; margin:1rem 0 0 0; }
+}
+
+ 
+:root:has(.toc-card) h1{ margin-bottom: var(--h1-bottom-gap) !important; }
+:root:has(.toc-card) h2:first-of-type{ margin-top: var(--h2-first-top) !important; }
+
+ 
+.toc-clear{ clear: both; }
+&lt;/style&gt;
+
+&lt;aside class=&#34;toc-card&#34; aria-label=&#34;Table of Contents&#34;&gt;
+  &lt;div class=&#34;toc-title&#34;&gt;Table of Contents&lt;/div&gt;
+  &lt;nav id=&#34;TableOfContents&#34;&gt;
+  &lt;ul&gt;
+    &lt;li&gt;&lt;a href=&#34;#region-strength&#34;&gt;Region Strength&lt;/a&gt;&lt;/li&gt;
+  &lt;/ul&gt;
+&lt;/nav&gt;
+&lt;/aside&gt;
+&lt;div class=&#34;toc-clear&#34;&gt;&lt;/div&gt;
+&lt;h1 id=&#34;region-strength&#34;&gt;Region Strength&lt;/h1&gt;
+&lt;p&gt;Ideally we want our potential champion to come from the path of least resistance. That is to say the less competitive games our champion can play the more likely they are to win the championship. In an effort to quantify this path of least resistance (at least to the final four) the metric Region strength was created. It is comprised of three components, Total Region Championships, Seed Prediction and Fragility.&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>March Madness Breakdown</title>
+      <link>http://localhost:1313/projects/marchmadness/</link>
+      <pubDate>Mon, 17 Mar 2025 09:00:00 -0500</pubDate>
+      
+      <guid>http://localhost:1313/projects/marchmadness/</guid>
+      <description>&lt;h1 id=&#34;march-madness-introduction&#34;&gt;March Madness Introduction&lt;/h1&gt;
+&lt;p&gt;Every March college basketball captures the Country’s countries imagination. The tournament begins with 68 teams each of whom believe they can win the tournament and be crowned the best college basketball team in the country. The single elimination, win or go home, style of tournament creates excitement because anything can happen in one game. And it is true, anything can happen in one game. But what is the likelihood? Part of the reason this tournament has gained its fame is in pursuit of the perfect bracket. Correctly picking all 63 games, Warren Buffet has famously offered a substantial cash prize to the first person who can fill out a perfect bracket. Despite millions of attempts each year no one has really come close. So how can we try to be perfect? How can we get as close as possible? Realistically the perfect bracket is never going to happen but chasing it will also keep us entertained.&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Databaseball</title>
+      <link>http://localhost:1313/projects/databaseball/</link>
+      <pubDate>Mon, 17 Mar 2025 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/projects/databaseball/</guid>
+      <description>&lt;h1 id=&#34;introduction&#34;&gt;Introduction&lt;/h1&gt;
+&lt;p&gt;I made an app that gives users the ability to query a real-time relational database of baseball statistics. This all started when a friend of mine expressed frustration that a tool like this did not exist. He asked me to make it my next project — and so I did.&lt;/p&gt;
+&lt;p&gt;I feel I was able to produce something that is really interesting and useful (if you’re into baseball). But before getting into the end product, I’d like to discuss the setup and process that led to it.&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Yelp Introduction</title>
+      <link>http://localhost:1313/posts/yelp/yelpintroduction/</link>
+      <pubDate>Mon, 29 Jul 2024 01:52:23 -0500</pubDate>
+      
+      <guid>http://localhost:1313/posts/yelp/yelpintroduction/</guid>
+      <description>&lt;style&gt;
+ 
+:root{
+  --toc-lift: 40rem;         
+  --toc-sticky: 4rem;       
+  --h1-bottom-gap: .75rem;  
+  --h2-first-top: .5rem;    
+}
+
+ 
+.toc-card{
+  float:right;
+  width:280px;
+  margin-top: calc(-1 * var(--toc-lift));   
+  margin-left:1.25rem;
+  margin-bottom:1rem;
+
+  position:sticky; top: var(--toc-sticky);
+  max-height:75vh; overflow:auto;
+  border-radius:12px; padding:1rem;
+  background:rgba(255,255,255,.04); box-shadow:0 2px 10px rgba(0,0,0,.12);
+  z-index:2;
+}
+.toc-title{font-weight:600; margin-bottom:.5rem}
+.toc-card ul{list-style:none; padding-left:.75rem}
+.toc-card a{text-decoration:none}
+
+ 
+@media (min-width:1280px){
+  .toc-card{ width:300px; margin-right:-320px; }
+}
+@media (min-width:1536px){
+  .toc-card{ width:320px; margin-right:-360px; }
+}
+
+ 
+@media (max-width:1100px){
+  .toc-card{ float:none; width:auto; position:relative; top:auto; margin:1rem 0 0 0; }
+}
+
+ 
+:root:has(.toc-card) h1{ margin-bottom: var(--h1-bottom-gap) !important; }
+:root:has(.toc-card) h2:first-of-type{ margin-top: var(--h2-first-top) !important; }
+
+ 
+.toc-clear{ clear: both; }
+&lt;/style&gt;
+
+&lt;aside class=&#34;toc-card&#34; aria-label=&#34;Table of Contents&#34;&gt;
+  &lt;div class=&#34;toc-title&#34;&gt;Table of Contents&lt;/div&gt;
+  &lt;nav id=&#34;TableOfContents&#34;&gt;
+  &lt;ul&gt;
+    &lt;li&gt;
+      &lt;ul&gt;
+        &lt;li&gt;
+          &lt;ul&gt;
+            &lt;li&gt;&lt;a href=&#34;#summary&#34;&gt;Summary&lt;/a&gt;&lt;/li&gt;
+            &lt;li&gt;&lt;a href=&#34;#ratings&#34;&gt;Ratings&lt;/a&gt;&lt;/li&gt;
+            &lt;li&gt;&lt;a href=&#34;#odd-observations&#34;&gt;Odd Observations&lt;/a&gt;&lt;/li&gt;
+            &lt;li&gt;&lt;a href=&#34;#mismatching-columns&#34;&gt;Mismatching Columns&lt;/a&gt;&lt;/li&gt;
+            &lt;li&gt;&lt;a href=&#34;#api-limitations&#34;&gt;API Limitations&lt;/a&gt;&lt;/li&gt;
+          &lt;/ul&gt;
+        &lt;/li&gt;
+      &lt;/ul&gt;
+    &lt;/li&gt;
+  &lt;/ul&gt;
+&lt;/nav&gt;
+&lt;/aside&gt;
+&lt;div class=&#34;toc-clear&#34;&gt;&lt;/div&gt;
+&lt;h3 id=&#34;summary&#34;&gt;Summary&lt;/h3&gt;
+&lt;p&gt;This is an introduction to the analysis done on Yelp included on this site. It goes over some of the difficulties of the data as well as providing a brief overview of the process
+taken to construct the project.&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Yelp Search Score</title>
+      <link>http://localhost:1313/posts/yelp/yelpsearchscore/</link>
+      <pubDate>Mon, 29 Jul 2024 01:52:23 -0500</pubDate>
+      
+      <guid>http://localhost:1313/posts/yelp/yelpsearchscore/</guid>
+      <description>&lt;style&gt;
+ 
+:root{
+  --toc-lift: 40rem;         
+  --toc-sticky: 4rem;       
+  --h1-bottom-gap: .75rem;  
+  --h2-first-top: .5rem;    
+}
+
+ 
+.toc-card{
+  float:right;
+  width:280px;
+  margin-top: calc(-1 * var(--toc-lift));   
+  margin-left:1.25rem;
+  margin-bottom:1rem;
+
+  position:sticky; top: var(--toc-sticky);
+  max-height:75vh; overflow:auto;
+  border-radius:12px; padding:1rem;
+  background:rgba(255,255,255,.04); box-shadow:0 2px 10px rgba(0,0,0,.12);
+  z-index:2;
+}
+.toc-title{font-weight:600; margin-bottom:.5rem}
+.toc-card ul{list-style:none; padding-left:.75rem}
+.toc-card a{text-decoration:none}
+
+ 
+@media (min-width:1280px){
+  .toc-card{ width:300px; margin-right:-320px; }
+}
+@media (min-width:1536px){
+  .toc-card{ width:320px; margin-right:-360px; }
+}
+
+ 
+@media (max-width:1100px){
+  .toc-card{ float:none; width:auto; position:relative; top:auto; margin:1rem 0 0 0; }
+}
+
+ 
+:root:has(.toc-card) h1{ margin-bottom: var(--h1-bottom-gap) !important; }
+:root:has(.toc-card) h2:first-of-type{ margin-top: var(--h2-first-top) !important; }
+
+ 
+.toc-clear{ clear: both; }
+&lt;/style&gt;
+
+&lt;aside class=&#34;toc-card&#34; aria-label=&#34;Table of Contents&#34;&gt;
+  &lt;div class=&#34;toc-title&#34;&gt;Table of Contents&lt;/div&gt;
+  &lt;nav id=&#34;TableOfContents&#34;&gt;
+  &lt;ul&gt;
+    &lt;li&gt;&lt;a href=&#34;#search-score&#34;&gt;Search Score&lt;/a&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;a href=&#34;#find-top-restaurants-by-zip-code&#34;&gt;Find Top Restaurants by ZIP Code&lt;/a&gt;&lt;/li&gt;
+  &lt;/ul&gt;
+&lt;/nav&gt;
+&lt;/aside&gt;
+&lt;div class=&#34;toc-clear&#34;&gt;&lt;/div&gt;
+&lt;h1 id=&#34;search-score&#34;&gt;Search Score&lt;/h1&gt;
+&lt;p&gt;After using Yelp to find the best restaurants ‘near me’ for more than a decade, I have seen a decline in the accuracy and validity of their search algorithm. Too often the search results seemed random and incomplete. So after years of confusion, I finally decided to try and take a look under the hood. See if I could understand their search algorithm and results. Then finally take a stab at my own search algorithm and see how closely my results compare to Yelp&amp;rsquo;s.&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Yelp and Zillow Housing Price Index</title>
+      <link>http://localhost:1313/posts/yelp/yelpandzillow/</link>
+      <pubDate>Mon, 29 Jul 2024 01:52:23 -0500</pubDate>
+      
+      <guid>http://localhost:1313/posts/yelp/yelpandzillow/</guid>
+      <description>&lt;style&gt;
+ 
+:root{
+  --toc-lift: 40rem;         
+  --toc-sticky: 4rem;       
+  --h1-bottom-gap: .75rem;  
+  --h2-first-top: .5rem;    
+}
+
+ 
+.toc-card{
+  float:right;
+  width:280px;
+  margin-top: calc(-1 * var(--toc-lift));   
+  margin-left:1.25rem;
+  margin-bottom:1rem;
+
+  position:sticky; top: var(--toc-sticky);
+  max-height:75vh; overflow:auto;
+  border-radius:12px; padding:1rem;
+  background:rgba(255,255,255,.04); box-shadow:0 2px 10px rgba(0,0,0,.12);
+  z-index:2;
+}
+.toc-title{font-weight:600; margin-bottom:.5rem}
+.toc-card ul{list-style:none; padding-left:.75rem}
+.toc-card a{text-decoration:none}
+
+ 
+@media (min-width:1280px){
+  .toc-card{ width:300px; margin-right:-320px; }
+}
+@media (min-width:1536px){
+  .toc-card{ width:320px; margin-right:-360px; }
+}
+
+ 
+@media (max-width:1100px){
+  .toc-card{ float:none; width:auto; position:relative; top:auto; margin:1rem 0 0 0; }
+}
+
+ 
+:root:has(.toc-card) h1{ margin-bottom: var(--h1-bottom-gap) !important; }
+:root:has(.toc-card) h2:first-of-type{ margin-top: var(--h2-first-top) !important; }
+
+ 
+.toc-clear{ clear: both; }
+&lt;/style&gt;
+
+&lt;aside class=&#34;toc-card&#34; aria-label=&#34;Table of Contents&#34;&gt;
+  &lt;div class=&#34;toc-title&#34;&gt;Table of Contents&lt;/div&gt;
+  &lt;nav id=&#34;TableOfContents&#34;&gt;
+  &lt;ul&gt;
+    &lt;li&gt;&lt;a href=&#34;#zillow-analysis&#34;&gt;Zillow Analysis&lt;/a&gt;
+      &lt;ul&gt;
+        &lt;li&gt;&lt;a href=&#34;#housing-price-prediction&#34;&gt;Housing Price Prediction&lt;/a&gt;&lt;/li&gt;
+        &lt;li&gt;&lt;a href=&#34;#data-constraints&#34;&gt;Data Constraints&lt;/a&gt;&lt;/li&gt;
+        &lt;li&gt;&lt;a href=&#34;#variables&#34;&gt;Variables&lt;/a&gt;
+          &lt;ul&gt;
+            &lt;li&gt;&lt;a href=&#34;#yelp&#34;&gt;Yelp&lt;/a&gt;&lt;/li&gt;
+            &lt;li&gt;&lt;a href=&#34;#zillow&#34;&gt;Zillow&lt;/a&gt;&lt;/li&gt;
+          &lt;/ul&gt;
+        &lt;/li&gt;
+        &lt;li&gt;&lt;a href=&#34;#creating-the-model&#34;&gt;Creating the Model&lt;/a&gt;&lt;/li&gt;
+        &lt;li&gt;&lt;a href=&#34;#evaluating-the-model&#34;&gt;Evaluating the Model&lt;/a&gt;&lt;/li&gt;
+        &lt;li&gt;&lt;a href=&#34;#residuals-plot&#34;&gt;Residuals Plot&lt;/a&gt;&lt;/li&gt;
+        &lt;li&gt;&lt;a href=&#34;#least-accurate-residuals&#34;&gt;Least Accurate Residuals&lt;/a&gt;&lt;/li&gt;
+        &lt;li&gt;&lt;a href=&#34;#most-accurate-predictions&#34;&gt;Most Accurate Predictions&lt;/a&gt;&lt;/li&gt;
+        &lt;li&gt;&lt;a href=&#34;#conclusions&#34;&gt;Conclusions&lt;/a&gt;&lt;/li&gt;
+      &lt;/ul&gt;
+    &lt;/li&gt;
+  &lt;/ul&gt;
+&lt;/nav&gt;
+&lt;/aside&gt;
+&lt;div class=&#34;toc-clear&#34;&gt;&lt;/div&gt;
+&lt;h1 id=&#34;zillow-analysis&#34;&gt;Zillow Analysis&lt;/h1&gt;
+&lt;h2 id=&#34;housing-price-prediction&#34;&gt;Housing Price Prediction&lt;/h2&gt;
+&lt;p&gt;This analysis was motivated by the following question: Can the collected data from Yelp be used to approximate the average housing price of a zip code?&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Yelp Tag Graphs</title>
+      <link>http://localhost:1313/posts/yelp/yelptaggraphs/</link>
+      <pubDate>Mon, 29 Jul 2024 01:52:23 -0500</pubDate>
+      
+      <guid>http://localhost:1313/posts/yelp/yelptaggraphs/</guid>
+      <description>&lt;style&gt;
+ 
+:root{
+  --toc-lift: 40rem;         
+  --toc-sticky: 4rem;       
+  --h1-bottom-gap: .75rem;  
+  --h2-first-top: .5rem;    
+}
+
+ 
+.toc-card{
+  float:right;
+  width:280px;
+  margin-top: calc(-1 * var(--toc-lift));   
+  margin-left:1.25rem;
+  margin-bottom:1rem;
+
+  position:sticky; top: var(--toc-sticky);
+  max-height:75vh; overflow:auto;
+  border-radius:12px; padding:1rem;
+  background:rgba(255,255,255,.04); box-shadow:0 2px 10px rgba(0,0,0,.12);
+  z-index:2;
+}
+.toc-title{font-weight:600; margin-bottom:.5rem}
+.toc-card ul{list-style:none; padding-left:.75rem}
+.toc-card a{text-decoration:none}
+
+ 
+@media (min-width:1280px){
+  .toc-card{ width:300px; margin-right:-320px; }
+}
+@media (min-width:1536px){
+  .toc-card{ width:320px; margin-right:-360px; }
+}
+
+ 
+@media (max-width:1100px){
+  .toc-card{ float:none; width:auto; position:relative; top:auto; margin:1rem 0 0 0; }
+}
+
+ 
+:root:has(.toc-card) h1{ margin-bottom: var(--h1-bottom-gap) !important; }
+:root:has(.toc-card) h2:first-of-type{ margin-top: var(--h2-first-top) !important; }
+
+ 
+.toc-clear{ clear: both; }
+&lt;/style&gt;
+
+&lt;aside class=&#34;toc-card&#34; aria-label=&#34;Table of Contents&#34;&gt;
+  &lt;div class=&#34;toc-title&#34;&gt;Table of Contents&lt;/div&gt;
+  &lt;nav id=&#34;TableOfContents&#34;&gt;
+  &lt;ul&gt;
+    &lt;li&gt;&lt;a href=&#34;#welcome-to-the-tag-graphs-tool&#34;&gt;Welcome to the Tag Graphs Tool!&lt;/a&gt;
+      &lt;ul&gt;
+        &lt;li&gt;&lt;a href=&#34;#tag-graphs&#34;&gt;Tag Graphs&lt;/a&gt;&lt;/li&gt;
+      &lt;/ul&gt;
+    &lt;/li&gt;
+  &lt;/ul&gt;
+&lt;/nav&gt;
+&lt;/aside&gt;
+&lt;div class=&#34;toc-clear&#34;&gt;&lt;/div&gt;
+&lt;h1 id=&#34;welcome-to-the-tag-graphs-tool&#34;&gt;Welcome to the Tag Graphs Tool!&lt;/h1&gt;
+&lt;p&gt;Welcome to the Tag Graph Tool. The purpose of this tool is to provide visualization to the most popular
+types of restaurants in a given area. There are three different graphs one each for State, City and Zip
+Code. Each graph works the same just chose option(s) from the selection box and hit the &amp;ldquo;Generate Graph&amp;rdquo;
+button.&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Yelp Heat Maps</title>
+      <link>http://localhost:1313/posts/yelp/yelpheatmaps/</link>
+      <pubDate>Mon, 29 Jul 2024 01:52:23 -0500</pubDate>
+      
+      <guid>http://localhost:1313/posts/yelp/yelpheatmaps/</guid>
+      <description>&lt;style&gt;
+ 
+:root{
+  --toc-lift: 40rem;         
+  --toc-sticky: 4rem;       
+  --h1-bottom-gap: .75rem;  
+  --h2-first-top: .5rem;    
+}
+
+ 
+.toc-card{
+  float:right;
+  width:280px;
+  margin-top: calc(-1 * var(--toc-lift));   
+  margin-left:1.25rem;
+  margin-bottom:1rem;
+
+  position:sticky; top: var(--toc-sticky);
+  max-height:75vh; overflow:auto;
+  border-radius:12px; padding:1rem;
+  background:rgba(255,255,255,.04); box-shadow:0 2px 10px rgba(0,0,0,.12);
+  z-index:2;
+}
+.toc-title{font-weight:600; margin-bottom:.5rem}
+.toc-card ul{list-style:none; padding-left:.75rem}
+.toc-card a{text-decoration:none}
+
+ 
+@media (min-width:1280px){
+  .toc-card{ width:300px; margin-right:-320px; }
+}
+@media (min-width:1536px){
+  .toc-card{ width:320px; margin-right:-360px; }
+}
+
+ 
+@media (max-width:1100px){
+  .toc-card{ float:none; width:auto; position:relative; top:auto; margin:1rem 0 0 0; }
+}
+
+ 
+:root:has(.toc-card) h1{ margin-bottom: var(--h1-bottom-gap) !important; }
+:root:has(.toc-card) h2:first-of-type{ margin-top: var(--h2-first-top) !important; }
+
+ 
+.toc-clear{ clear: both; }
+&lt;/style&gt;
+
+&lt;aside class=&#34;toc-card&#34; aria-label=&#34;Table of Contents&#34;&gt;
+  &lt;div class=&#34;toc-title&#34;&gt;Table of Contents&lt;/div&gt;
+  &lt;nav id=&#34;TableOfContents&#34;&gt;
+  &lt;ul&gt;
+    &lt;li&gt;&lt;a href=&#34;#welcome-to-the-heat-map-tool&#34;&gt;Welcome to the Heat Map Tool!&lt;/a&gt;&lt;/li&gt;
+  &lt;/ul&gt;
+&lt;/nav&gt;
+&lt;/aside&gt;
+&lt;div class=&#34;toc-clear&#34;&gt;&lt;/div&gt;
+&lt;h1 id=&#34;welcome-to-the-heat-map-tool&#34;&gt;Welcome to the Heat Map Tool!&lt;/h1&gt;
+&lt;p&gt;Curious how restaurants are distributed across the city? Select any city from the below dropdown and choose from any variable in the adjacent list to view how restaurants are found throughout the selected city based on selected variable!&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Yelp Introduction</title>
+      <link>http://localhost:1313/projects/yelpzillow/</link>
+      <pubDate>Mon, 29 Jul 2024 01:52:23 -0500</pubDate>
+      
+      <guid>http://localhost:1313/projects/yelpzillow/</guid>
+      <description>&lt;h3 id=&#34;summary&#34;&gt;Summary&lt;/h3&gt;
+&lt;p&gt;This is an introduction to the analysis done on Yelp included on this site. It goes over some of the difficulties of the data as well as providing a brief overview of the process
+taken to construct the project.&lt;/p&gt;
+&lt;p&gt;The Yelp API has its positives and negatives. It is relatively easy to get access and get started using. There are plenty of pages of documentation on how to use the API and its limitations. In its most basic form, it is a solid source of data from Yelp. These positives should not be understated; it is important that public data be easily available to the public. However, there are some negatives I would like to point out that I think should be addressed.&lt;/p&gt;</description>
+    </item>
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
   </channel>
 </rss>
