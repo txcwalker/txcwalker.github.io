@@ -2,7 +2,7 @@
 
 This repository contains the source code for my personal website and portfolio, built with [Hugo](https://gohugo.io/) using the Toha theme. The site highlights my data science projects, resume, and blog posts.
 
-🌐 Live Site: [[https://yourusername.github.io](https://txcwalker.github.io/)](https://txcwalker.github.io/)
+🌐 Live Site: [(https://txcwalker.github.io/)](https://txcwalker.github.io/)
 
 ---
 
