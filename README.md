@@ -6,7 +6,7 @@ This repository contains the source code for my personal website and portfolio, 
 
 ---
 
-## 🚀 Features
+## Features
 - Portfolio of data science & machine learning projects
 - Blog posts with analysis and tutorials
 - Responsive design, mobile-friendly
@@ -14,7 +14,16 @@ This repository contains the source code for my personal website and portfolio, 
 
 ---
 
-## 🛠️ Built With
+## Built With
 - [Hugo](https://gohugo.io/)
 - [Toha Theme](https://github.com/hugo-toha/toha)
 - GitHub Pages for hosting
+
+
+---
+
+## Tools
+- March Madness Simulator [https://txcwalker.github.io/projects/marchmadness/](https://txcwalker.github.io/projects/marchmadness/)
+- Baseball Database Search Engine [https://databaseball.streamlit.app/](https://databaseball.streamlit.app/)
+- Yelp Restaurant Finder [https://txcwalker.github.io/posts/yelp/yelpsearchscore/](https://txcwalker.github.io/posts/yelp/yelpsearchscore/)
+- Phishing Predictor [https://gonephishing.streamlit.app/](https://gonephishing.streamlit.app/)
