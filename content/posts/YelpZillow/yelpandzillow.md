@@ -10,6 +10,8 @@ parent = "YelpZillow"
 weight = 3
 +++
 
+{{< toc >}}
+
 # Zillow Analysis
 
 ## Housing Price Prediction

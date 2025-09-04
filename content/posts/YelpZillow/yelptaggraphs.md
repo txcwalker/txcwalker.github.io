@@ -10,6 +10,8 @@ parent = "YelpZillow"
 weight = 5
 +++
 
+{{< toc >}}
+
 # Welcome to the Tag Graphs Tool!
 
 Welcome to the Tag Graph Tool. The purpose of this tool is to provide visualizations to the most popular

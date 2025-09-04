@@ -10,6 +10,8 @@ parent = "YelpZillow"
 weight = 2
 +++
 
+{{< toc >}}
+
 # Search Score
 
 After using Yelp to find the best restaurants ‘near me’ for more than a decade, I have seen a decline in the accuracy and validity of their search algorithm. Too often the search results seemed random and incomplete. So after years of confusion, I finally decided to try and take a look under the hood. See if I could understand their search algorithm and results. Then finally take a stab at my own search algorithm and see how closely my results compare to Yelp's.

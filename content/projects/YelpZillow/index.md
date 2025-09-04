@@ -1,9 +1,8 @@
 ---
-title: 'Yelp Introduction'
+title: 'Yelp and Zillow Analysis'
 date: 2024-07-29T01:52:23-05:00
 lastmod: 2024-07-29T01:52:23-05:00
 ---
-
 
 ### Summary  
 This is an introduction to the analysis done on Yelp included on this site. It goes over some of the difficulties of the data as well as providing a brief overview of the process

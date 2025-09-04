@@ -10,6 +10,8 @@ parent = "YelpZillow"
 weight = 1
 +++
 
+{{< toc >}}
+
 ### Summary  
 This is an introduction to the analysis done on Yelp included on this site. It goes over some of the difficulties of the data as well as providing a brief overview of the process
 taken to construct the project.

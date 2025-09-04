@@ -530,10 +530,78 @@
       <pubDate>Wed, 19 Jun 2024 01:52:23 -0500</pubDate>
       
       <guid>http://localhost:1313/posts/yelpzillow/yelpintroduction/</guid>
-      <description>&lt;h3 id=&#34;summary&#34;&gt;Summary&lt;/h3&gt;
+      <description>&lt;style&gt;
+ 
+:root{
+  --toc-lift: 40rem;         
+  --toc-sticky: 4rem;       
+  --h1-bottom-gap: .75rem;  
+  --h2-first-top: .5rem;    
+}
+
+ 
+.toc-card{
+  float:right;
+  width:280px;
+  margin-top: calc(-1 * var(--toc-lift));   
+  margin-left:1.25rem;
+  margin-bottom:1rem;
+
+  position:sticky; top: var(--toc-sticky);
+  max-height:75vh; overflow:auto;
+  border-radius:12px; padding:1rem;
+  background:rgba(255,255,255,.04); box-shadow:0 2px 10px rgba(0,0,0,.12);
+  z-index:2;
+}
+.toc-title{font-weight:600; margin-bottom:.5rem}
+.toc-card ul{list-style:none; padding-left:.75rem}
+.toc-card a{text-decoration:none}
+
+ 
+@media (min-width:1280px){
+  .toc-card{ width:300px; margin-right:-320px; }
+}
+@media (min-width:1536px){
+  .toc-card{ width:320px; margin-right:-360px; }
+}
+
+ 
+@media (max-width:1100px){
+  .toc-card{ float:none; width:auto; position:relative; top:auto; margin:1rem 0 0 0; }
+}
+
+ 
+:root:has(.toc-card) h1{ margin-bottom: var(--h1-bottom-gap) !important; }
+:root:has(.toc-card) h2:first-of-type{ margin-top: var(--h2-first-top) !important; }
+
+ 
+.toc-clear{ clear: both; }
+&lt;/style&gt;
+
+&lt;aside class=&#34;toc-card&#34; aria-label=&#34;Table of Contents&#34;&gt;
+  &lt;div class=&#34;toc-title&#34;&gt;Table of Contents&lt;/div&gt;
+  &lt;nav id=&#34;TableOfContents&#34;&gt;
+  &lt;ul&gt;
+    &lt;li&gt;
+      &lt;ul&gt;
+        &lt;li&gt;
+          &lt;ul&gt;
+            &lt;li&gt;&lt;a href=&#34;#summary&#34;&gt;Summary&lt;/a&gt;&lt;/li&gt;
+            &lt;li&gt;&lt;a href=&#34;#ratings&#34;&gt;Ratings&lt;/a&gt;&lt;/li&gt;
+            &lt;li&gt;&lt;a href=&#34;#odd-observations&#34;&gt;Odd Observations&lt;/a&gt;&lt;/li&gt;
+            &lt;li&gt;&lt;a href=&#34;#mismatching-columns&#34;&gt;Mismatching Columns&lt;/a&gt;&lt;/li&gt;
+            &lt;li&gt;&lt;a href=&#34;#api-limitations&#34;&gt;API Limitations&lt;/a&gt;&lt;/li&gt;
+          &lt;/ul&gt;
+        &lt;/li&gt;
+      &lt;/ul&gt;
+    &lt;/li&gt;
+  &lt;/ul&gt;
+&lt;/nav&gt;
+&lt;/aside&gt;
+&lt;div class=&#34;toc-clear&#34;&gt;&lt;/div&gt;
+&lt;h3 id=&#34;summary&#34;&gt;Summary&lt;/h3&gt;
 &lt;p&gt;This is an introduction to the analysis done on Yelp included on this site. It goes over some of the difficulties of the data as well as providing a brief overview of the process
-taken to construct the project.&lt;/p&gt;
-&lt;p&gt;The Yelp API has its positives and negatives. It is relatively easy to get access and get started using. There are plenty of pages of documentation on how to use the API and its limitations. In its most basic form, it is a solid source of data from Yelp. These positives should not be understated; it is important that public data be easily available to the public. However, there are some negatives I would like to point out that I think should be addressed.&lt;/p&gt;</description>
+taken to construct the project.&lt;/p&gt;</description>
     </item>
     
     <item>
@@ -542,7 +610,65 @@ taken to construct the project.&lt;/p&gt;
       <pubDate>Wed, 19 Jun 2024 01:52:23 -0500</pubDate>
       
       <guid>http://localhost:1313/posts/yelpzillow/yelpsearchscore/</guid>
-      <description>&lt;h1 id=&#34;search-score&#34;&gt;Search Score&lt;/h1&gt;
+      <description>&lt;style&gt;
+ 
+:root{
+  --toc-lift: 40rem;         
+  --toc-sticky: 4rem;       
+  --h1-bottom-gap: .75rem;  
+  --h2-first-top: .5rem;    
+}
+
+ 
+.toc-card{
+  float:right;
+  width:280px;
+  margin-top: calc(-1 * var(--toc-lift));   
+  margin-left:1.25rem;
+  margin-bottom:1rem;
+
+  position:sticky; top: var(--toc-sticky);
+  max-height:75vh; overflow:auto;
+  border-radius:12px; padding:1rem;
+  background:rgba(255,255,255,.04); box-shadow:0 2px 10px rgba(0,0,0,.12);
+  z-index:2;
+}
+.toc-title{font-weight:600; margin-bottom:.5rem}
+.toc-card ul{list-style:none; padding-left:.75rem}
+.toc-card a{text-decoration:none}
+
+ 
+@media (min-width:1280px){
+  .toc-card{ width:300px; margin-right:-320px; }
+}
+@media (min-width:1536px){
+  .toc-card{ width:320px; margin-right:-360px; }
+}
+
+ 
+@media (max-width:1100px){
+  .toc-card{ float:none; width:auto; position:relative; top:auto; margin:1rem 0 0 0; }
+}
+
+ 
+:root:has(.toc-card) h1{ margin-bottom: var(--h1-bottom-gap) !important; }
+:root:has(.toc-card) h2:first-of-type{ margin-top: var(--h2-first-top) !important; }
+
+ 
+.toc-clear{ clear: both; }
+&lt;/style&gt;
+
+&lt;aside class=&#34;toc-card&#34; aria-label=&#34;Table of Contents&#34;&gt;
+  &lt;div class=&#34;toc-title&#34;&gt;Table of Contents&lt;/div&gt;
+  &lt;nav id=&#34;TableOfContents&#34;&gt;
+  &lt;ul&gt;
+    &lt;li&gt;&lt;a href=&#34;#search-score&#34;&gt;Search Score&lt;/a&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;a href=&#34;#find-top-restaurants-by-zip-code&#34;&gt;Find Top Restaurants by ZIP Code&lt;/a&gt;&lt;/li&gt;
+  &lt;/ul&gt;
+&lt;/nav&gt;
+&lt;/aside&gt;
+&lt;div class=&#34;toc-clear&#34;&gt;&lt;/div&gt;
+&lt;h1 id=&#34;search-score&#34;&gt;Search Score&lt;/h1&gt;
 &lt;p&gt;After using Yelp to find the best restaurants ‘near me’ for more than a decade, I have seen a decline in the accuracy and validity of their search algorithm. Too often the search results seemed random and incomplete. So after years of confusion, I finally decided to try and take a look under the hood. See if I could understand their search algorithm and results. Then finally take a stab at my own search algorithm and see how closely my results compare to Yelp&amp;rsquo;s.&lt;/p&gt;</description>
     </item>
     
@@ -552,10 +678,83 @@ taken to construct the project.&lt;/p&gt;
       <pubDate>Wed, 19 Jun 2024 01:52:23 -0500</pubDate>
       
       <guid>http://localhost:1313/posts/yelpzillow/yelpandzillow/</guid>
-      <description>&lt;h1 id=&#34;zillow-analysis&#34;&gt;Zillow Analysis&lt;/h1&gt;
+      <description>&lt;style&gt;
+ 
+:root{
+  --toc-lift: 40rem;         
+  --toc-sticky: 4rem;       
+  --h1-bottom-gap: .75rem;  
+  --h2-first-top: .5rem;    
+}
+
+ 
+.toc-card{
+  float:right;
+  width:280px;
+  margin-top: calc(-1 * var(--toc-lift));   
+  margin-left:1.25rem;
+  margin-bottom:1rem;
+
+  position:sticky; top: var(--toc-sticky);
+  max-height:75vh; overflow:auto;
+  border-radius:12px; padding:1rem;
+  background:rgba(255,255,255,.04); box-shadow:0 2px 10px rgba(0,0,0,.12);
+  z-index:2;
+}
+.toc-title{font-weight:600; margin-bottom:.5rem}
+.toc-card ul{list-style:none; padding-left:.75rem}
+.toc-card a{text-decoration:none}
+
+ 
+@media (min-width:1280px){
+  .toc-card{ width:300px; margin-right:-320px; }
+}
+@media (min-width:1536px){
+  .toc-card{ width:320px; margin-right:-360px; }
+}
+
+ 
+@media (max-width:1100px){
+  .toc-card{ float:none; width:auto; position:relative; top:auto; margin:1rem 0 0 0; }
+}
+
+ 
+:root:has(.toc-card) h1{ margin-bottom: var(--h1-bottom-gap) !important; }
+:root:has(.toc-card) h2:first-of-type{ margin-top: var(--h2-first-top) !important; }
+
+ 
+.toc-clear{ clear: both; }
+&lt;/style&gt;
+
+&lt;aside class=&#34;toc-card&#34; aria-label=&#34;Table of Contents&#34;&gt;
+  &lt;div class=&#34;toc-title&#34;&gt;Table of Contents&lt;/div&gt;
+  &lt;nav id=&#34;TableOfContents&#34;&gt;
+  &lt;ul&gt;
+    &lt;li&gt;&lt;a href=&#34;#zillow-analysis&#34;&gt;Zillow Analysis&lt;/a&gt;
+      &lt;ul&gt;
+        &lt;li&gt;&lt;a href=&#34;#housing-price-prediction&#34;&gt;Housing Price Prediction&lt;/a&gt;&lt;/li&gt;
+        &lt;li&gt;&lt;a href=&#34;#data-constraints&#34;&gt;Data Constraints&lt;/a&gt;&lt;/li&gt;
+        &lt;li&gt;&lt;a href=&#34;#variables&#34;&gt;Variables&lt;/a&gt;
+          &lt;ul&gt;
+            &lt;li&gt;&lt;a href=&#34;#yelp&#34;&gt;Yelp&lt;/a&gt;&lt;/li&gt;
+            &lt;li&gt;&lt;a href=&#34;#zillow&#34;&gt;Zillow&lt;/a&gt;&lt;/li&gt;
+          &lt;/ul&gt;
+        &lt;/li&gt;
+        &lt;li&gt;&lt;a href=&#34;#creating-the-model&#34;&gt;Creating the Model&lt;/a&gt;&lt;/li&gt;
+        &lt;li&gt;&lt;a href=&#34;#evaluating-the-model&#34;&gt;Evaluating the Model&lt;/a&gt;&lt;/li&gt;
+        &lt;li&gt;&lt;a href=&#34;#residuals-plot&#34;&gt;Residuals Plot&lt;/a&gt;&lt;/li&gt;
+        &lt;li&gt;&lt;a href=&#34;#least-accurate-residuals&#34;&gt;Least Accurate Residuals&lt;/a&gt;&lt;/li&gt;
+        &lt;li&gt;&lt;a href=&#34;#most-accurate-predictions&#34;&gt;Most Accurate Predictions&lt;/a&gt;&lt;/li&gt;
+        &lt;li&gt;&lt;a href=&#34;#conclusions&#34;&gt;Conclusions&lt;/a&gt;&lt;/li&gt;
+      &lt;/ul&gt;
+    &lt;/li&gt;
+  &lt;/ul&gt;
+&lt;/nav&gt;
+&lt;/aside&gt;
+&lt;div class=&#34;toc-clear&#34;&gt;&lt;/div&gt;
+&lt;h1 id=&#34;zillow-analysis&#34;&gt;Zillow Analysis&lt;/h1&gt;
 &lt;h2 id=&#34;housing-price-prediction&#34;&gt;Housing Price Prediction&lt;/h2&gt;
-&lt;p&gt;This analysis was motivated by the following question: Can the collected data from Yelp be used to approximate the average housing price of a zip code?&lt;/p&gt;
-&lt;p&gt;Data was collected from Yelp using its API and a model was created to try and predict the average cost of a house by zip code. If the model shows promise, it can be used to help predict future changes in housing price as the average price/rating/review count of a zip code&amp;rsquo;s restaurants increase or decrease. This could help with improving city logistics, ease gentrification, provide investing opportunities, and much more. The core idea is popular restaurants could be a proxy variable representing an increase in interest in a particular area and thus an increase in the average price of housing.&lt;/p&gt;</description>
+&lt;p&gt;This analysis was motivated by the following question: Can the collected data from Yelp be used to approximate the average housing price of a zip code?&lt;/p&gt;</description>
     </item>
     
     <item>
@@ -564,48 +763,65 @@ taken to construct the project.&lt;/p&gt;
       <pubDate>Wed, 19 Jun 2024 01:52:23 -0500</pubDate>
       
       <guid>http://localhost:1313/posts/yelpzillow/yelpheatmaps/</guid>
-      <description>&lt;h1 id=&#34;welcome-to-the-heat-map-tool&#34;&gt;Welcome to the Heat Map Tool!&lt;/h1&gt;
-&lt;p&gt;Curious how restaurants are distributed across the city? Select any city from the below dropdown and choose from any variable in the adjacent list to view how restaurants are found throughout the selected city based on selected variable!&lt;/p&gt;
-&lt;!DOCTYPE html&gt;
-&lt;html lang=&#34;en&#34;&gt;
-&lt;head&gt;
-    &lt;meta charset=&#34;UTF-8&#34;&gt;
-    &lt;meta name=&#34;viewport&#34; content=&#34;width=device-width, initial-scale=1.0&#34;&gt;
-    &lt;title&gt;Heatmap&lt;/title&gt;
-    &lt;link rel=&#34;stylesheet&#34; href=&#34;http://localhost:1313/css/style.css&#34;&gt;
-    
-    &lt;script src=&#34;https://cdn.plot.ly/plotly-latest.min.js&#34;&gt;&lt;/script&gt;
-    
-    &lt;link href=&#34;https://api.mapbox.com/mapbox-gl-js/v3.5.1/mapbox-gl.css&#34; rel=&#34;stylesheet&#34;&gt;
-    &lt;script src=&#34;https://api.mapbox.com/mapbox-gl-js/v3.5.1/mapbox-gl.js&#34;&gt;&lt;/script&gt;
-&lt;/head&gt;
-&lt;body&gt;
-    &lt;div class=&#34;graph-container&#34;&gt;
-        &lt;div class=&#34;form-section&#34;&gt;
-            &lt;div class=&#34;form-elements&#34;&gt;
-                &lt;form id=&#34;heatmap-form&#34;&gt;
-                    &lt;label for=&#34;target_city&#34;&gt;Select City:&lt;/label&gt;
-                    &lt;select id=&#34;target_city&#34; name=&#34;target_city&#34;&gt;
-                        
-                    &lt;/select&gt;
+      <description>&lt;style&gt;
+ 
+:root{
+  --toc-lift: 40rem;         
+  --toc-sticky: 4rem;       
+  --h1-bottom-gap: .75rem;  
+  --h2-first-top: .5rem;    
+}
 
-                    &lt;label for=&#34;target_variable&#34;&gt;Select Variable:&lt;/label&gt;
-                    &lt;select id=&#34;target_variable&#34; name=&#34;target_variable&#34;&gt;
-                        &lt;option value=&#34;review_count&#34;&gt;Review Count&lt;/option&gt;
-                        &lt;option value=&#34;price&#34;&gt;Price&lt;/option&gt;
-                        &lt;option value=&#34;rating&#34;&gt;Rating&lt;/option&gt;
-                    &lt;/select&gt;
+ 
+.toc-card{
+  float:right;
+  width:280px;
+  margin-top: calc(-1 * var(--toc-lift));   
+  margin-left:1.25rem;
+  margin-bottom:1rem;
 
-                    &lt;button type=&#34;submit&#34;&gt;Update Map&lt;/button&gt;
-                &lt;/form&gt;
+  position:sticky; top: var(--toc-sticky);
+  max-height:75vh; overflow:auto;
+  border-radius:12px; padding:1rem;
+  background:rgba(255,255,255,.04); box-shadow:0 2px 10px rgba(0,0,0,.12);
+  z-index:2;
+}
+.toc-title{font-weight:600; margin-bottom:.5rem}
+.toc-card ul{list-style:none; padding-left:.75rem}
+.toc-card a{text-decoration:none}
 
-                &lt;div id=&#34;plotly-map&#34;&gt;&lt;/div&gt;
-            &lt;/div&gt;
-        &lt;/div&gt;
-    &lt;/div&gt;
-    &lt;script src=&#34;http://localhost:1313/js/heatmaps.js&#34;&gt;&lt;/script&gt;
-&lt;/body&gt;
-&lt;/html&gt;</description>
+ 
+@media (min-width:1280px){
+  .toc-card{ width:300px; margin-right:-320px; }
+}
+@media (min-width:1536px){
+  .toc-card{ width:320px; margin-right:-360px; }
+}
+
+ 
+@media (max-width:1100px){
+  .toc-card{ float:none; width:auto; position:relative; top:auto; margin:1rem 0 0 0; }
+}
+
+ 
+:root:has(.toc-card) h1{ margin-bottom: var(--h1-bottom-gap) !important; }
+:root:has(.toc-card) h2:first-of-type{ margin-top: var(--h2-first-top) !important; }
+
+ 
+.toc-clear{ clear: both; }
+&lt;/style&gt;
+
+&lt;aside class=&#34;toc-card&#34; aria-label=&#34;Table of Contents&#34;&gt;
+  &lt;div class=&#34;toc-title&#34;&gt;Table of Contents&lt;/div&gt;
+  &lt;nav id=&#34;TableOfContents&#34;&gt;
+  &lt;ul&gt;
+    &lt;li&gt;&lt;a href=&#34;#welcome-to-the-heat-map-tool&#34;&gt;Welcome to the Heat Map Tool!&lt;/a&gt;&lt;/li&gt;
+  &lt;/ul&gt;
+&lt;/nav&gt;
+&lt;/aside&gt;
+&lt;div class=&#34;toc-clear&#34;&gt;&lt;/div&gt;
+&lt;h1 id=&#34;welcome-to-the-heat-map-tool&#34;&gt;Welcome to the Heat Map Tool!&lt;/h1&gt;
+&lt;p&gt;Curious how restaurants are distributed across the city? Select any city from the below dropdown and choose from any variable in the adjacent list to view how restaurants are found throughout the selected city based on selected variable!&lt;/p&gt;</description>
     </item>
     
     <item>
@@ -614,53 +830,72 @@ taken to construct the project.&lt;/p&gt;
       <pubDate>Wed, 19 Jun 2024 01:52:23 -0500</pubDate>
       
       <guid>http://localhost:1313/posts/yelpzillow/yelptaggraphs/</guid>
-      <description>&lt;h1 id=&#34;welcome-to-the-tag-graphs-tool&#34;&gt;Welcome to the Tag Graphs Tool!&lt;/h1&gt;
+      <description>&lt;style&gt;
+ 
+:root{
+  --toc-lift: 40rem;         
+  --toc-sticky: 4rem;       
+  --h1-bottom-gap: .75rem;  
+  --h2-first-top: .5rem;    
+}
+
+ 
+.toc-card{
+  float:right;
+  width:280px;
+  margin-top: calc(-1 * var(--toc-lift));   
+  margin-left:1.25rem;
+  margin-bottom:1rem;
+
+  position:sticky; top: var(--toc-sticky);
+  max-height:75vh; overflow:auto;
+  border-radius:12px; padding:1rem;
+  background:rgba(255,255,255,.04); box-shadow:0 2px 10px rgba(0,0,0,.12);
+  z-index:2;
+}
+.toc-title{font-weight:600; margin-bottom:.5rem}
+.toc-card ul{list-style:none; padding-left:.75rem}
+.toc-card a{text-decoration:none}
+
+ 
+@media (min-width:1280px){
+  .toc-card{ width:300px; margin-right:-320px; }
+}
+@media (min-width:1536px){
+  .toc-card{ width:320px; margin-right:-360px; }
+}
+
+ 
+@media (max-width:1100px){
+  .toc-card{ float:none; width:auto; position:relative; top:auto; margin:1rem 0 0 0; }
+}
+
+ 
+:root:has(.toc-card) h1{ margin-bottom: var(--h1-bottom-gap) !important; }
+:root:has(.toc-card) h2:first-of-type{ margin-top: var(--h2-first-top) !important; }
+
+ 
+.toc-clear{ clear: both; }
+&lt;/style&gt;
+
+&lt;aside class=&#34;toc-card&#34; aria-label=&#34;Table of Contents&#34;&gt;
+  &lt;div class=&#34;toc-title&#34;&gt;Table of Contents&lt;/div&gt;
+  &lt;nav id=&#34;TableOfContents&#34;&gt;
+  &lt;ul&gt;
+    &lt;li&gt;&lt;a href=&#34;#welcome-to-the-tag-graphs-tool&#34;&gt;Welcome to the Tag Graphs Tool!&lt;/a&gt;
+      &lt;ul&gt;
+        &lt;li&gt;&lt;a href=&#34;#tag-graphs&#34;&gt;Tag Graphs&lt;/a&gt;&lt;/li&gt;
+      &lt;/ul&gt;
+    &lt;/li&gt;
+  &lt;/ul&gt;
+&lt;/nav&gt;
+&lt;/aside&gt;
+&lt;div class=&#34;toc-clear&#34;&gt;&lt;/div&gt;
+&lt;h1 id=&#34;welcome-to-the-tag-graphs-tool&#34;&gt;Welcome to the Tag Graphs Tool!&lt;/h1&gt;
 &lt;p&gt;Welcome to the Tag Graph Tool. The purpose of this tool is to provide visualizations to the most popular
 types of restaurants in a given area. There are three different graphs one each for State, City and Zip
 Code. Each graph works the same just chose option(s) from the selection box and hit the &amp;ldquo;Generate Graph&amp;rdquo;
-button.&lt;/p&gt;
-&lt;h2 id=&#34;tag-graphs&#34;&gt;Tag Graphs&lt;/h2&gt;
-&lt;!DOCTYPE html&gt;
-&lt;html lang=&#34;en&#34;&gt;
-&lt;head&gt;
-    &lt;meta charset=&#34;UTF-8&#34;&gt;
-    &lt;meta name=&#34;viewport&#34; content=&#34;width=device-width, initial-scale=1.0&#34;&gt;
-    &lt;title&gt;Tag Graphs&lt;/title&gt;
-    &lt;link rel=&#34;stylesheet&#34; href=&#34;http://localhost:1313/css/tag_graphs_style.css&#34;&gt;
-    &lt;script src=&#34;https://cdn.plot.ly/plotly-latest.min.js&#34;&gt;&lt;/script&gt;
-    &lt;script src=&#34;http://localhost:1313/js/taggraphs.js&#34; defer&gt;&lt;/script&gt;
-&lt;/head&gt;
-&lt;body&gt;    
-    &lt;div class=&#34;graphs-container&#34;&gt;
-        &lt;div class=&#34;form-container&#34;&gt;
-            &lt;label for=&#34;target_states&#34;&gt;Select State:&lt;/label&gt;
-            &lt;select id=&#34;target_states&#34; multiple&gt;
-                
-            &lt;/select&gt;
-            &lt;button onclick=&#34;updateGraph(&#39;states&#39;)&#34;&gt;Generate State Graphs&lt;/button&gt;
-            &lt;div id=&#34;plotly-graph-states&#34; class=&#34;plotly-graph-container&#34;&gt;&lt;/div&gt;
-        &lt;/div&gt;
-
-        &lt;div class=&#34;form-container&#34;&gt;
-            &lt;label for=&#34;target_cities&#34;&gt;Select City:&lt;/label&gt;
-            &lt;select id=&#34;target_cities&#34; multiple&gt;
-                
-            &lt;/select&gt;
-            &lt;button onclick=&#34;updateGraph(&#39;cities&#39;)&#34;&gt;Generate City Graphs&lt;/button&gt;
-            &lt;div id=&#34;plotly-graph-cities&#34; class=&#34;plotly-graph-container&#34;&gt;&lt;/div&gt;
-        &lt;/div&gt;
-
-        &lt;div class=&#34;form-container&#34;&gt;
-            &lt;label for=&#34;target_zip_codes&#34;&gt;Select ZIP Code:&lt;/label&gt;
-            &lt;select id=&#34;target_zip_codes&#34; multiple&gt;
-                
-            &lt;/select&gt;
-            &lt;button onclick=&#34;updateGraph(&#39;zip_codes&#39;)&#34;&gt;Generate ZIP Code Graphs&lt;/button&gt;
-            &lt;div id=&#34;plotly-graph-zip_codes&#34; class=&#34;plotly-graph-container&#34;&gt;&lt;/div&gt;
-        &lt;/div&gt;
-    &lt;/div&gt;
-&lt;/body&gt;
-&lt;/html&gt;</description>
+button.&lt;/p&gt;</description>
     </item>
     
     

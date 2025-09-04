@@ -2,7 +2,10 @@
 title: "March Madness Breakdown"
 date: 2025-03-17T09:00:00-05:00
 lastmod: 2025-03-18T18:30:00-05:00
+hero: "images/posts/marchmadness.jpg"
 ---
+
+{{< toc >}}
 
 # March Madness Introduction
 
