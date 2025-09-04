@@ -1,0 +1,17 @@
++++
+title = "Yelp Heap Maps"
+date = 2024-06-19T01:52:23-05:00
+draft = false
+weight = 4
+hero = "images/posts/downtownchicago.jpg"
+
+[menu.sidebar]
+parent = "YelpZillow"
+weight = 4
++++
+
+# Welcome to the Heat Map Tool!
+
+Curious how restaurants are distributed across the city? Select any city from the below dropdown and choose from any variable in the adjacent list to view how restaurants are found throughout the selected city based on selected variable!
+
+{{< heatmap >}}
