@@ -32,7 +32,7 @@ projects:
   - name: Yelp + Zillow Interactive Panels
     role: Author
     timeline: 2024–Present
-    url: /projects/YelpZillow/
+    url: /projects/yelpzillow/
     summary: Analysis on Yelp, Zillow and their possible interactions.
     categories: ["machine-learning", "python"]
     tags: ["Python", "API", "Machine Learning", "Economics"]
