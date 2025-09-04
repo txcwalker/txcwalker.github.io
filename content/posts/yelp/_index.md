@@ -1,11 +1,11 @@
 +++
-title = "Yelp/Zillow"
+title = "YelpZillow"
 weight = 30
 draft = false
 
 [menu.sidebar]
-name = "Yelp/Zillow"
-identifier = "Yelp/Zillow"   # <— children will use this
+name = "YelpZillow"
+identifier = "YelpZillow"   # <— children will use this
 weight = 30
 +++
 
