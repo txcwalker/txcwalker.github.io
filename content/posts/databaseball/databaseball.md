@@ -22,9 +22,9 @@ I feel I was able to produce something that is really interesting and useful (if
 
 ## Database Creation and Maintenance
 
-The first step was building a database of baseball stats. Ideally, this would include not just season-by-season data, but also game-by-game and even pitch-by-pitch. While that’s the ultimate goal, the data I was able to quickly implement was season-by-season — including postseason stats, award winners, team results, and (for seasons starting in 2002) more advanced statistics.  
+The first step was building a database of baseball stats. Ideally, this would include not just season-by-season data, but also game-by-game and even pitch-by-pitch data. While that’s the ultimate goal, the data I was able to quickly implement was season-by-season, including postseason stats, award winners, team results, and (for seasons starting in 2002) more advanced statistics.  
 
-By combining data from the **Lahman project** and the **pybaseball package** (scraping FanGraphs), I created a relatively comprehensive database of season-long player statistics. The Lahman database even goes back to 1900 — and further for some tables.  
+By combining data from the **Lahman project** and the **pybaseball package** (scraping FanGraphs), I created a relatively comprehensive database of season-long player statistics. The Lahman database even goes back to 1900 and further for some tables.  
 
 The end goal is to eventually include as much pitch-by-pitch data as possible, but more on that later.
 
