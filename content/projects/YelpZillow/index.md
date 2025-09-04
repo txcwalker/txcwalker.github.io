@@ -31,10 +31,9 @@ This is a quality of life issue. For the most part, all of the columns came in t
 
 ### API Limitations
 
-The last point to be addressed about this project’s interaction with the Yelp API is the limitations. This is not a criticism of the API, rather a statement on the dataset that was formed from the collection process. On the “standard” version of the API, there is a limitation to the number of ‘calls’ that can be made to the API. Essentially, one computer can only make so many requests in a day/month so it does not crash the entire system. Makes sense; this is great on many levels. What is a bit more bizarre is there is no way (at least that was found for this project) to pick up at the last save point from the data retrieval. Take New York for example. The API is called and run for the first X (say 2000) observations. This data is received, saved, and processed. However, trying to get the next 2000 observations proved to be difficult. In fact, it was not able to be done. Impossible? Probably not, but many different approaches were tried and none of them were successful. All of this is to say this dataset is comprised of the first X amount of observations from each city that was called.
+The last point to be addressed about this project’s interaction with the Yelp API is the limitations. This is not a criticism of the API, rather a statement on the dataset that was formed from the collection process. On the “standard” version of the API, there is a limitation to the number of ‘calls’ that can be made to the API. Essentially, one IP address/account can only make so many requests in a day/month so it does not crash the entire system. Makes sense; this is great on many levels. What is a bit more bizarre is there is no way (at least that was found for this project) to pick up at the last save point from the data retrieval. Take New York for example. The API is called and run for the first X (say 2000) observations. This data is received, saved, and processed. However, trying to get the next 2000 observations proved to be difficult. In fact, it was not able to be done. Impossible? Probably not, but many different approaches were tried and none of them were successful. All of this is to say this dataset is comprised of the first X amount of observations from each city that was called.
 
 Again, nothing is perfect; no one is expecting this. Most of this data is scrapped from each vendor's website and if it is copied as it appears exactly. However, from an ease of use and analysis perspective, these are a few things that can be relatively easily cleaned up. In an ideal world, APIs could be used by anyone, not just those who can code.
-
 
 # Search Score
 
@@ -42,7 +41,7 @@ After using Yelp to find the best restaurants ‘near me’ for more than a deca
 
 This started by using the Yelp API and accessing as much data as possible. The API has daily call limit (about 10 max calls) and a call limit of about 2000 observations per call. So after gathering data over several weeks, the dataset was defined. After cleaning close to 100,000 total observations from over 50 major metropolitan areas around the United States. This is a small percentage of the total observations that Yelp has but it is big enough to run an analysis on, develop a model, and evaluate the results to form a few conclusions on the overall validity of both search algorithms.
 
-When accessing data from the Yelp API, there are plenty of variables that can be selected to accompany each observation. For the purposes of this discussion, there are two: Number of Reviews and Rating. With just these two variables, we should be able to understand the current Yelp algorithm and create a close replica of it as long as the current search algorithm is relatively unbiased.
+When accessing data from the Yelp API, there are plenty of variables that can be selected to accompany each observation. For the purposes of this discussion, there are two: Number of Reviews and Rating. With just these two variables, we should be able to understand the current Yelp algorithm and create a simple approximation of it as long as the current search algorithm is relatively unbiased.
 
 Let’s start with creating a version of Yelp's search algorithm. It should show the user the best restaurants near them in an objective, unbiased order. The metric should rate the restaurant’s quality and have some verification component. The two variables mentioned earlier (Reviews and Rating) are a perfect and concise way to accomplish this task. The Rating is the measure of quality (on a scale of 1-5, where 5 is best) and the Number of Reviews is an easy way to verify the rating; the more reviews a place has, the more accurate the rating.
 
@@ -50,9 +49,9 @@ It would be a dream to be able to multiply these numbers together, arrive at a s
 
 Recommendation Score = Rating * Number of Reviews
 
-Restaurant Score 1 = 5 * 50 = 250
+Restaurant Score 1: 5 * 50 = 250
 
-Restaurant Score 2 = 4 * 100 = 400
+Restaurant Score 2: 4 * 100 = 400
 
 Obviously, Restaurant 1 should have a way higher ranking, but it is nearly half of Restaurant 2. To accommodate for this, each number will be scaled in the following way. The Rating is the most important part of evaluating the restaurant. Lower values should be punished and higher values should be rewarded, so this number will be squared. As for the Number of Reviews, this is important but after a certain amount of reviews, the rating is going to become stable. So this number is important but should have diminishing returns. A perfect way to scale this down is a log function, in this case, the natural log. The scaling can be seen below, and now the algorithm is as follows: 
 
@@ -79,7 +78,7 @@ A couple of quick notes before the conclusions. First, a reminder, as the API on
 <!-- Model Search table -->
 {{< tables file="search_score_tables" key="Model Search" >}}
 
-Unfortunately, this is not a one-off occurrence. This was the case for all of the zip codes researched. Below is the same search functionality used to create the model’s top ten list. Go ahead and select any zip code from the dropdown and compare it to the Yelp Results. Obviously, not every zip code was checked. There are over 2000 of them in the data set, and if the researched ones are the outliers, then that is great! But if you don’t believe me, try for yourself at the bottom of the page. Pick any zip code, then run a Yelp search using the recommended search setting and compare it to the results that appear on this page!
+Unfortunately, this is not a one-off occurrence. This was the case for all of the zip codes researched. Below is the same search functionality used to create the model’s top ten list. Go ahead and select any zip code from the dropdown and compare it to the Yelp Results. Obviously, not every zip code was checked. There are over 2000 of them in the data set, and if the researched ones are the outliers, then that is great! But if you don’t believe me, try for yourself below. Pick any zip code, then run a Yelp search using the recommended search setting and compare it to the results that appear on this page!
 
 So where did the model go wrong? It is only getting two pieces of information versus the tens if not hundreds the Yelp algorithm uses. Of the two pieces of information, it is getting one of them (the one more heavily weighted in the model) has significant information loss because it is rounded (no idea why it is still transmitting the same amount of information one place past the decimal).
 
@@ -87,7 +86,7 @@ The biggest place of improvement for the model is the number of reviews itself. 
 
 On Yelp’s end, how is it that in the top ten for one of many zip codes in Downtown Los Angeles, there are three restaurants with 60 or fewer reviews and two with fewer than 15? Are some reviews worth more than others? Does the location of the search or location of the zip code influence the type of restaurant that will show up in searches? For example, part of this zip code is an area known as Little Tokyo, so are Japanese restaurants more likely to populate? Are the searches considering data from the user's computer? For example, when these searches were run across multiple accounts and web browsers, different results were seen. There is no guarantee that the person running the Yelp search is the same person who uses the device most of the time. Accounts/computers are often shared between families, kids, couples, roommates, companies, etc. Is there a point where a review is no longer used in the algorithm? For example, if a review was left longer than x years ago, is it disregarded by the algorithm? If so, then why does it still show on the site if it is not being used? Is there marketing being considered by the search? Are these three restaurants prolific advertisers on social media or elsewhere, which is being considered by the algorithm? A most recommended list should surely be agnostic of advertising and marketing.
 
-Both algorithms have their strengths and weaknesses. Clearly, neither is perfect and both are in need of improvement, which makes sense, as it is difficult to quantify human preferences when each of us has a slightly different opinion. The best algorithm probably lies somewhere in between the simple model created here and the more complex version Yelp has been using.  
+Both algorithms have their strengths and weaknesses. Clearly, neither is perfect and both are in need of improvement, which makes sense, as it is difficult to quantify human preferences when each of us has a slightly different opinion. The best algorithm probably lies somewhere in between the simple model created here and the more complex version Yelp has been using.   
 
 
 # Find Top Restaurants by ZIP Code
@@ -161,7 +160,7 @@ The variables in the model are listed above, with Zillow Price being the depende
 
 ## Evaluating the Model
 
-Two of the more common  quantitative evaluation techniques for random forests are: Mean Squared Error (MSE) and R{{< sup "2" >}} (coefficient of determination). MSE measures the average difference between the true and predicted values by the model, squared to make it positive and to more heavily penalize extreme misses. The squares are then summed and averaged to produce the final MSE. R{{< sup "2" >}} provides a numerical value between 0 and 1, indicating how much of the variance in the dependent variable is explained by the independent variables.
+Two of the more common quantitative evaluation techniques for random forests are: Mean Squared Error (MSE) and R{{< sup "2" >}} (coefficient of determination). MSE measures the average difference between the true and predicted values by the model, squared to make it positive and to more heavily penalize extreme misses. The squares are then summed and averaged to produce the final MSE. R{{< sup "2" >}} provides a numerical value between 0 and 1, indicating how much of the variance in the dependent variable is explained by the independent variables.
 
 **Mean Squared Error (MSE):** 80,007,257,500.25774  
 **R {{< sup "2" >}}>:** 0.5229242919073203
@@ -201,7 +200,7 @@ The final piece of visualization is looking at which variables the model most hi
 
 The mean number of reviews was the most important feature, but it capped out just above 25%, with two additional variables (review count median and mean price) coming in at just below 15%, and state coming in just behind the two of them at about 13%. These four variables are doing most of the work.
 
-A bit surprising, challenging the initial thought process behind the idea that spurred this analysis, is that restaurant rating looks to be essentially useless in the model evaluation of relative importance. This could be due to the serious loss of information from the rounding when the data was received via the Yelp API. Even though these are averages and medians on a 1-5 scale, the small differences can make a big difference. In the downloaded data, 4.3 is viewed the same as 4.7, and there is a massive difference between 4.7 and 4.8 (4.5 vs 5.0). Orit might be too random to help with the prediction.
+A bit surprising, challenging the initial thought process behind the idea that spurred this analysis, is that restaurant rating looks to be essentially useless in the model evaluation of relative importance. This could be due to the serious loss of information from the rounding when the data was received via the Yelp API. Even though these are averages and medians on a 1-5 scale, the small differences in value can make a big difference in final product. In the downloaded data, 4.3 is viewed the same as 4.7, and there is a massive difference between 4.7 and 4.8 (4.5 vs 5.0). Or it might be too random to help with the prediction.
 
 Here are three graphs to show the biggest misses, closest predictions, and the final one shows all of the data plotted on a map of the United States. The top map is all of the residuals plotted at the average coordinates of its zip code. The size and color scale with the size of the difference. The color scale is pictured on the right, and as the circles get bigger, so does the size of the miss. Size scale is based on the absolute value, so negative values are not the smallest.
 
@@ -245,7 +244,7 @@ Curious how restaurants are distributed across the city? Select any city from th
 
 # Welcome to the Tag Graphs Tool!
 
-Welcome to the Tag Graph Tool. The purpose of this tool is to provide visualization to the most popular
+Welcome to the Tag Graph Tool. The purpose of this tool is to provide visualizations to the most popular
 types of restaurants in a given area. There are three different graphs one each for State, City and Zip
 Code. Each graph works the same just chose option(s) from the selection box and hit the "Generate Graph"
 button.

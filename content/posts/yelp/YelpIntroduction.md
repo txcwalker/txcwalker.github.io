@@ -6,7 +6,7 @@ weight = 1
 hero = "images/posts/downtownsanfrancisco.jpg"
 
 [menu.sidebar]
-parent = "Yelp/Zillow"            
+parent = "YelpZillow"            
 weight = 1 
 +++
 
@@ -38,6 +38,6 @@ This is a quality of life issue. For the most part, all of the columns came in t
 
 ### API Limitations
 
-The last point to be addressed about this project’s interaction with the Yelp API is the limitations. This is not a criticism of the API, rather a statement on the dataset that was formed from the collection process. On the “standard” version of the API, there is a limitation to the number of ‘calls’ that can be made to the API. Essentially, one computer can only make so many requests in a day/month so it does not crash the entire system. Makes sense; this is great on many levels. What is a bit more bizarre is there is no way (at least that was found for this project) to pick up at the last save point from the data retrieval. Take New York for example. The API is called and run for the first X (say 2000) observations. This data is received, saved, and processed. However, trying to get the next 2000 observations proved to be difficult. In fact, it was not able to be done. Impossible? Probably not, but many different approaches were tried and none of them were successful. All of this is to say this dataset is comprised of the first X amount of observations from each city that was called.
+The last point to be addressed about this project’s interaction with the Yelp API is the limitations. This is not a criticism of the API, rather a statement on the dataset that was formed from the collection process. On the “standard” version of the API, there is a limitation to the number of ‘calls’ that can be made to the API. Essentially, one IP address/account can only make so many requests in a day/month so it does not crash the entire system. Makes sense; this is great on many levels. What is a bit more bizarre is there is no way (at least that was found for this project) to pick up at the last save point from the data retrieval. Take New York for example. The API is called and run for the first X (say 2000) observations. This data is received, saved, and processed. However, trying to get the next 2000 observations proved to be difficult. In fact, it was not able to be done. Impossible? Probably not, but many different approaches were tried and none of them were successful. All of this is to say this dataset is comprised of the first X amount of observations from each city that was called.
 
 Again, nothing is perfect; no one is expecting this. Most of this data is scrapped from each vendor's website and if it is copied as it appears exactly. However, from an ease of use and analysis perspective, these are a few things that can be relatively easily cleaned up. In an ideal world, APIs could be used by anyone, not just those who can code.

@@ -6,7 +6,7 @@ weight = 3
 hero = "images/posts/downtownchicago.jpg"
 
 [menu.sidebar]
-parent = "Yelp/Zillow"            
+parent = "YelpZillow"            
 weight = 3      
 +++
 
@@ -78,7 +78,7 @@ The variables in the model are listed above, with Zillow Price being the depende
 
 ## Evaluating the Model
 
-Two of the more common  quantitative evaluation techniques for random forests are: Mean Squared Error (MSE) and R{{< sup "2" >}} (coefficient of determination). MSE measures the average difference between the true and predicted values by the model, squared to make it positive and to more heavily penalize extreme misses. The squares are then summed and averaged to produce the final MSE. R{{< sup "2" >}} provides a numerical value between 0 and 1, indicating how much of the variance in the dependent variable is explained by the independent variables.
+Two of the more common quantitative evaluation techniques for random forests are: Mean Squared Error (MSE) and R{{< sup "2" >}} (coefficient of determination). MSE measures the average difference between the true and predicted values by the model, squared to make it positive and to more heavily penalize extreme misses. The squares are then summed and averaged to produce the final MSE. R{{< sup "2" >}} provides a numerical value between 0 and 1, indicating how much of the variance in the dependent variable is explained by the independent variables.
 
 **Mean Squared Error (MSE):** 80,007,257,500.25774  
 **R {{< sup "2" >}}>:** 0.5229242919073203
@@ -118,7 +118,7 @@ The final piece of visualization is looking at which variables the model most hi
 
 The mean number of reviews was the most important feature, but it capped out just above 25%, with two additional variables (review count median and mean price) coming in at just below 15%, and state coming in just behind the two of them at about 13%. These four variables are doing most of the work.
 
-A bit surprising, challenging the initial thought process behind the idea that spurred this analysis, is that restaurant rating looks to be essentially useless in the model evaluation of relative importance. This could be due to the serious loss of information from the rounding when the data was received via the Yelp API. Even though these are averages and medians on a 1-5 scale, the small differences can make a big difference. In the downloaded data, 4.3 is viewed the same as 4.7, and there is a massive difference between 4.7 and 4.8 (4.5 vs 5.0). Orit might be too random to help with the prediction.
+A bit surprising, challenging the initial thought process behind the idea that spurred this analysis, is that restaurant rating looks to be essentially useless in the model evaluation of relative importance. This could be due to the serious loss of information from the rounding when the data was received via the Yelp API. Even though these are averages and medians on a 1-5 scale, the small differences in value can make a big difference in final product. In the downloaded data, 4.3 is viewed the same as 4.7, and there is a massive difference between 4.7 and 4.8 (4.5 vs 5.0). Or it might be too random to help with the prediction.
 
 Here are three graphs to show the biggest misses, closest predictions, and the final one shows all of the data plotted on a map of the United States. The top map is all of the residuals plotted at the average coordinates of its zip code. The size and color scale with the size of the difference. The color scale is pictured on the right, and as the circles get bigger, so does the size of the miss. Size scale is based on the absolute value, so negative values are not the smallest.
 

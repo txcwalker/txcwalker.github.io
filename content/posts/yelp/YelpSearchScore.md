@@ -6,7 +6,7 @@ weight = 2
 hero = "images/posts/pasteldenata.jpg"
 
 [menu.sidebar]
-parent = "Yelp/Zillow"            
+parent = "YelpZillow"            
 weight = 2
 +++
 
@@ -18,7 +18,7 @@ After using Yelp to find the best restaurants ‘near me’ for more than a deca
 
 This started by using the Yelp API and accessing as much data as possible. The API has daily call limit (about 10 max calls) and a call limit of about 2000 observations per call. So after gathering data over several weeks, the dataset was defined. After cleaning close to 100,000 total observations from over 50 major metropolitan areas around the United States. This is a small percentage of the total observations that Yelp has but it is big enough to run an analysis on, develop a model, and evaluate the results to form a few conclusions on the overall validity of both search algorithms.
 
-When accessing data from the Yelp API, there are plenty of variables that can be selected to accompany each observation. For the purposes of this discussion, there are two: Number of Reviews and Rating. With just these two variables, we should be able to understand the current Yelp algorithm and create a close replica of it as long as the current search algorithm is relatively unbiased.
+When accessing data from the Yelp API, there are plenty of variables that can be selected to accompany each observation. For the purposes of this discussion, there are two: Number of Reviews and Rating. With just these two variables, we should be able to understand the current Yelp algorithm and create a simple approximation of it as long as the current search algorithm is relatively unbiased.
 
 Let’s start with creating a version of Yelp's search algorithm. It should show the user the best restaurants near them in an objective, unbiased order. The metric should rate the restaurant’s quality and have some verification component. The two variables mentioned earlier (Reviews and Rating) are a perfect and concise way to accomplish this task. The Rating is the measure of quality (on a scale of 1-5, where 5 is best) and the Number of Reviews is an easy way to verify the rating; the more reviews a place has, the more accurate the rating.
 
@@ -26,9 +26,9 @@ It would be a dream to be able to multiply these numbers together, arrive at a s
 
 Recommendation Score = Rating * Number of Reviews
 
-Restaurant Score 1 = 5 * 50 = 250
+Restaurant Score 1: 5 * 50 = 250
 
-Restaurant Score 2 = 4 * 100 = 400
+Restaurant Score 2: 4 * 100 = 400
 
 Obviously, Restaurant 1 should have a way higher ranking, but it is nearly half of Restaurant 2. To accommodate for this, each number will be scaled in the following way. The Rating is the most important part of evaluating the restaurant. Lower values should be punished and higher values should be rewarded, so this number will be squared. As for the Number of Reviews, this is important but after a certain amount of reviews, the rating is going to become stable. So this number is important but should have diminishing returns. A perfect way to scale this down is a log function, in this case, the natural log. The scaling can be seen below, and now the algorithm is as follows: 
 

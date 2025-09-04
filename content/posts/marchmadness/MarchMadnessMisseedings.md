@@ -24,21 +24,20 @@ It feels like every year the committee intentionally misseeds a couple of teams 
 
 4. Gonzaga and Saint Mary’s: Both teams ended the season in the top 25 this year. Obviously they played in one of the weakest conferences in college basketball but they both played competitive non conference schedules. By nearly every advanced metric both of these teams are in the top 20 teams in the country with Gonzaga being close to the top 10. If Gonzaga did not have such a nasty potential second matchup against Houston they would be a favorite to make the final four as an non 1 or 2 seed. Even now they can still make a deep run. 
 
-5. Memphis: This is a team that ended the year in the top 25 for the AP, cruised through their conference and conference tournament. Played one of the best non conference schedules in the country, has wins over  Michigan State, Clemson, Ole Miss and UConn and is still drastically over seeded. They did everything they were suppose to but the advance metrics for this team fall extremely short. So short in fact that as 5 seed they are underdogs to 12 seed Colorado State. This is a team that sort of has to be a five seed based on their record but has the strength of an 8 or 9 seed, possibly lower. 
+5. Memphis: This is a team that ended the year in the top 25 for the AP, cruised through their conference and conference tournament. Played one of the best non conference schedules in the country, has wins over  Michigan State, Clemson, Ole Miss and UConn and... is still drastically over seeded. They did everything they were suppose to but the advance metrics for this team fall extremely short. So short in fact that as 5 seed they are underdogs to 12 seed Colorado State. This is a team that sort of has to be a five seed based on their record but has the strength of an 8 or 9 seed, possibly lower. 
 
 
 # Fairytales
 
-Every tournament has its over and underperformers. The teams that keep winning despite the odds (the cinderella stories) well overperformer their seed expectation and the teams that exit early (the frogs) despite their hype underperform their seed expectation. This metric comparing the average wins a team has in the simulated tournaments and comparing it to their seeds historical accomplishments. This information can be found here:
+Every tournament has its over and underperformers. The teams that keep winning despite the odds (the cinderella stories) overperformer their seed expectation and the teams that exit early (the frogs) despite their hype underperform their seed expectation. This metric comparing the average wins a team has in the simulated tournaments and comparing it to their seeds historical accomplishments. This information can be found here:
 
 https://bracketodds.cs.illinois.edu/seedadv.html 
 
-These are some teams who are not winning or losing as often as their seed might suggest. Both of the below graphs synergize with the concepts we discussed earlier about the tournament being top heavy and top 30 being one of the best 30s in tournament history (except for maybe you Memphis) .
+These are some teams who are not winning or losing as often as their seed might suggest. Both of the below graphs synergize with the concepts we discussed earlier about the tournament being top heavy and top 30 being one of the best 30s in tournament history (except for maybe you Memphis).
 
 ## Underperformers
 
 ![Underperformers](/images/March_Madness/underperformers.png)
-
 
 Speaking of which Memphis leads the way in underperforming as both Vegas and the Model used for the sims has Colorado St. favored in the games. A couple of other teams worth noting from the graph below.
 
@@ -60,4 +59,4 @@ Two of the five teams on this graph (Maryland and Colorado St.) are taking advan
 
 1. Missouri: We spoke briefly about them above in the context of their first round matchup with Drake the model loves this team relative to its seed being only slight underdogs against St. Johns, Texas Tech and Maryland while being significant favorites at -650 against Drake this outpaces the -275 line that Vegas currently is giving. 
 
-2. Gonzaga: This is a case of the Bulldogs beating Georgia alot. We discussed them a bit already above and their story is similar to Maryland’s just one round earlier. They have a tough potential matchup against Houston if they can beat Georgia but after that they are competitive with every other team in the region being favored over both Clemson and Purdue in a theoretical Sweet Sixteen game and only slight underdogs to both Kentucky and Illinois in an eventual Elite Eight (although Tennessee is heavily favored and most likely to get there).  
+2. Gonzaga: This is a case of the Bulldogs beating Georgia alot. We discussed them a bit already above and their story is similar to Maryland’s just one round earlier. They have a tough potential matchup against Houston if they can beat Georgia but after that they are competitive with every other team in the region being favored over both Clemson and Purdue in a theoretical Sweet Sixteen game and only slight underdogs to both Kentucky and Illinois in an eventual Elite Eight (although Tennessee is heavily favored and most likely to get there). 

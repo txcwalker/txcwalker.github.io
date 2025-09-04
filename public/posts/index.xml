@@ -170,7 +170,7 @@
 &lt;/aside&gt;
 &lt;div class=&#34;toc-clear&#34;&gt;&lt;/div&gt;
 &lt;h2 id=&#34;introduction&#34;&gt;Introduction:&lt;/h2&gt;
-&lt;p&gt;This project first started out as me getting a phishing message on LinkedIn. I was annoyed that I got my hopes up, however brief, and realized that I could probably make some sort of model to evaluate if messages were sent with benevolent or malign intent. After doing a bit of research, testing and finally some coding I was able to get a model and app (check that out here “ (&lt;a href=&#34;https://gonephishing.streamlit.app&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;https://gonephishing.streamlit.app&lt;/a&gt;) ”).&lt;/p&gt;</description>
+&lt;p&gt;This project first started out as me getting a phishing message on LinkedIn. I was annoyed that I got my hopes up, however brief, and realized that I could probably make some sort of model to evaluate if messages were sent with benevolent or malignant intent. After doing a bit of research, testing and finally some coding I was able to get a model and app created (check that out here “ (&lt;a href=&#34;https://gonephishing.streamlit.app&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;https://gonephishing.streamlit.app&lt;/a&gt;) ”).&lt;/p&gt;</description>
     </item>
     
     <item>
@@ -248,7 +248,7 @@
 &lt;/aside&gt;
 &lt;div class=&#34;toc-clear&#34;&gt;&lt;/div&gt;
 &lt;h1 id=&#34;march-madness-introduction&#34;&gt;March Madness Introduction&lt;/h1&gt;
-&lt;p&gt;Every March college basketball captures the Country’s countries imagination. The tournament begins with 68 teams each of whom believe they can win the tournament and be crowned the best college basketball team in the country. The single elimination, win or go home, style of tournament creates excitement because anything can happen in one game. And it is true, anything can happen in one game. But what is the likelihood? Part of the reason this tournament has gained its fame is in pursuit of the perfect bracket. Correctly picking all 63 games, Warren Buffet has famously offered a substantial cash prize to the first person who can fill out a perfect bracket. Despite millions of attempts each year no one has really come close. So how can we try to be perfect? How can we get as close as possible? Realistically the perfect bracket is never going to happen but chasing it will also keep us entertained.&lt;/p&gt;</description>
+&lt;p&gt;Every March college basketball captures the Country’s imagination. The tournament begins with 68 teams each of whom believe they can win the tournament and be crowned the best college basketball team in the country. The single elimination, win or go home, style of tournament creates excitement because anything can happen in one game. And it is true, anything can happen in one game. But what is the likelihood? Part of the reason this tournament has gained its fame is the pursuit of the perfect bracket. Correctly picking all 63 games, Warren Buffet has famously offered a substantial cash prize to the first person who can fill out a perfect bracket. Despite millions of attempts each year no one has really come close. So how can we try to be perfect? How can we get as close as possible? Realistically the perfect bracket is never going to happen but chasing it will also keep us entertained.&lt;/p&gt;</description>
     </item>
     
     <item>
@@ -381,7 +381,7 @@
   &lt;nav id=&#34;TableOfContents&#34;&gt;&lt;/nav&gt;
 &lt;/aside&gt;
 &lt;div class=&#34;toc-clear&#34;&gt;&lt;/div&gt;
-&lt;p&gt;Below is a table with the odds for every Team to make it to the following rounds Sweet Sixteen, Elite Eight, Final Four and Championship Winner. Simpley Select which team(s) you would like to view and hit &amp;ldquo;Show Selected Teams&amp;rdquo;&lt;/p&gt;</description>
+&lt;p&gt;Below is a table with the odds for every Team to make it to the following rounds Sweet Sixteen, Elite Eight, Final Four and Championship Winner. Simpley Select which team(s) you would like to view and hit &amp;ldquo;Show Selected Teams&amp;rdquo;. Please keep in mind that these odds will not perfectly match Vegas. These odds are calculated on 10,000 tournaments being simulate and each teams placements being summed. So there can only every be 10,000 championship winners, 40,000 Final Four teams, etc etc. So if a team never makes it to a round in the tournament they have functionally +infinity odds and if they are winning 1000 of the 10000 times they have a probabiltiy of 10% which translates to 9/1 or +900. Las Vegas odds do not operate this way, it is close but not exact they are not in the business of correct predictins (sort of it is more complicated than that and something out of the scope of this discussion).&lt;/p&gt;</description>
     </item>
     
     <item>
@@ -825,7 +825,7 @@ taken to construct the project.&lt;/p&gt;</description>
 &lt;/aside&gt;
 &lt;div class=&#34;toc-clear&#34;&gt;&lt;/div&gt;
 &lt;h1 id=&#34;welcome-to-the-tag-graphs-tool&#34;&gt;Welcome to the Tag Graphs Tool!&lt;/h1&gt;
-&lt;p&gt;Welcome to the Tag Graph Tool. The purpose of this tool is to provide visualization to the most popular
+&lt;p&gt;Welcome to the Tag Graph Tool. The purpose of this tool is to provide visualizations to the most popular
 types of restaurants in a given area. There are three different graphs one each for State, City and Zip
 Code. Each graph works the same just chose option(s) from the selection box and hit the &amp;ldquo;Generate Graph&amp;rdquo;
 button.&lt;/p&gt;</description>

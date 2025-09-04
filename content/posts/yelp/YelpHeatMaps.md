@@ -6,7 +6,7 @@ weight = 5
 hero = "images/posts/paella.jpg"
 
 [menu.sidebar]
-parent = "Yelp/Zillow"            
+parent = "YelpZillow"            
 weight = 5  
 +++
 
